@@ -1,0 +1,53 @@
+*
+{
+    
+    font-family: Caveat , Roboto , Tahoma, sans-serif;
+}
+
+:root {
+    --naranjaP: #ff6700ff;  /* Almacena los colores de la paleta con un nombre */
+    --blancoP: #ebebebff;
+    --grisP: #c0c0c0ff;
+    --azulclaroP:  #3a6ea5ff;
+    --azuloscuroP:  #004e98ff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: roboto;
+}
+
+
+header{
+    background-color: var(--naranjaP);
+    border: 2px greenyellow solid;
+}
+
+section{
+    background-color: var(--azulclaroP);
+    border: 2px greenyellow solid;
+}
+
+nav{
+    background-color: var(--blancoP);
+    border: 2px greenyellow solid;
+}
+
+main{
+    background-color: var(--grisP);
+    border: 2px greenyellow solid;
+}
+
+aside{
+    background-color: var(--naranjaP);
+    border: 2px greenyellow solid;
+}
+
+article{
+    background-color: var(--azulclaroP);
+    border: 2px greenyellow solid;
+}
+
+footer{
+    background-color: var(--azuloscuroP);
+    border: 2px greenyellow solid;
+}
