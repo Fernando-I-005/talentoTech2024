@@ -1,6 +1,15 @@
 body{
-    background-color: crimson;
-    color: gold;
+    
+    color: rgb(36, 35, 33);
     text-align: center;
-   
+   background-color: grey;
+   display: flex;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 1px blue solid;
 }
