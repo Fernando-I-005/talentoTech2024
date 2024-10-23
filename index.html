@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,85 +9,115 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- fueente de google fonts -->
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"> <!-- fuente de google fonts -->
+
 
 
 
 </head>
+
 <body>
     <div id="contenedorFijo">
-    
-    <header>
-    <p id="encabezadoSuperior">Construimos juntos tu proximo proyecto</p>
-    <img src="recursos/Logo Ferrecentro PNG naranja.png" id="logoEncabezado"/> <!-- -->
-    
-    <form action="/buscar" method="GET" class="barra-busqueda">
-        <input type="text" name="query" placeholder="Buscar..." aria-label="Buscar" required>
-        <button type="submit">Buscar</button>
-    </form>
-    
-    
-    <h3>HEADER</h3>
-    <P>define el encabezado de una página o sección. Contiene elementos como logotipos, títulos y menús de navegación.</P></header>
-    
-    <nav>
-    
-     <ul> 
-                <li><a href="" > PRODUCTOS</a></li>
-                <li><a href="" > PROMOCIONES</a></li>
-                <li><a href="" > PREGUNTAS FRECUENTES</a></li>
-                <li><a href="" > CONTACTO </a></li>
-                <li><a href="" > UBICACION</a></li>
-    </ul>
-    
-    
-    
-    <h3>NAV</h3> representa una sección de navegación con enlaces a otras partes de la página o a diferentes páginas.
-    
-    </nav>
+
+        <header>
+            <p id="encabezadoSuperior">Construimos juntos tu proximo proyecto</p>
+            <!-- -->
+
+            <div id="contenedorLogoBuscar">
+
+
+                <a href="index.html"><img src="recursos/Logo Ferrecentro PNG naranja.png" id="logoEncabezado" /></a>
+
+                <form action="/buscar" method="GET" class="barra-busqueda">
+                    <input type="text" name="query" placeholder="Buscar..." aria-label="Buscar" required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="html/productos.html"> PRODUCTOS</a></li>
+                <li><a href="html/promociones.html"> PROMOCIONES</a></li>
+                <li><a href="html/preguntasFrecuentes.html"> PREGUNTAS FRECUENTES</a></li>
+                <li><a href="html/contactos.html"> CONTACTO </a></li>
+                <li><a href="html/ubicacion.html"> UBICACION</a></li>
+            </ul>
+
+
+        </nav>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <main> <h3>MAIN</h3> contiene el contenido principal del documento, que es único y esencial para la página.
-    
-    <section><h2>SECTION 1 CARRUSEL </h2>  define una sección temática en el contenido que agrupa elementos relacionados.</section>
-    
-    
-    <div id="contenedorSecciones" >
-  
-    <section><h2>SECTION 2 PRODUCTOS DESTACADOS </h2>  define una sección temática en el contenido que agrupa elementos relacionados.</section>
-    
-    <section><h2>SECTION 3 MAS VENDIDOS </h2>  define una sección temática en el contenido que agrupa elementos relacionados.</section>
-    
-    <article> <h3>ARTICLE MARCAS </h3> representa una pieza autónoma de contenido, como un artículo de un blog o una noticia.</article>
-    
-    </div>
-    
-    
-    <div id="contenedorPublicidad" >
-    
-    <aside> <h3> ASIDE 1  PUBLICIDAD 1 </h3> contiene información adicional que puede estar relacionada con elcontenido principal, como anuncios o enlaces secundarios </aside>
-    
-    <aside> <h3> ASIDE 2  PUBLICIDAD 2 </h3> contiene información adicional que puede estar relacionada con elcontenido principal, como anuncios o enlaces secundarios </aside>
-    </div>
-    
-        
+
+
+
+
+
+
+
+
+
+    <main>
+
+        <section id="contenedorCarrusel">
+            <img src="recursos/fachada.jpg">
+        </section>
+
+
+        <div id="contenedorSecciones">
+
+            <section id="contenedorDestacados">
+                <h3>PRODUCTOS DESTACADOS </h3>
+                <div class="contenedorCard">
+                    <img class="card" src="./recursos/cardProductos.jpg">
+                    <img class="card" src="./recursos/cardProductos.jpg">
+                    <img class="card" src="./recursos/cardProductos.jpg">
+                </div>
+            </section>
+
+            <section id="contenedorMasVendidos">
+                <h3>MAS VENDIDOS </h3>
+                <div class="contenedorCard">
+                    <img class="card" src="./recursos/cardProductos.jpg">
+                    <img class="card" src="./recursos/cardProductos.jpg">
+                    <img class="card" src="./recursos/cardProductos.jpg">
+                </div>
+            </section>
+
+            <article id="contenedorMarcas">
+                <h3>MARCAS </h3>
+            </article>
+
+        </div>
+
+
+        <div id="contenedorPublicidad">
+
+            <aside class="contenedorPublicidad">
+                <h3> ASIDE 1 PUBLICIDAD 1 </h3>
+            </aside>
+
+            <aside class="contenedorPublicidad">
+                <h3> ASIDE 2 PUBLICIDAD 2 </h3>
+            </aside>
+        </div>
+
+
     </main>
-    
 
-   
 
-    <footer> <h4>FOOTER </h4> define el pie de página, donde generalmente se encuentran los derechos de autor, enlaces adicionales y contactos. </footer>
+
+
+    <footer>
+        <h4>FOOTER </h4>
+    </footer>
 
 
 
 </body>
+
 </html>
