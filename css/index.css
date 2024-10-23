@@ -197,7 +197,7 @@ section {
 #contenedorDestacados {
     border: 2px black solid;
     text-align: center;
-    margin:2em;
+    margin: 2em;
 
 }
 
@@ -215,7 +215,7 @@ section {
 #contenedorMasVendidos {
     border: 2px black solid;
     text-align: center;
-    margin:2em;
+    margin: 2em;
 
 }
 
@@ -234,7 +234,7 @@ article {
     background-color: var(--azulclaroP);
     border: 2px greenyellow solid;
     text-align: center;
-    margin:2em;
+    margin: 2em;
 }
 
 
@@ -256,6 +256,30 @@ aside {
 footer {
     background-color: var(--azuloscuroP);
     border: 2px greenyellow solid;
-    padding: 1em;
+    padding: 1.5em 11em;
     color: var(--blancoP);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+#logoFooter{
+width: 4em;
+
+}
+
+#logoFiscal{
+    width: 3em;
+
+}
+
+
+
+footer a {
+    color: var(--blancoP);
+    text-decoration: none; /* Elimina el subrayado */
+margin: 0.7em ;
+
 }
