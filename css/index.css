@@ -40,6 +40,7 @@ header {
 #contenedorLogoBuscar {
     border: 2px violet solid;
     display: flex;
+    justify-content: space-around;
 
 
 }
@@ -118,6 +119,8 @@ form button {
 nav {
     background-color: var(--azulclaroP);
     border: 2px greenyellow solid;
+    padding: 1.5em 0em;
+    text-align: center;
 }
 
 nav ul {
@@ -160,19 +163,21 @@ nav ul li a:hover {
 
 main {
     background-color: var(--blancoP);
-    border: 2px greenyellow solid;
+    border: 2px violet solid;
     padding: 3em;
+
 }
 
 
 #contenedorCarrusel {
-    display: flex;
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    /* Centra verticalmente */
+
+    text-align: center;
     padding: 1em;
+    width: 100%;
 }
+
+
+
 
 
 section {
@@ -186,10 +191,19 @@ section {
     width: 12em;
 }
 
+
+
+#contenedorSecundario {
+    display: flex;
+}
+
+
+
 #contenedorSecciones {
     background-color: var(--blancoP);
     border: 2px blue solid;
     padding: 3em;
+    width: 70%;
 }
 
 
@@ -244,11 +258,45 @@ article {
     background-color: var(--blancoP);
     border: 2px blue solid;
     padding: 3em;
+    width: 25%;
+    display: block;
+    text-align: center;
+
+
 }
 
 aside {
     background-color: var(--naranjaP);
-    border: 2px greenyellow solid;
+    border: 2px rgb(11, 156, 223) solid;
+}
+
+.publicidad {
+    width: 15em;
+    height: 15em;
+    margin: 3em auto;
+
+
+}
+
+
+#contenedorMarcas {
+    margin: auto;
+}
+
+
+#contenedorMarcas img {
+    width: 4em;
+
+
+}
+
+
+#subContenedorMarcas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em;
+
+
 }
 
 
@@ -262,15 +310,15 @@ footer {
     justify-content: space-around;
     flex-wrap: nowrap;
     align-items: center;
-    
-}
-
-#logoFooter{
-width: 4em;
 
 }
 
-#logoFiscal{
+#logoFooter {
+    width: 4em;
+
+}
+
+#logoFiscal {
     width: 3em;
 
 }
@@ -279,7 +327,8 @@ width: 4em;
 
 footer a {
     color: var(--blancoP);
-    text-decoration: none; /* Elimina el subrayado */
-margin: 0.7em ;
+    text-decoration: none;
+    /* Elimina el subrayado */
+    margin: 0.7em;
 
 }
