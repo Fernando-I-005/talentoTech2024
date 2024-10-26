@@ -1,0 +1,170 @@
+/*------------------ajustes universales-----------------*/
+* {
+
+    font-family: montserrat, Caveat, Tahoma, sans-serif;
+}
+
+:root {
+    --naranjaP: #ff6700ff;
+    /* Almacena los colores de la paleta con un nombre */
+    --blancoP: #ebebebff;
+    --grisP: #c0c0c0ff;
+    --azulclaroP: #3a6ea5ff;
+    --azuloscuroP: #004e98ff;
+}
+
+
+body{
+    background-color: var(--naranjaP);
+    color: var(--naranjaP);
+    /*border: 1px blue solid;*/
+   
+}
+
+body div {
+color: var(--azuloscuroP)
+
+}
+
+
+#contenedorEncabezado{
+/*border: 1px red solid;*/
+text-align:center;
+
+}
+
+
+/* -------------------------form 1 -----------------------*/
+#contenedorForm1
+{
+/*border: 1px yellow solid; */
+text-align:center;
+padding: 60px;
+
+   
+}
+#contenedorForm1 h3
+{
+/*border: 1px yellow solid; */
+text-align:center;
+background-color: var(--azuloscuroP);
+max-width: 600px;
+font-size: 1.3em;
+font-weight: 600;
+padding: 20px; 
+border-radius: 12px;
+margin: auto;
+margin-bottom: 1em;
+color:var(--blancoP) 
+}
+
+
+
+
+
+#form1 
+{
+  background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;  
+}
+
+#form1 label 
+{
+  display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align:left;  
+    
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+input[type="text"]:focus,  /*:FOCUS-->realiza acciones cuando el campo esta seleccionado*/
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--naranjaP);
+    outline: none;  /*elimina el coloreado por default de los navegadores"*/
+}
+
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: var(--naranjaP);
+}
+
+input[type="reset"],input[type="submit"] {
+    background-color:var(--azuloscuroP);
+    padding:0.8em 1.4em;
+     border-radius: 8px;
+     margin: 0px 15px;
+     color: var(--blancoP);
+     font-size: 15px;
+    border: none;
+}
+
+
+
+
+
+
+
+#contenedorForm2
+{
+ border: 1px white solid; 
+ text-align:center;  
+}
+
+/* -------------------------form 2 oculto -----------------------*/
+
+
+
+/*h3 
+{
+    margin: 35px;
+    background-color: Black;
+}*/
+
+#contenedorForm2
+{
+    background-color:pink;
+border: 1px yellow solid; 
+text-align:center;  
+display:none; 
+}
+
+#form2 
+{
+  background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;  
+}
+
+#form2 label 
+{
+  display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align:left;  
+    
+}
+
+
+

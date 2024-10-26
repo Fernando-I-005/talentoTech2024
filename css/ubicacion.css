@@ -3,13 +3,28 @@ body{
     color: rgb(36, 35, 33);
     text-align: center;
    background-color: grey;
-   display: flex;
+   
 }
 
 main{
-    display: flex;
+   /*display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    border: 1px blue solid;
+    border: 1px blue solid;*/
+}
+
+main span
+{
+display:inline-block; 
+border: 1px blue solid;
+padding: 1.5em;
+}
+
+
+body div 
+{
+  border: 1px red solid;
+padding: 1.5em;  
+    
 }
