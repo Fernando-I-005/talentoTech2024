@@ -1,7 +1,7 @@
 /*------------------ajustes universales-----------------*/
 * {
 
-    font-family: Roboto, Caveat, Tahoma, sans-serif;
+    font-family: Montserrat, Caveat, Tahoma, sans-serif;
 }
 
 :root {
@@ -11,15 +11,6 @@
     --grisP: #c0c0c0ff;
     --azulclaroP: #3a6ea5ff;
     --azuloscuroP: #004e98ff;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: roboto;
 }
 
 /*-----------------------HEADER-----------------------------*/
@@ -115,7 +106,7 @@ form button {
     color: white;
     border: 2px solid var(--naranjaP);
     border-radius: 0.5em;
-    cursor: pointer;
+    cursor:alias;
 }
 
 .barra-busqueda button:hover {
@@ -209,7 +200,7 @@ main {
 
 
 #contenedorCarrusel img:hover{
-cursor:crosshair;
+cursor:e-resize;
 width: 35em;
 opacity: 1;
 filter: contrast(120%)

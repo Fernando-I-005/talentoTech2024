@@ -76,7 +76,13 @@ button, input, select, textarea {
 /* Estilos básicos para el cuerpo del documento */
 body {
     line-height: 1.5;
-    font-family: sans-serif;
+    font-family: Montserrat, caveat, Helvetica, sans-serif;
     background-color: #fff;
     color: #333;
 }
+
+*{
+font-family: Montserrat, caveat, Arial, Helvetica, sans-serif;
+
+}
+
