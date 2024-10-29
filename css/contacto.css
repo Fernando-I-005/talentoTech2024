@@ -17,8 +17,16 @@
 body{
     background-color: var(--naranjaP);
     color: var(--naranjaP);
-    /*border: 1px blue solid;*/
-    min-width: 300px;
+    /*border: 1px white solid;*/
+    width:80vw;
+    display:flex;
+    justify-content:center;
+   
+    flex-wrap:wrap;
+    min-width: 350px;
+    margin:auto;
+    height:100vh;
+    
    
 }
 
@@ -30,14 +38,20 @@ body a {
 
 
 body div {
-color: var(--azuloscuroP)
+color: var(--azuloscuroP);
+
 
 }
 
 
 #contenedorEncabezado{
-/*border: 1px red solid;*/
+/*border: 1px yellow solid;*/
 text-align:center;
+flex: 0 0 80%; /* Esto hace que el elemento ocupe todo el ancho */
+width: 100%;    /* Asegura que ocupa todo el ancho del contenedor */
+display:flex;
+justify-content:center;
+margin:2em;
 
 }
 
@@ -47,9 +61,11 @@ text-align:center;
 {
 /*border: 1px yellow solid; */
 text-align:center;
-padding: 60px;
+/*padding: 60px;*/
+max-width:100%;
 display: flexbox;
 flex-wrap: wrap;
+justify-content:center;
 
    
 }
@@ -60,13 +76,14 @@ text-align:center;
 background-color: var(--azuloscuroP);
 max-width: 600px;
 min-width: 300px;
-font-size: 1.3em;
+font-size: 1.1em;
 font-weight: 600;
 padding: 20px; 
 border-radius: 12px;
 margin: auto;
 margin-bottom: 1em;
 color:var(--blancoP) ;
+;
 
 }
 
