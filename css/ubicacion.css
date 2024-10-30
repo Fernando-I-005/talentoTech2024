@@ -13,25 +13,28 @@ body {
   text-align: center;
   background-color: var(--azuloscuroP);
   /*border: 2px red solid;*/
-  margin:0;
-  padding:0;
-    }
+  margin: 0;
+  padding: 0;
+}
 
+/*
 main {
-  /*border: 1px yellow solid;*/
-    }
-  
+  border: 1px yellow solid;
+    }*/
+
 
 
 #textoSuperior {
   /*border: 2px white solid;*/
-  margin:auto;
+  margin: auto;
   border-radius: 5px;
-  flex: 0 0 100%; /* Esto hace que el elemento ocupe todo el ancho */
-  width:10%;    /* Asegura que ocupa todo el ancho del contenedor */
-  min-width:90px;
+  flex: 0 0 100%;
+  /* Esto hace que el elemento ocupe todo el ancho */
+  width: 10%;
+  /* Asegura que ocupa todo el ancho del contenedor */
+  min-width: 90px;
   border: 2px white solid;
-  margin:auto;
+  margin: 1em auto;
   border-radius: 5px;
 }
 
@@ -41,7 +44,7 @@ main {
   border-radius: 15px;
   display: inline-flex;
   flex-wrap: wrap;
-  width:auto;
+  width: auto;
   margin: 2em 0em;
   align-items: center;
   background-color: var(--azulclaroP);
@@ -50,68 +53,73 @@ main {
 
 .contenedorDuplicado {
   /*border: 4px green solid;*/
-  
-  display:flex;
-  flex:1;
+
+  display: flex;
+  flex: 1;
   justify-content: center;
-  flex-direction: column; /* Alinea el contenido verticalmente */
-  align-items: center; /* Centra el contenido */
-  width: 100%;    /* Asegura que ocupa todo el ancho del contenedor */
+  flex-direction: column;
+  /* Alinea el contenido verticalmente */
+  align-items: center;
+  /* Centra el contenido */
+  width: 100%;
+  /* Asegura que ocupa todo el ancho del contenedor */
   min-width: 450px;
   max-width: 700px;
   height: 60vh;
-  padding:1em;
- }
+  padding: 1em;
+}
 
 
 .contenedorDuplicado h3 {
   /*border: 1px red solid;*/
-  font-size:0.8em;
+  font-size: 0.8em;
 }
 
 .contenedorDuplicado h2 {
   /*border: 1px rgb(29, 203, 209) solid;*/
   padding: 0.5em;
-  margin-bottom:0.5em;
+  margin-bottom: 0.5em;
   font-size: 1.2em;
   font-weight: 700;
-  color:var(--naranjaP);
-  background-color:var(--blancoP);
+  color: var(--naranjaP);
+  background-color: var(--blancoP);
   border-radius: 8px;
-  width:100%;
+  width: 100%;
 }
 
-.contenedorDuplicado h3 a 
-{
-    font-style:italic;
-    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño */
+.contenedorDuplicado h3 a {
+  font-style: italic;
+  transition: font-size 0.3s ease;
+  /* Suaviza el cambio de tamaño */
 }
 
 .contenedorDuplicado h3 a:hover {
-    font-size: 102%; /* Aumenta el tamaño al pasar el mouse */
-    color:white;
+  font-size: 102%;
+  /* Aumenta el tamaño al pasar el mouse */
+  color: white;
 }
 
 
 
-.contenedorImagen
-{
- /*border: 3px violet solid;*/
- width:75%;
- height:75%;
- display:flex;
- margin-top:1em;
+.contenedorImagen {
+  /*border: 3px violet solid;*/
+  width: 70%;
+  /*height:75%;*/
+  display: flex;
+  margin-top: 1em;
 }
 
 
 .imagenLocal {
   border-radius: 9px;
   border: 3px var(--naranjaP) solid;
-  width: auto; /* Mantiene la proporción de la imagen */
-  height: auto; /* Mantiene la proporción de la imagen */
-  margin: 0.5em auto ;
-
+  width: 100%; /* Ajusta al tamaño del contenedor */
+  height: auto; /* Mantiene la proporción */
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0.5em auto;
 }
+
 
 
 .mapa {
@@ -121,14 +129,18 @@ main {
   height: 100%;
   max-width: 500px;
   max-height: 100%;
-  }
-  
-  hr {
-    border: none; /* Elimina el borde por defecto */
-    height: 1px; /* Altura de la línea */
-    background-color: var(--blancoP); /* Color de la línea */
-    margin: 1em 10em; /* Espaciado alrededor de la línea */
+}
 
-    
-    
+hr {
+  border: none;
+  /* Elimina el borde por defecto */
+  height: 1px;
+  /* Altura de la línea */
+  background-color: var(--blancoP);
+  /* Color de la línea */
+  margin: 1em 10em;
+  /* Espaciado alrededor de la línea */
+
+
+
 }

@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*Esto asegura que las dimensiones que definas para los elementos incluyan padding y border*/
+
+
+.contenedorCard{
+
+    border: 3px orange solid;
+    border-radius: 10px;
+    width: 280px;
+    height: 450px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color:beige;
+    color: rgb(45, 45, 172);
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+}
+
+
+.contenedorImagen{
+
+    border: 2px blue solid;
+    border-radius: 10px;
+    width: 95%;
+    height: 60%;
+    display: flex;
+    background-color: aliceblue;
+   
+    
+    
+
+}
+
+.imagenProducto{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    margin:auto;
+}
+
+
+
+.contenedorPrecio{
+
+    border: 2px yellow solid;
+    border-radius: 10px;
+    width: 95%;
+    height: 10%;
+
+    display: flex;
+    
+   font-weight: 1000;
+    font-size: 1.7em;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+
+}
+
+.contenedorDescripcion{
+
+    border: 2px rgb(34, 127, 233) solid;
+    border-radius: 10px;
+    width: 95%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 0.8em;
+
+}
+
+
+.contenedorInferior{
+
+    border: 2px rgb(29, 197, 94) solid;
+    border-radius: 10px;
+    width: 95%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    display: flex;
+    align-items: center;
+
+}
+
+.contenedorSelector{
+    border: 2px rgb(240, 141, 12) solid;
+    width: 20%;
+    height: 70%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1em;
+    color: blue;
+    
+}
+
+
+
+.contenedorBoton {
+    border: 2px rgb(240, 235, 230) solid;
+    border-radius: 10px;
+    width: 60%;
+    height: 70%;
+    background-color: darkorange;
+    color:aliceblue;
+    font-weight: 1000;
+    
+   
+}
