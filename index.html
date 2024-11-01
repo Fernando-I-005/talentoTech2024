@@ -28,7 +28,7 @@
     <div id="contenedorFijo">
 
         <header>
-            <p id="encabezadoSuperior">Construimos juntos tu proximo proyecto</p>
+            <p id="encabezadoSuperior">¡¡Construimos juntos tu proximo proyecto!!</p>
             <!-- -->
 
             <div id="contenedorLogoBuscar">
@@ -53,7 +53,7 @@
                 <li><a href="html/preguntasFrecuentes.html"> PREGUNTAS FRECUENTES</a></li>
                 <li><a href="html/contacto.html"> CONTACTO </a></li>
                 <li><a href="html/ubicacion.html"> UBICACION</a></li>
-                <li><a href="html/card.html"> card</a></li>
+
             </ul>
 
 
@@ -69,24 +69,35 @@
 
 
     <main>
-        <h2>¡¡Tenemos lo que estas buscando!! </h2>
-        <section id="contenedorCarrusel">
+
+
+
+        <div id="contenedorCarrusel">
+
+            <h2>¡¡Tenemos lo que estas buscando!! </h2>
+
+            <section id="contenedorImagenesCarrusel">
+
+
+                <img src="recursos/imagenPrincipal1.jpg">
+                <img src="recursos/imagenPrincipal2.jpg">
+                <img src="recursos/imagenPrincipal3.jpg">
+                <img src="recursos/imagenPrincipal4.jpg">
+                <img src="recursos/imagenPrincipal5.jpg">
+                <img src="recursos/imagenPrincipal6.jpg">
+
+            </section>
+
+        </div>
 
 
 
 
 
-            <img src="recursos/fachada.jpg">
-            <img src="recursos/imagenPrincipal1.jpg">
-            <img src="recursos/imagenPrincipal2.jpg">
-            <img src="recursos/imagenPrincipal3.jpg">
-            <img src="recursos/imagenPrincipal4.jpg">
-            <img src="recursos/imagenPrincipal5.jpg">
-            <img src="recursos/imagenPrincipal6.jpg">
 
 
 
-        </section>
+
 
         <div id="contenedorSecundario">
 
@@ -97,7 +108,13 @@
                 <div>
                     <aside class="publicidad">
                         <span>
-                            <img src="./recursos/PublicidadAkapol.jpg">
+                            <img src="recursos/LogoBlackDecker200px100px72.png" style="width:100px">
+                            <video width="640" height="640" autoplay loop muted playsinline>
+                                <source src="./recursos/video1920_1080_25fps.mp4" type="video/mp4">
+
+                                <!-- Mensaje alternativo en caso de que el navegador no soporte la etiqueta de video -->
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
                         </span>
                     </aside>
                 </div>
@@ -138,38 +155,198 @@
                 <section id="contenedorDestacados">
                     <h3>Productos destacados </h3>
                     <div class="contenedorCard">
-                        <img class="card" src="./recursos/cardProductos.jpg">
-                        <img class="card" src="./recursos/cardProductos.jpg">
-                        <img class="card" src="./recursos/cardProductos.jpg">
+
+
+
+
+
+                        <div class="contenedorCard1">
+                            <div class="contenedorImagen1">
+                                <img class="imagenProducto1" src="recursos/producto5.png">
+                            </div>
+                            <div class="contenedorPrecio1">
+                                <h4> $ 125.550,05</h4>
+                            </div>
+                            <div class="contenedorDescripcion1">
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Sed
+                                    labore molestiae illo, at explicabo </p>
+                            </div>
+                            <div class="contenedorInferior1">
+                                <input class="contenedorSelector1" type="number" id="Number3" name="cantidad" min="1"
+                                    max="100" value="1" step="1">
+
+                                <button class="contenedorBoton1">AGREGAR</button>
+                            </div>
+                        </div>
+
+
+                        <div class="contenedorCard1">
+                            <div class="contenedorImagen1">
+                                <img class="imagenProducto1" src="recursos/producto2.jpg">
+                            </div>
+                            <div class="contenedorPrecio1">
+                                <h4> $ 2.533,00</h4>
+                            </div>
+                            <div class="contenedorDescripcion1">
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Sed
+                                    labore molestiae illo, at explicabo </p>
+                            </div>
+                            <div class="contenedorInferior1">
+                                <input class="contenedorSelector1" type="number" id="Number4" name="cantidad" min="1"
+                                    max="100" value="1" step="1">
+
+                                <button class="contenedorBoton1">AGREGAR</button>
+                            </div>
+                        </div>
+
+
+                        <div class="contenedorCard1">
+                            <div class="contenedorImagen1">
+                                <img class="imagenProducto1" src="recursos/producto9.png">
+                            </div>
+                            <div class="contenedorPrecio1">
+                                <h4> $ 1.552.583,90</h4>
+                            </div>
+                            <div class="contenedorDescripcion1">
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Sed
+                                    labore molestiae illo, at explicabo </p>
+                            </div>
+                            <div class="contenedorInferior1">
+                                <input class="contenedorSelector1" type="number" id="Number5" name="cantidad" min="1"
+                                    max="100" value="1" step="1">
+
+                                <button class="contenedorBoton1">AGREGAR</button>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </section>
 
                 <section id="contenedorMasVendidos">
                     <h3>Mas vendidos </h3>
                     <div class="contenedorCard">
-                        <img class="card" src="./recursos/cardProductos.jpg">
-                        <img class="card" src="./recursos/cardProductos.jpg">
-                        <img class="card" src="./recursos/cardProductos.jpg">
+                        <!-- <img class="card" src="./recursos/cardProductos.jpg" >
+                        <img class="card" src="./recursos/cardProductos.jpg" >
+                        <img class="card" src="./recursos/cardProductos.jpg" >-->
+
+
+
+
+                        <div class="contenedorCard1">
+                            <div class="contenedorImagen1">
+                                <img class="imagenProducto1" src="recursos/producto3.png">
+                            </div>
+                            <div class="contenedorPrecio1">
+                                <h4> $ 125.550,05</h4>
+                            </div>
+                            <div class="contenedorDescripcion1">
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Sed
+                                    labore molestiae illo, at explicabo </p>
+                            </div>
+                            <div class="contenedorInferior1">
+                                <input class="contenedorSelector1" type="number" id="cantidad" name="cantidad" min="1"
+                                    max="100" value="1" step="1">
+
+                                <button class="contenedorBoton1">AGREGAR</button>
+                            </div>
+                        </div>
+
+
+                        <div class="contenedorCard1">
+                            <div class="contenedorImagen1">
+                                <img class="imagenProducto1" src="recursos/producto1.png">
+                            </div>
+                            <div class="contenedorPrecio1">
+                                <h4> $ 1.533,00</h4>
+                            </div>
+                            <div class="contenedorDescripcion1">
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Sed
+                                    labore molestiae illo, at explicabo </p>
+                            </div>
+                            <div class="contenedorInferior1">
+                                <input class="contenedorSelector1" type="number" id="Number1" name="cantidad" min="1"
+                                    max="100" value="1" step="1">
+
+                                <button class="contenedorBoton1">AGREGAR</button>
+                            </div>
+                        </div>
+
+
+                        <div class="contenedorCard1">
+                            <div class="contenedorImagen1">
+                                <img class="imagenProducto1" src="recursos/producto4.png">
+                            </div>
+                            <div class="contenedorPrecio1">
+                                <h4> $ 52.583,90</h4>
+                            </div>
+                            <div class="contenedorDescripcion1">
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Sed
+                                    labore molestiae illo, at explicabo </p>
+                            </div>
+                            <div class="contenedorInferior1">
+                                <input class="contenedorSelector1" type="number" id="Number2" name="cantidad" min="1"
+                                    max="100" value="1" step="1">
+
+                                <button class="contenedorBoton1">AGREGAR</button>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </section>
 
                 <article id="contenedorMarcas">
                     <h3>Nuestras marcas </h3>
                     <div id="subContenedorMarcas">
-                        <a href="https://esab.com/ar/sam_es/brands/esab-family-brands/conarco/" target="_blank"><img
-                                src="recursos/LogoConarco200px100px72.jpg"></a>
-                        <a href="https://akapol.com/" target="_blank"><img
-                                src="recursos/LogoPoxipol200px100px72.png"></a>
-                        <a href="https://makita.com.ar/" target="_blank"><img
-                                src="recursos/LogoMakital200px100px72.png"></a>
-                        <a href="https://www.kalop.com.ar/" target="_blank"><img
-                                src="recursos/LogoKalop200px100px72.jpg"></a>
-                        <a href="https://ar.blackanddecker.global/" target="_blank"><img
-                                src="recursos/LogoBlackDecker200px100px72.png"></a>
-                        <a href="https://www.bahco.com/ar_es/" target="_blank"><img
-                                src="recursos/LogoBahco200px100px72.jpg"></a>
-                        <a href="http://www.grupodema.com.ar/productos/marcas/acqua-system" target="_blank"><img
-                                src="recursos/LogoAqua200px100px72.jpg"></a>
+                        <a class="imagenMarca" href="https://esab.com/ar/sam_es/brands/esab-family-brands/conarco/"
+                            target="_blank"><img src="recursos/LogoConarco200px100px72.jpg" style="width:100px"></a>
+                        <a class="imagenMarca" href="https://akapol.com/" target="_blank"><img
+                                src="recursos/LogoPoxipol200px100px72.png" style="width:100px"></a>
+                        <a class="imagenMarca" href="https://makita.com.ar/" target="_blank"><img
+                                src="recursos/LogoMakital200px100px72.png" style="width:100px"></a>
+                        <a class="imagenMarca" href="https://www.kalop.com.ar/" target="_blank"><img
+                                src="recursos/LogoKalop200px100px72.jpg" style="width:100px"></a>
+                        <a class="imagenMarca" href="https://ar.blackanddecker.global/" target="_blank"><img
+                                src="recursos/LogoBlackDecker200px100px72.png" style="width:100px"></a>
+                        <a class="imagenMarca" href="https://www.bahco.com/ar_es/" target="_blank"><img
+                                src="recursos/LogoBahco200px100px72.jpg" style="width:100px"></a>
+                        <a class="imagenMarca" href="https://www.grupodema.com.ar/productos/marcas/acqua-system"
+                            target="_blank"><img src="recursos/LogoAqua200px100px72.jpg" style="width:100px"></a>
 
                     </div>
                 </article>
@@ -212,26 +389,29 @@
 
     <footer>
 
-        <span> <a href="index.html"> <img id="logoFooter" src="./recursos/LogoFerrecentroPNGgris.png"> </a> </span>
+        <div>
+            <div> <a href="index.html"> <img id="logoFooter" src="./recursos/LogoFerrecentroPNGgris.png"> </a> </div>
 
-        <span><a href="html/contacto.html" title="Contactanos"> Contacto </a></span>
+            <div><a href="html/contacto.html" title="Contactanos"> Contacto </a></div>
 
-        <span><a href="html/ubicacion.html" title="Donde estamos"> Ubicacíon</a></span>
+            <div><a href="html/ubicacion.html" title="Donde estamos"> Ubicacíon</a></div>
 
-        <span id="logosRedes">
-            <a href="https://www.facebook.com/" target="_blank" title="Visita nuestra página de Facebook"> <i
-                    class="fa-brands fa-facebook fa-2x"></i> </a>
-            <a href="https://www.instagram.com/?hl=es" target="_blank" title="Visita nuestra página de Instagram"> <i
-                    class="fa-brands fa-instagram fa-2x"></i> </a> <!-- fa-2x mofidica el tamaño del icono-->
-            <a href="https://www.tiktok.com/upload?lang=es" target="_blank" title="Visita nuestra página de Tik Tok"> <i
-                    class="fa-brands fa-tiktok fa-2x"></i> </a>
-            <a href="https://www.paypal.com/ar/home?locale.x=es_AR" target="_blank"
-                title="Visita nuestra página de Paypal"> <i class="fa-brands fa-paypal fa-2x"></i> </a>
+            <div id="logosRedes">
+                <a href="https://www.facebook.com/" target="_blank" title="Visita nuestra página de Facebook"> <i
+                        class="fa-brands fa-facebook fa-2x"></i> </a>
+                <a href="https://www.instagram.com/?hl=es" target="_blank" title="Visita nuestra página de Instagram">
+                    <i class="fa-brands fa-instagram fa-2x"></i> </a> <!-- fa-2x mofidica el tamaño del icono-->
+                <a href="https://www.tiktok.com/upload?lang=es" target="_blank"
+                    title="Visita nuestra página de Tik Tok"> <i class="fa-brands fa-tiktok fa-2x"></i> </a>
+                <a href="https://www.paypal.com/ar/home?locale.x=es_AR" target="_blank"
+                    title="Visita nuestra página de Paypal"> <i class="fa-brands fa-paypal fa-2x"></i> </a>
 
 
-        </span>
-        <span><a href="https://www.afip.gob.ar/landing/default.asp"><img id="logoFiscal"
-                    src="./recursos/IMGdatafiscal.png" title="Info fiscal"></a></span>
+            </div>
+            <div><a href="https://www.afip.gob.ar/landing/default.asp"><img id="logoFiscal"
+                        src="./recursos/IMGdatafiscal.png" title="Info fiscal"></a></div>
+
+        </div>
     </footer>
 
 
