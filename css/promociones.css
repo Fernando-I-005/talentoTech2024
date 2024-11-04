@@ -1,6 +1,163 @@
-body{
-    background-color: crimson;
-    color: gold;
+/*------------------ajustes universales-----------------*/
+* {
+
+    font-family: Montserrat, Caveat, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranjaP: #ff6700ff;
+    /* Almacena los colores de la paleta con un nombre */
+    --blancoP: #ebebebff;
+    --grisP: #c0c0c0ff;
+    --azulclaroP: #3a6ea5ff;
+    --azuloscuroP: #004e98ff;
+}
+
+/*agregado luego*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    height: 100vh;
+    /* Altura del viewport */
+    margin: 0;
+    /* Elimina el margen por defecto */
+
+}
+
+main {
+    background-image: url("../recursos/imagenFondoConstruccion2.jpg");
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    height: 100vh;
+    /* Aseg�rate de que el body tenga altura completa */
+    margin: 0;
+    /* Elimina m�rgenes */
+
+    width: 100%;
     text-align: center;
-   
+    padding: 3em;
+    color: var(--naranjaP)
+}
+
+
+main div {
+    /*border: 2px white solid;*/
+    display: block;
+    height: auto;
+}
+
+
+
+
+
+
+#contenedorLogoImagen {
+    display: block;
+
+    padding: auto;
+}
+
+#contenedorLogoImagen a {
+    display: inline-block;
+
+}
+
+#contenedorLogoImagen img {
+    display: inline-block;
+    padding: 15px;
+
+}
+
+h2 {
+    
+    font-size: 3.5em;
+    margin: 0;
+    color: var(--blancoP);
+
+}
+
+h3 {
+    margin: 0;
+    font-family: Caveat;
+    font-size: 2em;
+
+}
+
+#logoFerrecentro {
+    height: 9em;
+    /*border: 3px green solid;*/
+}
+
+
+a {
+    text-decoration: none;
+    /* Elimina el subrayado */
+}
+
+
+#contenedorBoton {
+    /*border: 3px red solid;*/
+    display: flex;
+    height: 300px;
+    padding: auto;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+
+.botonRedondo {
+    padding: 80px 40px;
+    background-color: var(--naranjaP);
+    color: var(--blancoP);
+    border: none;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 6em;
+    height: 6em;
+    border: 3px grey solid;
+    font-family: Montserrat;
+    font-weight: 900;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    /* Sombra del fondo */
+}
+
+.botonRedondo:hover {
+
+    transform: scale(1.1);
+
+    transition: transform 0.3s ease
+}
+
+
+#constructorIMG {
+    height: 15em;
+    display: block;
+    /*border: 3px green solid;*/
+    margin: auto;
+}
+
+hr {
+    border: 3px var(--naranjaP) solid;
+    width: 50%;
+
+
 }
