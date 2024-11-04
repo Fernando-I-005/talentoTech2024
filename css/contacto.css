@@ -14,107 +14,100 @@
 }
 
 
-body{
+
+/*---------------------------body-------------------*/
+
+body {
     background-color: var(--naranjaP);
     color: var(--naranjaP);
     /*border: 1px white solid;*/
-    width:80vw;
-    display:flex;
-    justify-content:center;
-   
-    flex-wrap:wrap;
-    min-width: 350px;
-    margin:auto;
-    height:100vh;
+    font-display: flex;
+    justify-content: center;
+}
+
+body div a {
+    display: inline;
+    /*border: 2px var(--azuloscuroP) solid;*/
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: var(--blancoP);
+    font-weight: 700;
+    color: var(--azuloscuroP);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     
-   
-}
-
-body a {
-
-    text-decoration: none
-  } 
-
-
-
-body div {
-color: var(--azuloscuroP);
-
 
 }
 
+body div a:hover {
+    border: 2px var(--blancoP) solid;
+    background-color: var(--naranjaP);
+    color: var(--blancoP);
+    
+    
+}
 
-#contenedorEncabezado{
-/*border: 1px yellow solid;*/
-text-align:center;
-flex: 0 0 80%; /* Esto hace que el elemento ocupe todo el ancho */
-width: 100%;    /* Asegura que ocupa todo el ancho del contenedor */
-display:flex;
-justify-content:center;
-margin:2em;
 
+
+
+#contenedorEncabezado {
+    /*border: 3px rgb(221, 13, 134) solid;*/
+    text-align: center;
+    margin: 3em;
 }
 
 
 /* -------------------------form 1 -----------------------*/
-#contenedorForm1
-{
-/*border: 1px yellow solid; */
-text-align:center;
-/*padding: 60px;*/
-max-width:100%;
-display: flexbox;
-flex-wrap: wrap;
-justify-content:center;
-
-   
-}
-#contenedorForm1 h3
-{
-/*border: 1px yellow solid; */
-text-align:center;
-background-color: var(--azuloscuroP);
-max-width: 600px;
-min-width: 300px;
-font-size: 1.1em;
-font-weight: 600;
-padding: 20px; 
-border-radius: 12px;
-margin: auto;
-margin-bottom: 1em;
-color:var(--blancoP) ;
-;
-
+#contenedorForm1 {
+    /*border: 1px rgb(3, 218, 164) solid;*/
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
 }
 
-
-
-
-
-#form1 
-{
-  background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+#contenedorForm1 h3 {
+    border: 1px rgb(223, 98, 26) solid;
+    text-align: center;
+    background-color: var(--azuloscuroP);
     max-width: 600px;
     min-width: 300px;
-    margin: auto;  
-    background-image:url(../recursos/LogoFerrecentroPNGgris.png);
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: 50%; /* La imagen cubrirá todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 1em;
+    color: var(--blancoP);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
 }
 
-#form1 label 
-{
-  display: block;
+
+#form1 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
+    background-image: url(../recursos/LogoFerrecentroPNGgris.png);
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-size: 50%;
+    /* La imagen cubrirá todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+#form1 label {
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    text-align:left;
-    
-    
+    text-align: left;
+
 }
 
 
@@ -127,14 +120,16 @@ textarea {
     border: 3px solid #ccc;
     border-radius: 4px;
     font-size: 18px;
-    opacity: 0.7; 
+    opacity: 0.7;
 }
 
-input[type="text"]:focus,  /*:FOCUS-->realiza acciones cuando el campo esta seleccionado*/
+input[type="text"]:focus,
+/*:FOCUS-->realiza acciones cuando el campo esta seleccionado*/
 input[type="email"]:focus,
 textarea:focus {
     border-color: var(--naranjaP);
-    outline: none;  /*elimina el coloreado por default de los navegadores"*/
+    outline: none;
+    /*elimina el coloreado por default de los navegadores"*/
 }
 
 
@@ -142,66 +137,18 @@ textarea:focus {
 input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: var(--naranjaP);
+    transform: scale(1.1);
 }
 
-input[type="reset"],input[type="submit"] {
-    background-color:var(--azuloscuroP);
-    padding:0.8em 1.4em;
-     border-radius: 8px;
-     margin: 0px 15px;
-     color: var(--blancoP);
-     font-size: 15px;
-    border: none;
-}
-
-
-
-
-
-
-
-#contenedorForm2
-{
- border: 1px white solid; 
- text-align:center;  
-}
-
-/* -------------------------form 2 oculto -----------------------*/
-
-
-
-/*h3 
-{
-    margin: 35px;
-    background-color: Black;
-}*/
-
-#contenedorForm2
-{
-    background-color:pink;
-border: 1px yellow solid; 
-text-align:center;  
-display:none; 
-}
-
-#form2 
-{
-  background: #fff;
-    padding: 20px;
+input[type="reset"],
+input[type="submit"] {
+    background-color: var(--azuloscuroP);
+    padding: 0.8em 1.4em;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;  
+    margin: 0px 15px;
+    color: var(--blancoP);
+    font-size: 15px;
+    border: none;
+    font-weight: 700;
+    transition: transform 0.3s ease;
 }
-
-#form2 label 
-{
-  display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align:left;  
-    
-}
-
-
-

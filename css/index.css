@@ -139,10 +139,13 @@ form button {
     cursor: alias;
     font-size: 1.5em;
     border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave */
 }
 
 .barra-busqueda button:hover {
     background-color: #0056b3;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el mouse */
 }
 
 
@@ -165,6 +168,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: 0.7em;
+    
 }
 
 
@@ -177,6 +181,8 @@ nav ul li a {
     padding: 0.4em 1.2em;
     border-radius: 0.4em;
     margin: 0.5em 1em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave */
 }
 
 nav ul li a:hover {
@@ -185,6 +191,11 @@ nav ul li a:hover {
     background-color: var(--naranjaP);
     border: 1px var(--azuloscuroP) double;
     color: var(--blancoP);
+    
+    
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el mouse */
+
+
 }
 
 
@@ -299,10 +310,7 @@ section {
     min-width: 200px;
 }
 
-aside {
-    /*background-color: var(--naranjaP);
-    border: 2px rgb(11, 156, 223) solid;*/
-}
+
 
 .publicidad {
 
@@ -408,10 +416,19 @@ aside {
     font-family: arial;
     width: 250px;
     height: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 
+}
+
+.contenedorCard1:hover {
+
+transform: translateY(-10px); /* Mueve la card hacia arriba al pasar el mouse */
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mouse */
 
 
 }
+
 
 
 .contenedorImagen1 {
@@ -546,9 +563,7 @@ aside {
 }
 
 
-#contenedorMarcas img {
-    /*width: 4em;*/
-}
+
 
 #subContenedorMarcas {
     margin: 2em;

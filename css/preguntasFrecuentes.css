@@ -1,6 +1,127 @@
-body{
-    background-color: crimson;
-    color: gold;
-    text-align: center;
-   
+/*------------------ajustes universales-----------------*/
+* {
+
+    font-family: Montserrat, Caveat, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranjaP: #ff6700ff;
+    /* Almacena los colores de la paleta con un nombre */
+    --blancoP: #ebebebff;
+    --grisP: #c0c0c0ff;
+    --azulclaroP: #3a6ea5ff;
+    --azuloscuroP: #004e98ff;
+}
+
+/*agregado luego*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/**--------------------------------------*/
+
+
+main
+{
+/*border: 3px pink solid; */   
+display: grid;
+grid-template-areas: 
+        "logo"
+        "titulo"
+        "grafico"
+        "boton";
+ justify-content:center; 
+ text-align:center;
+ background-image: url("../recursos/imagenFondo2Construccion3840px72ppp.jpg"); /* Ruta de la imagen */
+ background-size: cover;  /* Ajusta la imagen para que cubra todo el fondo */
+ background-position: center;/* Centra la imagen */   
+ background-repeat: no-repeat;/* Evita que la imagen se repita */  
+ height: 100vh;
+ align-items:center;
+}
+
+/*----------------------------------------*/
+#contenedorLogoImagen{
+ /*border: 3px blue solid;*/
+ grid-area: logo;
+}
+
+
+#logoFerrecentro{
+width:7em;
+filter: drop-shadow(0px 0px 5x white);
+}
+/*----------------------------------------*/
+#contenedorTitulo{
+ /*border: 3px red solid;*/
+  grid-area: titulo;      
+}
+
+#contenedorTitulo h2{
+ border: 6px var(--naranjaP) solid;
+ background-color: var(--naranjaP);
+ color: var(--blancoP);
+ font-size:2.7em;
+ font-weight:800;
+ padding:0 0.3em;
+ margin:0;
+ filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
+ border-radius:5px;
+}
+
+/*----------------------------------------*/
+#contenedorGrafico{
+ /*border: 3px orange solid;*/
+  grid-area: grafico;       
+}
+
+
+#constructorIMG{
+width:16em;
+margin:0;
+filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+
+#contenedorGrafico h3{
+ /*border: 3px orange solid;*/
+ font-family: Caveat;
+ font-size:2.5em;
+ color: var(--blancoP);
+ margin:0;
+ filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));     
+}
+
+/*----------------------------------------*/
+#contenedorBoton{
+/*border: 3px green solid;*/
+ grid-area: boton;
+ display:flex;
+ justify-content:center;        
+}
+
+.botonRedondo {
+    padding: 37.5px 20px;
+    background-color: var(--naranjaP);
+    color: var(--blancoP);
+    border-radius: 50%;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 6em;
+    height: 6em;
+    border: 3px grey solid;
+    font-family: Montserrat;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    /* Sombra del fondo */
+    justify-content:center;
+    text-decoration:none;
+}
+
+.botonRedondo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease
 }
