@@ -17,10 +17,11 @@ body {
   padding: 0;
 }
 
-/*
+
 main {
   border: 1px yellow solid;
-    }*/
+  margin:auto;
+    }
 
 
 
@@ -33,11 +34,39 @@ main {
   width: 10%;
   /* Asegura que ocupa todo el ancho del contenedor */
   min-width: 90px;
-  border: 2px white solid;
-  margin: 1em auto;
+  /*border: 2px white solid;*/
+  margin: 1.5em auto;
   border-radius: 5px;
 }
 
+
+#botonVolverUbicacion{
+    display: inline;
+    /*border: 2px var(--azuloscuroP) solid;*/
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: var(--blancoP);
+    font-weight: 700;
+    color: var(--azuloscuroP);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+   
+
+}
+
+
+#botonVolverUbicacion:hover {
+    border: 2px var(--blancoP) solid;
+    background-color: var(--naranjaP);
+    color: var(--blancoP);
+    
+    
+}
+
+
+
+
+/*****************************************************/
 
 .contenedorPrincipal {
   border: 3px var(--naranjaP) solid;
@@ -48,7 +77,21 @@ main {
   margin: 2em 0em;
   align-items: center;
   background-color: var(--azulclaroP);
+  transition: background-color 0.3s ease;
 }
+  
+  /*justify-items: center; /* Alinea los elementos horizontalmente AGREGADO, LUEGO BORRAR*/
+ /* align-items: center; /* Alinea los elementos verticalmente */
+  /*justify-content: center; /* Asegura que el contenido se centra en el eje horizontal */
+
+
+.contenedorPrincipal:hover {
+background-color: var(--naranjaP);
+border: 4px var(--blancoP) solid;
+}
+
+
+
 
 
 .contenedorDuplicado {
@@ -138,8 +181,9 @@ hr {
   /* Altura de la línea */
   background-color: var(--blancoP);
   /* Color de la línea */
-  margin: 1em 10em;
+  margin:auto;
   /* Espaciado alrededor de la línea */
+  width:4em;
 
 
 

@@ -78,8 +78,9 @@ header {
     margin: 0em;
     font-size: 1.5em;
     text-align: center;
-    padding: 0.3em;
+    padding: 0.5em;
     font-weight: 600;
+    text-shadow: 2px 2px 5px black;
 
 }
 
@@ -114,6 +115,8 @@ form input {
 
 form button {
     font-size: 1.2em;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -183,6 +186,8 @@ nav ul li a {
     margin: 0.5em 1em;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
     transition: box-shadow 0.3s ease; /* Transición suave */
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li a:hover {
@@ -351,6 +356,8 @@ section {
     border-radius: 20px;
     width: 80%;
     margin: auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 /*---------------------------------------------*/

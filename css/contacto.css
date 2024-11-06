@@ -35,7 +35,7 @@ body div a {
     font-weight: 700;
     color: var(--azuloscuroP);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    
+
 
 }
 
@@ -43,8 +43,8 @@ body div a:hover {
     border: 2px var(--blancoP) solid;
     background-color: var(--naranjaP);
     color: var(--blancoP);
-    
-    
+
+
 }
 
 
@@ -87,7 +87,7 @@ body div a:hover {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    
+
     max-width: 600px;
     min-width: 300px;
     margin: auto;
@@ -99,8 +99,29 @@ body div a:hover {
     background-position: center;
     /* Centra la imagen */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
+
+#form1:hover {
+    transform: scale(1.01);
+    /* Aumenta el tama�o de la tarjeta */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    /* Aumenta la sombra */
+    background-color: var(--grisP);
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 #form1 label {
     display: block;

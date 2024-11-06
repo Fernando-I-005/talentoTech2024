@@ -126,7 +126,7 @@ main {
 
 
 .cartaBancaria:hover {
-transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+transform: scale(1.05); /* Aumenta el tamaï¿½o de la tarjeta */
 box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
 border: 4px var(--azulclaroP) solid;
 
@@ -146,11 +146,11 @@ border: 4px var(--azulclaroP) solid;
 
 
 /*-------------------------------------*/
-.contenedorLogoBanco {
+/*.contenedorLogoBanco {
   /*border: 2px blue solid;*/
   /*filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, 1)); /* Sombra blanca  nono*/
   
-}
+/*}
 
 
 .imagenLogoBanco {
@@ -161,10 +161,10 @@ border: 4px var(--azulclaroP) solid;
 
 
 /*----------------------------------*/
-.contenedorTextoPromo {
-  /*border: 2px rgb(24, 218, 208) solid;*/
+/*.contenedorTextoPromo {
+  border: 2px rgb(24, 218, 208) solid;
   
-}
+}*/
 
 .imagenTextoPromo {
  width: 60%;
@@ -258,7 +258,7 @@ font-size:0.6em;
     }  
 }
 
-/* Media Query para pantallas con un ancho máximo de 500px */
+/* Media Query para pantallas con un ancho mï¿½ximo de 500px */
 @media (max-width: 500px) {
   main 
   {
@@ -278,6 +278,6 @@ font-size:0.6em;
 }
 
 
-/*En este caso, se están utilizando áreas de grid verticales, pero no se especifica cómo deben alinearse esos elementos en el espacio disponible de la pantalla. A pesar de usar justify-content: center, esto solo afecta a los elementos en el eje horizontal, mientras que los elementos en un layout vertical se alinean según el espacio disponible, lo que podría causar que las tarjetas se desalineen o se distribuyan mal.
+/*En este caso, se estï¿½n utilizando ï¿½reas de grid verticales, pero no se especifica cï¿½mo deben alinearse esos elementos en el espacio disponible de la pantalla. A pesar de usar justify-content: center, esto solo afecta a los elementos en el eje horizontal, mientras que los elementos en un layout vertical se alinean segï¿½n el espacio disponible, lo que podrï¿½a causar que las tarjetas se desalineen o se distribuyan mal.
 
-2. Solución: Usar align-items y justify-items*/
+2. Soluciï¿½n: Usar align-items y justify-items*/

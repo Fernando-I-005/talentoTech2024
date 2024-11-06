@@ -45,7 +45,7 @@ La página ha sido desplegada en **GitHub Pages** y **Netlify**, asegurando que 
  
 
 - **Netlify**:
-  - [Página Principal](https://tu-proyecto.netlify.app/index.html)
+  - [Página Principal](https://ferremundo.netlify.app/)
  
 
 ## Propósito del Proyecto
