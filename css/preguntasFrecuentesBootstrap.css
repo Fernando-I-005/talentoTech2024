@@ -1,0 +1,174 @@
+/*------------------ajustes universales-----------------*/
+* {
+
+    font-family: Montserrat, Caveat, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranjaP: #ff6700ff;
+    /* Almacena los colores de la paleta con un nombre */
+    --blancoP: #ebebebff;
+    --grisP: #c0c0c0ff;
+    --azulclaroP: #3a6ea5ff;
+    --azuloscuroP: #004e98ff;
+}
+
+/*agregado luego*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/**--------------------------------------*/
+
+*{
+font-family: Montserrat, Caveat, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+body {
+    background-image: url(../recursos/imagenFondo1Construccion3840px72ppp.jpg);
+    background-size: cover; /* Hace que la imagen ocupe todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
+    min-height: 100vh; /* Asegura que el fondo cubra todo el alto del viewport */
+    text-align: center;
+}
+
+
+
+
+
+.container{
+    background-color: var(--naranjaP);
+    padding: 3em;
+    color: var(--blancoP);
+    text-align: center;
+}
+
+
+/*********************************---*/
+#contenedorEncabezado {
+    /*border: 3px rgb(221, 13, 134) solid;*/
+    text-align: center;
+    grid-area: bVolver;
+    margin-top:0em;
+    margin-bottom: 1em;
+}
+
+
+
+
+#botonVolver {
+    display: inline;
+    /*border: 2px var(--azuloscuroP) solid;*/
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: var(--blancoP);
+    font-weight: 700;
+    color: var(--azuloscuroP);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#botonVolver:hover {
+    border: 2px var(--blancoP) solid;
+    background-color: var(--naranjaP);
+    color: var(--blancoP);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo{
+    /*border: 6px var(--blancoP) solid;*/
+    background-color: var(--azuloscuroP);
+    color: var(--blancoP);
+    font-size:1.5em;
+    font-weight:800;
+    padding:0.3em 1em ;
+    margin:1.5em 1em;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
+    border-radius:5px;
+    display: inline-block;
+    
+    
+}
+
+
+
+
+
+
+
+#introduccion{
+font-size: 1.2em;
+color: var(--azuloscuroP);
+font-weight: 600;
+font-style: italic;
+margin: 2em 0em;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********-----------acordion-------------------------*/
+.accordion{
+    background-color: darkgreen;
+}
+
+.accordion-item{
+    background-color: var(--naranjaP);
+    
+    }
+
+.accordion-header{
+background-color: fuchsia;
+
+}
+
+.accordion-body{
+    background-color:var(--naranjaP);
+}
+
+.accordion-button{
+    background-color:var(--azuloscuroP);
+    color: var(--blancoP);
+    margin-bottom: 1em;
+
+}
+
+.accordion-collapse{
+background-color: blue;
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:var(--azulclaroP); /* Cambia a rosa el fondo del botón abierto */
+    color: var(--blancoP); /* Puedes cambiar el color del texto si es necesario */
+}
