@@ -158,25 +158,27 @@ form button {
 nav {
     background-color: var(--azulclaroP);
     /*border: 2px greenyellow solid;*/
-    padding: 1.5em 0em;
-    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+
+.listaNav {
     /* Elimina los c�rculos */
-    width: auto;
 }
 
 
-nav ul li {
-    display: inline-block;
-    margin: 0.7em;
-    
+.itemNav{      
+        /*border: 3px blue solid;*/
+        
+}
+
+li{
+/*border: 3px red solid;*/
 }
 
 
-nav ul li a {
+
+
+.botonNav {
     color: var(--blancoP);
     /* O establece un color espec�fico, como: color: black; */
     text-decoration: none;
@@ -189,20 +191,75 @@ nav ul li a {
     transition: box-shadow 0.3s ease; /* Transición suave */
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav ul li a:hover {
+.botonNav:hover {
     color: var(--azuloscuroP);
     /* Color al pasar el rat�n */
     background-color: var(--naranjaP);
     border: 1px var(--azuloscuroP) double;
     color: var(--blancoP);
-    
-    
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el mouse */
 
 
 }
+
+
+
+.container-fluid{
+background-color: var(--azulclaroP);
+    /*border: 2px greenyellow solid;*/
+    padding: 1.5em 0em;
+    
+   
+   
+}
+
+div .container-fluid{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.itemNav, .dropdown {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.dropdown-item{
+font-family:Montserrat, Helvetica, sans-serif;
+font-weight:600;
+background-color: var(--azulclaroP);
+color:var(--blancoP);
+border-radius:6px;
+border:1px var(--blancoP) solid;
+margin:0.1em;
+font-size:0.9em;
+}
+
+.dropdown-item:hover{
+background-color: var(--naranjaP);
+color:White;
+}
+
+
+.dropdown-menu{
+background-color: Transparent;
+border:none;
+
+
+}
+
+
+
 
 
 /*------------------------------------------MAIN----------------------------------------*/
@@ -639,7 +696,7 @@ footer div {
             "marcas";
     }
 
-    nav {
+    /*nav {
         text-align: center;
     }
 
@@ -651,7 +708,7 @@ footer div {
     nav ul li {
         display: block;
         margin: 1.5em;
-    }
+    }*/
 
     .publicidad {
         width: 80%;
@@ -680,7 +737,7 @@ footer div {
     justify-items: center;
     }
 
-    nav {
+    /*nav {
         text-align: center;
     }
 
@@ -700,7 +757,7 @@ footer div {
         padding: 0.3em;
 
     }
-
+*/
 
     footer span {
         display: inline-block;

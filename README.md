@@ -19,7 +19,7 @@ El favicon de la página fue creado utilizando [favicon.io](https://favicon.io),
 
 ## Diseño de la Página
 - En la **página principal (index.html)** y en las **páginas en construcción (preguntasfrecuentes.html y productos.html)**, se utilizó `display: grid` para estructurar el contenido de manera eficiente y adaptativa.
-- Para las **páginas de contacto.html y ubicacion.html**, se aplicó `display: flex`, lo que permite una distribución flexible de los elementos en la interfaz.
+- Para las **páginas de contacto.html y ubicacion.html**, se aplicó `display: flex`, lo que permite una distribución flexible de los elementos en la interfaz.Para la pagina de Preguntas Frecuentes se uso Bootstrap.
 
 ## Galería de Imágenes
 Para implementar la galería de imágenes principal en `index.html`, se utilizó el siguiente tutorial de Instagram: [Tutorial de Galería](https://www.instagram.com/reel/DBG0q2_i3dA/?igsh=cWxhemZlZXlrM2Jo). Este recurso proporcionó ideas y técnicas útiles para crear una presentación atractiva de los productos.
@@ -27,7 +27,7 @@ Para implementar la galería de imágenes principal en `index.html`, se utilizó
 ## Herramientas de Diseño
 Para el diseño de imágenes, fondos y el redimensionamiento de los mismos, se utilizaron las siguientes herramientas:
 - **CorelDRAW**: Utilizado para crear y diseñar el logo, así como para el bosquejo del diseño.
-- **Adobe Photoshop**: Empleado para el redimensionamiento de imágenes y ajustes de fondo, garantizando una presentación visual óptima.
+- **Adobe Photoshop**: Empleado para el redimensionamiento de imágenes y ajustes de fondo, garantizando una presentación visual óptima. Para minimizar el peso de las imagenes se trabajo con una resolucion de 72 ppp.
 
 ## Inspiración
 Este proyecto se inspiró en sitios web como [ferreteriaexpres.com.ar](https://ferreteriaexpres.com.ar) y [comercialcmp.com.ar](https://www.comercialcmp.com.ar), entre otros. Estas referencias ayudaron a definir la estructura y el diseño del eCommerce.
@@ -64,7 +64,7 @@ Este sitio está dirigido a:
 - **Empresas** que necesiten abastecerse de materiales y herramientas.
 
 ## Diseño y Estética
-El diseño se enfoca en la simplicidad y la elegancia. La paleta de colores seleccionada busca ser armoniosa y representar la confiabilidad de la marca. La tipografía elegida mejora la legibilidad y proporciona una estética profesional.
+El diseño se enfoca en la simplicidad y la elegancia. La paleta de colores seleccionada busca ser armoniosa y representar la confiabilidad de la marca. La tipografía elegida mejora la legibilidad y proporciona una estética profesional. Se aplican efectos de Css con transciciones suaves para animar el sitio.
 
 ## Tecnologías Utilizadas
 - **HTML** para la estructura básica.
