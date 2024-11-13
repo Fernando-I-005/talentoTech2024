@@ -18,7 +18,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+ box-sizing: border-box;
 }
 /**--------------------------------------*/
 
@@ -38,6 +38,7 @@ body {
     background-position: center center; /* Centra la imagen */
     min-height: 100vh; /* Asegura que el fondo cubra todo el alto del viewport */
     text-align: center;
+    
 }
 
 
@@ -123,6 +124,11 @@ color: var(--blancoP);
 font-weight: 600;
 font-style: italic;
 margin: 2em 0em;
+padding:1em;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+background-color: rgba(0, 0, 0, 0.3); /* Negro con 50% de opacidad */
+border-radius:0.5em;
+
 }
 
 
@@ -139,36 +145,55 @@ margin: 2em 0em;
 
 /***********-----------acordion-------------------------*/
 .accordion{
-    background-color: darkgreen;
+    background-color:  var(--naranjaP);
+   
+    
 }
 
-.accordion-item{
-    background-color: var(--naranjaP);
-    
-    }
+
 
 .accordion-header{
-background-color: fuchsia;
+background-color: transparent;
 
 }
 
 .accordion-body{
-    background-color:var(--naranjaP);
+    background-color:var(--blancoP);
+    margin-bottom:2em;
+    border-radius:0.4em;
 }
 
 .accordion-button{
     background-color:var(--azuloscuroP);
     color: var(--blancoP);
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-size:0.6em;
+    border-radius:0.4em;
 
 }
 
 .accordion-collapse{
-background-color: blue;
+background-color: transparent;
 
 }
 
 .accordion-button:not(.collapsed) {
-    background-color:var(--azulclaroP); /* Cambia a rosa el fondo del botón abierto */
-    color: var(--blancoP); /* Puedes cambiar el color del texto si es necesario */
+    background-color:var(--azuloscuroP); /* Cambia a rosa el fondo del botón abierto */
+    color: var(--blancoP);
+     /* Puedes cambiar el color del texto si es necesario */
+     box-shadow:2px 2px 6px rgba(0, 0, 0, 0.9);
 }
+
+.accordion-item{
+    background-color: var(--naranjaP);
+    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);*/
+    color:black;
+    font-weight: 600;
+    border:none;
+    text-align:left
+    
+    
+    
+    
+    }

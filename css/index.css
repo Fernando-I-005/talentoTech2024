@@ -81,27 +81,28 @@ header {
     text-align: center;
     padding: 0.5em;
     font-weight: 600;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 
 }
+
+
+
+/*-------contenedor exterior Buscar----------*/
 
 #contenedorLogoBuscar {
     /*border: 2px violet solid;*/
     display: flex;
     justify-content: space-around;
-
-
+    margin-top:1em;
 }
 
 
+/* logo ferrecentro*/
 #logoEncabezado {
     width: 7.5em;
-    margin: 0.5em auto;
-    display: inline-block;
-
-}
-
-
+    margin: 1em;
+   }
+/* campo blanco + boton buscar*/
 form {
     /*border: 2px pink solid;*/
     padding: 2em;
@@ -113,6 +114,9 @@ form input {
     width: 90%;
     font-size: 1.2em;
 }
+
+
+
 
 form button {
     font-size: 1.2em;
@@ -133,6 +137,8 @@ form button {
     border-radius: 0.5em;
 }
 
+
+ /*----boton buscar----*/
 .barra-busqueda button {
     padding: 10px 20px;
     margin-left: 5px;
@@ -143,17 +149,18 @@ form button {
     cursor: alias;
     font-size: 1.5em;
     border: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Sombra */
     transition: box-shadow 0.3s ease; /* Transición suave */
 }
 
 .barra-busqueda button:hover {
-    background-color: #0056b3;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el mouse */
+    background-color: var(--naranjaP);
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+
 }
 
 
-/*------------------------------NAV---------------------------------------*/
+/*----------------------------------NAV---------------------------------------*/
 
 nav {
     background-color: var(--azulclaroP);
@@ -177,54 +184,49 @@ li{
 
 
 
-
+/*-------botones NAV----*/
 .botonNav {
+    font-weight: 700;
     color: var(--blancoP);
-    /* O establece un color espec�fico, como: color: black; */
-    text-decoration: none;
-    /* Elimina el subrayado */
+    text-align:center;
+    border-radius: 0.4em;
     border: 1px var(--blancoP) solid;
     padding: 0.4em 1.2em;
-    border-radius: 0.4em;
     margin: 0.5em 1em;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
-    transition: box-shadow 0.3s ease; /* Transición suave */
-    font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
+    transition: box-shadow 0.3s ease; /* Transición suave */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+    background-color:var(--azuloscuroP);
+
+    }
 
 .botonNav:hover {
-    color: var(--azuloscuroP);
-    /* Color al pasar el rat�n */
     background-color: var(--naranjaP);
-    border: 1px var(--azuloscuroP) double;
+    border: 2px var(--azuloscuroP) solid;
     color: var(--blancoP);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el mouse */
-
-
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el mouse */
 }
 
 
-
+/*------contenedor NAV entero---*/
 .container-fluid{
-background-color: var(--azulclaroP);
+    background-color: var(--azulclaroP);
     /*border: 2px greenyellow solid;*/
-    padding: 1.5em 0em;
-    
-   
-   
+    padding: 1em 0em;  
 }
 
-div .container-fluid{
+
+/*div .container-fluid{
     display: flex;
     justify-content: center;
-}
+    border: 2px greenyellow solid;
+}*/
 
+
+/*------CONTENEDOR DE 5 BOTONES----*/
 .navbar-nav {
-    margin: 0 auto;
+    margin: 0 auto; /* CENTRA LOS 5 BOTONES!!*/
+    
 }
 
 .itemNav, .dropdown {
@@ -232,17 +234,24 @@ div .container-fluid{
     align-items: center;
 }
 
+/*-----contenedor de botones desplegables------------*/
+.dropdown-menu{
+background-color: Transparent;
+border:none;
+}
 
 
+
+/*------BOTONES DESPLEGABLES-----*/
 .dropdown-item{
-font-family:Montserrat, Helvetica, sans-serif;
 font-weight:600;
 background-color: var(--azulclaroP);
 color:var(--blancoP);
-border-radius:6px;
+border-radius:5px;
 border:1px var(--blancoP) solid;
-margin:0.1em;
+margin:0em;
 font-size:0.9em;
+padding:0.2em 0em;
 }
 
 .dropdown-item:hover{
@@ -251,14 +260,25 @@ color:White;
 }
 
 
-.dropdown-menu{
-background-color: Transparent;
-border:none;
 
+/*ICONO HAMBURGUESA*/
 
+.navbar-toggler {
+    margin-left: 1em;
+    border-color: white;
+    background-color: var(--blancoP);
 }
-
-
+ 
+  .navbar-toggler:focus {  
+    background-color: var(--naranjaP);
+}
+ 
+ 
+  
+/* tres lineas */
+ 
+.navbar-toggler-icon {
+  }
 
 
 
@@ -281,12 +301,7 @@ main {
         "secundario secundario secundario";
 }
 
-/*
-"carrusel carrusel carrusel"
-    "publicidad secciones secciones"
-    "publicidad secciones secciones"
-    "publicidad secciones secciones"
-    "marcas marcas marcas"*/
+
 
 #contenedorCarrusel {
     grid-area: carrusel;
@@ -342,7 +357,7 @@ section {
 }
 
 
-/*------------------------CONTENEDORSECUNDARIO(PUBLICDAD) ------------------*/
+/*------------------------CONTENEDORSECUNDARIO(PUBLICIDAD) ------------------*/
 
 
 #contenedorSecundario {
@@ -412,7 +427,7 @@ section {
     font-weight: 600;
     background-color: var(--naranjaP);
     border-radius: 20px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
@@ -447,7 +462,7 @@ section {
     /*text-align: center;
     margin: 2em;*/
     border-radius: 15px;
-    /* background-color: yellow;*/
+    background-color: var(--azuloscuroP);
 
 }
 
@@ -521,13 +536,6 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
 
 
 
-
-
-
-
-
-
-
 .contenedorPrecio1 {
     /*border: 2px yellow solid;*/
     border-radius: 2px;
@@ -539,14 +547,10 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
     margin-top: 0.5em;
 }
 
-
 .contenedorPrecio1 h4 {
     font-weight: 800;
     font-size: 1.4em;
-
-
 }
-
 
 
 .contenedorDescripcion1 {
@@ -619,8 +623,8 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
 */
 /*-----------------------------------------------*/
 #contenedorMarcas {
-    background-color: var(--azulclaroP);
-    /*border: 2px greenyellow solid;*/
+    background-color: transparent;
+    border: 2px var(--azuloscuroP) solid;
     /*text-align: center;*/
     /*margin: 2em;*/
     grid-area: marcas;
@@ -636,27 +640,32 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
 
 .imagenMarca {
     min-width: 400px;
+    margin:1em;
 }
 
 /*-----------------------------------FOOTER-------------------------------*/
 footer {
     background-color: var(--azuloscuroP);
     /*border: 2px greenyellow solid;*/
-    padding: 3em auto;
-    color: var(--blancoP);
+    
+    color: va(--blancoP);
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     grid-area: footer;
+    font-size:1em;
+    font-weight:500;
 }
 
 #logoFooter {
     width: 4em;
+    min-width:2em;
 }
 
 #logoFiscal {
     width: 3em;
+     min-width:2em;
 }
 
 footer a {
@@ -665,6 +674,14 @@ footer a {
     /* Elimina el subrayado */
     margin: 0.3em;
 }
+
+footer a:hover {
+    color: var(--naranjaP);
+  
+}
+
+
+
 
 footer div {
     /*border: 2px red solid;*/
@@ -732,7 +749,7 @@ footer div {
             "secciones"
             "publicidad "
             "marcas";
-            justify-content: center;
+    justify-content: center;
     align-items: center; /* Alinea los elementos verticalmente */
     justify-items: center;
     }
@@ -751,13 +768,15 @@ footer div {
         margin: 1.5em;
     }
 
+*/
+
     footer div {
         display: inline-block;
         text-align: center;
         padding: 0.3em;
 
     }
-*/
+
 
     footer span {
         display: inline-block;

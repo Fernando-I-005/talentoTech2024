@@ -146,7 +146,7 @@ border: 4px var(--blancoP) solid;
 
 .contenedorImagen {
   /*border: 3px violet solid;*/
-  width: 70%;
+  width: 60%;
   /*height:75%;*/
   display: flex;
   margin-top: 1em;
