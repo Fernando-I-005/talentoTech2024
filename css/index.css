@@ -350,10 +350,12 @@ main {
 
 
 
-section {
+
+#contenedorCarrusel div {
     background-color: var(--azulclaroP);
     /*border: 2px greenyellow solid;*/
     padding: 1em;
+    border-radius:15px;
 }
 
 
@@ -438,8 +440,9 @@ section {
     /*border: 2px black solid;*/
     /*text-align: center;*/
     /*margin: 2em;*/
-    border-radius: 15px;
-    /*background-color: Red;*/
+    border-radius: 1em;
+    background-color: var(--azuloscuroP);
+    padding:0.5em;
 
 }
 
@@ -461,8 +464,9 @@ section {
     /*border: 2px black solid;*/
     /*text-align: center;
     margin: 2em;*/
-    border-radius: 15px;
+    border-radius: 1em;
     background-color: var(--azuloscuroP);
+    padding:0.5em;
 
 }
 

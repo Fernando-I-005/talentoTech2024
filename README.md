@@ -28,7 +28,7 @@ Para la tipografía, se utilizaron fuentes de Google Fonts:
 - **Caveat**: Para texto más informal o destacable, aportando un toque de personalidad y cercanía.
 
 ### **Imágenes y Recursos Visuales**
-- **Imágenes**: Se utilizaron imágenes libres de regalías de [Pixabay](https://pixabay.com) para asegurar que el contenido visual fuera de alta calidad y apropiado para el sitio.
+- **Imágenes**: Se utilizaron imágenes libres de regalías de [Pixabay](https://pixabay.com) para asegurar que el contenido visual fuera de alta calidad y apropiado para el sitio. Las imágenes fueron optimizadas con una resolución de **72 ppp** para garantizar tiempos de carga rápidos sin sacrificar la calidad visual.
 - **Íconos**: Se emplearon íconos de [FontAwesome](https://fontawesome.com) para agregar elementos visuales que mejoran la navegación y la comprensión del contenido.
 
 ---
@@ -46,7 +46,7 @@ El diseño web se ha enfocado en la accesibilidad y la eficiencia, utilizando un
 Para la galería de imágenes en `index.html`, se siguió un tutorial de Instagram: [Tutorial de Galería](https://www.instagram.com/reel/DBG0q2_i3dA/?igsh=cWxhemZlZXlrM2Jo). Este recurso brindó ideas para crear una presentación atractiva y funcional de los productos.
 
 ### **Animaciones y Efectos**
-Se aplicaron transiciones suaves en **CSS** para animar elementos al interactuar con ellos, mejorando la experiencia del usuario y haciendo que el sitio sea más dinámico.
+Se aplicaron transiciones suaves en **CSS** para animar elementos al interactuar con ellos, mejorando la experiencia del usuario y haciendo que el sitio sea más dinámico. Además, se utilizó **Animate.css** para implementar animaciones predefinidas, proporcionando una experiencia más atractiva.
 
 ### **Optimización de Imágenes**
 Las imágenes fueron optimizadas para asegurar tiempos de carga rápidos. Se trabajó con una resolución de 72 ppp para reducir el peso de los archivos, sin comprometer la calidad visual.

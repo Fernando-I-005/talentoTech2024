@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- bootstrap!! antes que otras css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- animate.css -->
     <link rel="stylesheet" href="css/resetNormalize.css">
     <!-- vinculo con css que resetea y normaliza propiedades // importante!! va antes del ccs -->
     <link rel="stylesheet" href="css/index.css"> <!-- vinculo con css -->
@@ -26,7 +27,7 @@
         <header>
             <p id="encabezadoSuperior">¡¡Construimos juntos tu proximo proyecto!!</p>
             <div id="contenedorLogoBuscar">
-                <a href="index.html"><img src="recursos/LogoFerrecentroPNGnaranja.png" alt="Logo Ferrecentro Naranja"
+                <a class="animate__animated  animate__pulse animate__infinite" href="index.html"><img src="recursos/LogoFerrecentroPNGnaranja.png" alt="Logo Ferrecentro Naranja"
                         id="logoEncabezado"></a>
                 <form action="/buscar" method="GET" class="barra-busqueda">
                     <input type="text" name="query" placeholder="Buscar..." aria-label="Buscar" required>
@@ -93,9 +94,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
 
-<!--ver doble clase!!!-->
+<!--ver doble clase!!!--> <!--class="btn btn-secondary dropdown-toggle"-->
+                        <li>   
                         <div class="dropdown itemNav">
-                            <a class="botonNav" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="A1"data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                            <a class="botonNav" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                
@@ -110,6 +112,7 @@
                                 <li><a class="botonNav dropdown-item" href="./html/productos.html">PISOS</a></li>
                             </ul>
                         </div>
+                        </li> 
 
                         <li class="itemNav"><a href="./html/promociones.html" class="botonNav"> PROMOCIONES</a></li>
                         <li class="itemNav"><a href="./html/preguntasFrecuentesBootstrap.html" class="botonNav">
@@ -139,14 +142,14 @@
 
         <div id="contenedorCarrusel">
             <h2>¡¡Tenemos lo que estas buscando!! </h2>
-            <section id="contenedorImagenesCarrusel">
+            <div id="contenedorImagenesCarrusel">
                 <img src="recursos/imagenPrincipal1.jpg" alt="imagen pricipal carrusel 1">
                 <img src="recursos/imagenPrincipal2.jpg" alt="imagen pricipal carrusel 2">
                 <img src="recursos/imagenPrincipal3.jpg" alt="imagen pricipal carrusel 3">
                 <img src="recursos/imagenPrincipal4.jpg" alt="imagen pricipal carrusel 4">
                 <img src="recursos/imagenPrincipal5.jpg" alt="imagen pricipal carrusel 5">
                 <img src="recursos/imagenPrincipal6.jpg" alt="imagen pricipal carrusel 6">
-            </section>
+            </div>
         </div>
 
 
