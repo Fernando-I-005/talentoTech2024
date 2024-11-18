@@ -355,6 +355,10 @@ main {
     border-radius:15px;
 }
 
+#imagencarruselPrincipal {
+display:none;
+
+}
 
 /*-----------------------------CONTENEDORSECUNDARIO(PUBLICIDAD) ---------------------------*/
 
@@ -850,6 +854,31 @@ footer div {
 @media (max-width: 768px) {
 
 
+    #imagencarrusel1de6, #imagencarrusel2de6,#imagencarrusel3de6,#imagencarrusel4de6,#imagencarrusel5de6, #imagencarrusel6de6{
+        display:none;
+
+    }
+
+    #imagencarruselPrincipal{
+
+        display:block;
+    }
+
+
+
+
+
+
+    .container {
+        max-width: 1250px;
+                padding: 0em;
+    }
+
+
+
+
+
+
     footer div {
         display: inline-block;
         text-align: center;
@@ -863,6 +892,10 @@ footer div {
         border: 3px red solid;
         width: 250px;
     }
+
+
+
+
 
 
 }
