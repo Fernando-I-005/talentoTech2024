@@ -1,0 +1,340 @@
+/*------------------ajustes universales-----------------*/
+* {
+
+    font-family: Montserrat, Caveat, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranjaP: #ff6700ff;
+    /* Almacena los colores de la paleta con un nombre */
+    --blancoP: #ebebebff;
+    --grisP: #c0c0c0ff;
+    --azulclaroP: #3a6ea5ff;
+    --azuloscuroP: #004e98ff;
+}
+
+/*agregado luego*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(212, 252, 196);
+    font-family: Montserrat SemiBold;
+    min-height: 50vh;
+ 
+}
+
+
+#contenedorExterior {
+    background-color: transparent;
+}
+
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    border: 2px red solid;
+}
+
+.swiper-wrapper {
+    background-color: transparent;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 0 20px;
+    text-transform: capitalize;
+    color: black;
+    font-size: 18px;
+}
+
+li a {
+    text-transform: capitalize;
+    color: black;
+    font-size: 18px;
+}
+
+.swiper {
+    margin-top: 40px;
+}
+
+.swiper-slide {
+    /*margin-bottom:50px;*/
+    background-color: red;
+    /*transparent; */
+    box-shadow: 0 30px 30px (0, 0, 0, 0.2);
+    border-radius: 15px;
+    height: 350px;
+    width: 260px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.swiper-slide img {
+    width: 250px;
+    border-radius: 15px;
+    height: 360px;
+}
+
+
+.swiper-txt {
+    position: absolute;
+    padding: 25px;
+
+}
+
+.swiper-txt h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: Black;
+
+}
+
+
+/* Flechas de navegaci�n */
+.swiper-button-next,
+.swiper-button-prev {
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    color: orange;
+    font-size: 30px;
+}
+
+/*.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+/*}*/
+
+
+
+
+
+
+
+/*----------------------------------------cardddd!!!!-------------------------------------------------------*/
+
+
+.contenedorCard1 {
+
+    border: 3px var(--naranjaP) solid;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color: var(--blancoP);
+    color: var(--azuloscuroP);
+    font-family: arial;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    
+
+}
+
+.contenedorCard1:hover {
+
+transform: translateY(-1px); /* Mueve la card hacia arriba al pasar el mouse */
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mouse */
+
+
+}
+
+
+
+.contenedorImagen1 {
+    border: 2px var(--azuloscuroP) solid;
+    border-radius: 10px;
+    width: 95%;
+    height: 60%;
+    display: flex;
+    background-color: var(--blancoP);
+    justify-content: center; /* Centrar la imagen horizontalmente */
+    align-items: center;     /* Centrar la imagen verticalmente */
+}
+
+.imagenProducto1 {
+    width: auto;
+    height: auto;
+    max-width: 100%;    /* Se ajusta al 100% del ancho del contenedor */
+    max-height: 100%;   /* Se ajusta al 100% de la altura del contenedor */
+    object-fit: contain;
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+
+
+.imagenProducto1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.contenedorPrecio1 {
+    /*border: 2px yellow solid;*/
+    border-radius: 2px;
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.contenedorPrecio1 h4 {
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+
+.contenedorDescripcion1 {
+    /*border: 2px rgb(34, 127, 233) solid;*/
+    border-radius: 10px;
+    width: 95%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+.contenedorInferior1 {
+    /*border: 2px rgb(29, 197, 94) solid;*/
+    border-radius: 10px;
+    width: 95%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    display: flex;
+    align-items: center;
+
+}
+
+.contenedorSelector1 {
+    border: 2px var(--naranjaP) solid;
+    width: 20%;
+    height: 70%;
+    border-radius: 0.4em;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: var(--blancoP);
+}
+
+
+
+.contenedorBoton1 {
+    border: 2px rgb(240, 235, 230) solid;
+    border-radius: 0.6em;
+    width: 60%;
+    height: 90%;
+    background-color: var(--naranjaP);
+    color: var(--blancoP);
+    font-weight: 700;
+    transition: transform 0.3s ease;
+    /* Transición suave para el tamaño */
+    
+}
+
+.contenedorBoton1:hover {
+    transform: scale(1.1);
+    /* Aumentar el tamaño al 110% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------medias queries--------------*/
+
+@media(max-width:600px) {
+
+
+
+    .swiper {
+        padding: 0 70px;
+    }
+
+ /*   .swiper-slide img {
+        
+    }
+*/
+
+
+}
+
+
+
+
+/* tutorial ------- https://www.youtube.com/watch?v=SxklmLH6TE8  librer�a Swiper desde un CDN swiper@9 ---- */

@@ -116,8 +116,6 @@ form input {
 }
 
 
-
-
 form button {
     font-size: 1.2em;
     font-weight: 700;
@@ -160,28 +158,26 @@ form button {
 }
 
 
-/*----------------------------------NAV---------------------------------------*/
+/*----------------------------------------------------NAV--------------------------------------------------------*/
 
 nav {
     background-color: var(--azulclaroP);
     /*border: 2px greenyellow solid;*/
 }
 
-
+/*
 .listaNav {
-    /* Elimina los c�rculos */
 }
 
 
 .itemNav{      
-        /*border: 3px blue solid;*/
-        
+  
 }
 
 li{
-/*border: 3px red solid;*/
-}
 
+}
+*/
 
 
 /*-------botones NAV----*/
@@ -197,6 +193,7 @@ li{
     transition: box-shadow 0.3s ease; /* Transición suave */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
     background-color:var(--azuloscuroP);
+    font-size:0.9em;
 
     }
 
@@ -250,8 +247,8 @@ color:var(--blancoP);
 border-radius:5px;
 border:1px var(--blancoP) solid;
 margin:0em;
-font-size:0.9em;
-padding:0.2em 0em;
+font-size:0.8em;
+padding:0.2em 0.4em;
 }
 
 .dropdown-item:hover{
@@ -277,12 +274,12 @@ color:White;
   
 /* tres lineas */
  
-.navbar-toggler-icon {
+/*.navbar-toggler-icon {
   }
+*/
 
 
-
-/*------------------------------------------MAIN----------------------------------------*/
+/*----------------------------------------------------------MAIN------------------------------------------------------------*/
 
 main {
     background-color: var(--blancoP);
@@ -301,7 +298,7 @@ main {
         "secundario secundario secundario";
 }
 
-
+ /*---------------------display carrusel imagenes----------------*/
 
 #contenedorCarrusel {
     grid-area: carrusel;
@@ -359,7 +356,7 @@ main {
 }
 
 
-/*------------------------CONTENEDORSECUNDARIO(PUBLICIDAD) ------------------*/
+/*-----------------------------CONTENEDORSECUNDARIO(PUBLICIDAD) ---------------------------*/
 
 
 #contenedorSecundario {
@@ -401,7 +398,7 @@ main {
 }
 
 
-/*------------------------CONTENEDORSECCIONES ------------------*/
+/*-----------------------------------CONTENEDOR SECCIONES -----------------------------*/
 
 
 #contenedorSecciones {
@@ -432,10 +429,11 @@ main {
     width: 100%;
     margin: auto;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top:0.6em;
 
 }
 
-/*---------------------------------------------*/
+/*-------------------DESTACADOS--------------------------*/
 #contenedorDestacados {
     /*border: 2px black solid;*/
     /*text-align: center;*/
@@ -459,7 +457,7 @@ main {
 
 }
 
-/*---------------------------------------------*/
+/*-----------------MAS VENDIDOS----------------------------*/
 #contenedorMasVendidos {
     /*border: 2px black solid;*/
     /*text-align: center;
@@ -477,19 +475,114 @@ main {
     display: flex;
     flex-wrap: Wrap;
     justify-content: center;
+    align-self:center;   /*----------------ver alinear verticalmente aca----------*/
 
 }
 
 
-/*----------------------------------------cardddd!!!!-------------------------------------------------------*/
+
+
+/*---------------CARRUSEL SWIPER!!!!!-----------------------*/
+
+
+
+
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    /*border: 2px red solid;*/
+    /*background-color: blue;*/
+    padding: 0em 3em;
+}
+
+.swiper-wrapper {
+    background-color: transparent;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 0 20px;
+    text-transform: capitalize;
+    color: black;
+    font-size: 18px;
+}
+
+li a {
+    text-transform: capitalize;
+    color: black;
+    font-size: 18px;
+}
+
+.swiper {
+    margin-top: 40px;
+}
+
+.swiper-slide {
+    /*margin-bottom:50px;*/
+    background-color: transparent;
+    /*transparent; */
+    box-shadow: 0 30px 30px (0, 0, 0, 0.2);
+    border-radius: 15px;
+    height: 350px;
+    width: 260px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2em;
+
+}
+
+.swiper-slide img {
+    width: 250px;
+    border-radius: 15px;
+    height: 360px;
+}
+
+
+.swiper-txt {
+    position: absolute;
+    padding: 25px;
+
+}
+
+.swiper-txt h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: Black;
+
+}
+
+
+/* Flechas de navegaci�n */
+.swiper-button-next,
+.swiper-button-prev {
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    color: var(--naranjaP);
+    font-size: 30px;
+    margin:0em;
+    
+}
+
+/*.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    /*background-color: rgba(0, 0, 0, 0.8);*//*
+}*/
+
+
+
+/*----------------------------------------¡¡CAAAAAAAAAAAARD!!!!!!!!!!!!!-------------------------------------------------------*/
 
 
 .contenedorCard1 {
 
     border: 3px var(--naranjaP) solid;
     border-radius: 10px;
-
-    margin: 0.4em;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -502,12 +595,13 @@ main {
     height: 350px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Sombra */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    
 
 }
 
 .contenedorCard1:hover {
 
-transform: translateY(-10px); /* Mueve la card hacia arriba al pasar el mouse */
+transform: translateY(-1px); /* Mueve la card hacia arriba al pasar el mouse */
 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mouse */
 
 
@@ -522,15 +616,20 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
     height: 60%;
     display: flex;
     background-color: var(--blancoP);
-    
+    justify-content: center; /* Centrar la imagen horizontalmente */
+    align-items: center;     /* Centrar la imagen verticalmente */
 }
 
 .imagenProducto1 {
-    width: 80%;
-    height: 80%;
+    width: auto;
+    height: auto;
+    max-width: 100%;    /* Se ajusta al 100% del ancho del contenedor */
+    max-height: 100%;   /* Se ajusta al 100% de la altura del contenedor */
     object-fit: contain;
     margin: auto;
+    transition: transform 0.3s ease;
 }
+
 
 
 .imagenProducto1:hover {
@@ -553,7 +652,7 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
 
 .contenedorPrecio1 h4 {
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 
@@ -566,7 +665,7 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
     display: flex;
     align-items: center;
     padding: 8px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 500;
     text-align: left;
 }
@@ -590,9 +689,9 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
     border: 2px var(--naranjaP) solid;
     width: 20%;
     height: 70%;
-    border-radius: 10px;
+    border-radius: 0.4em;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.9em;
     background-color: var(--blancoP);
 }
 
@@ -600,20 +699,29 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
 
 .contenedorBoton1 {
     border: 2px rgb(240, 235, 230) solid;
-    border-radius: 10px;
+    border-radius: 0.6em;
     width: 60%;
-    height: 70%;
+    height: 90%;
     background-color: var(--naranjaP);
     color: var(--blancoP);
-    font-weight: 800;
+    font-weight: 700;
     transition: transform 0.3s ease;
     /* Transición suave para el tamaño */
+    
 }
 
 .contenedorBoton1:hover {
     transform: scale(1.1);
     /* Aumentar el tamaño al 110% */
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -698,7 +806,7 @@ footer div {
 
 /***************************mediaqueries******************************/
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     nav {
         padding: 0.1em;
     }
@@ -741,38 +849,6 @@ footer div {
 
 @media (max-width: 768px) {
 
-    #contenedorSecundario {
-        /*display: flex;*/
-        grid-area: secundario;
-        padding: 2em;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "secciones"
-            "secciones"
-            "publicidad "
-            "marcas";
-    justify-content: center;
-    align-items: center; /* Alinea los elementos verticalmente */
-    justify-items: center;
-    }
-
-    /*nav {
-        text-align: center;
-    }
-
-    nav ul {
-        list-style-type: none;
-    }
-
-
-    nav ul li {
-        display: block;
-        margin: 1.5em;
-    }
-
-*/
 
     footer div {
         display: inline-block;
@@ -790,3 +866,50 @@ footer div {
 
 
 }
+
+
+
+
+
+/*----------------medias queries--------------*/
+/*
+@media(max-width:1400px) {
+
+
+
+    .swiper {
+        padding: 0 70px;
+    }
+
+    .swiper-slide img {
+        
+    }
+
+
+
+}
+
+
+
+
+
+@media(max-width:600px) {
+
+
+
+    .swiper {
+        padding: 0 70px;
+    }
+
+    .swiper-slide img {
+        
+    }
+
+
+
+}
+
+*/
+
+
+/* tutorial ------- https://www.youtube.com/watch?v=SxklmLH6TE8  librer�a Swiper desde un CDN swiper@9 -- png.egg.com-- */

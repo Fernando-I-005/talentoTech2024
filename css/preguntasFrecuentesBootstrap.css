@@ -1,3 +1,5 @@
+
+
 /*------------------ajustes universales-----------------*/
 * {
 
@@ -162,6 +164,13 @@ background-color: transparent;
     margin-bottom:2em;
     border-radius:0.4em;
 }
+
+/*veeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer aca **/
+accordion-body ul{
+background-color:Red;
+
+}
+
 
 .accordion-button{
     background-color:var(--azuloscuroP);

@@ -31,6 +31,10 @@ Para la tipografía, se utilizaron fuentes de Google Fonts:
 - **Imágenes**: Se utilizaron imágenes libres de regalías de [Pixabay](https://pixabay.com) para asegurar que el contenido visual fuera de alta calidad y apropiado para el sitio. Las imágenes fueron optimizadas con una resolución de **72 ppp** para garantizar tiempos de carga rápidos sin sacrificar la calidad visual.
 - **Íconos**: Se emplearon íconos de [FontAwesome](https://fontawesome.com) para agregar elementos visuales que mejoran la navegación y la comprensión del contenido.
 
+### **Deslizador de imagenes**
+Para realizar el deslizador se uso la libreria [swiper](https://swiperjs.com) 
+
+
 ---
 
 ## **Consideraciones de Diseño Web**
@@ -51,6 +55,10 @@ Se aplicaron transiciones suaves en **CSS** para animar elementos al interactuar
 ### **Optimización de Imágenes**
 Las imágenes fueron optimizadas para asegurar tiempos de carga rápidos. Se trabajó con una resolución de 72 ppp para reducir el peso de los archivos, sin comprometer la calidad visual.
 
+### **Deslizador de imagenes**
+Para realizar el deslizador se uso la libreria [swiper](https://swiperjs.com) basado en el [Tutorial de Youyube](https://www.youtube.com/watch?v=SxklmLH6TE8)
+
+
 ---
 
 ## **Herramientas Utilizadas**
@@ -65,7 +73,13 @@ Las imágenes fueron optimizadas para asegurar tiempos de carga rápidos. Se tra
 
 Este proyecto se inspiró en sitios web de referencia dentro del rubro, tales como:  
 - [ferreteriaexpres.com.ar](https://ferreteriaexpres.com.ar)  
-- [comercialcmp.com.ar](https://www.comercialcmp.com.ar)  
+- [comercialcmp.com.ar](https://www.comercialcmp.com.ar) 
+- [easy.com.ar](https://www.easy.com.ar) 
+- [Makro.com.ar](https://makro.com.ar/beneficios-bancarios) 
+
+
+
+
 
 Estas referencias fueron clave para definir la estructura, navegación y diseño del eCommerce.
 
@@ -73,7 +87,7 @@ Estas referencias fueron clave para definir la estructura, navegación y diseño
 
 ## **Recursos Utilizados**
 
-- **Imágenes y Videos**: Contenido visual libre de regalías de [Pixabay](https://pixabay.com).
+- **Imágenes y Videos**: Contenido visual libre de regalías de [Pixabay](https://pixabay.com)y [PNGegg](https://www.pngegg.com/).
 - **Fuentes**: **Google Fonts** con las fuentes **Montserrat** y **Caveat**.
 - **Íconos**: Íconos de [FontAwesome](https://fontawesome.com).
 

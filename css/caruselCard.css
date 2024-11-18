@@ -1,0 +1,35 @@
+body {
+    background-color: blue;
+    display: flex;
+    width: 50%;
+}
+
+
+
+#carouselExample{
+
+margin:4em;
+
+}
+
+
+
+
+.carousel-item {
+    display: flex;
+}
+
+.carousel-item .d-flex {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-item > .d-flex > .col {
+    flex: 1 0 0;
+    max-width: 25%; /* Para que haya 4 imágenes horizontalmente */
+}
+
+.carousel-item img {
+    max-height: 300px; /* Ajusta la altura de las imágenes según necesidad */
+    object-fit: cover;
+}

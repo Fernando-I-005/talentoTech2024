@@ -8,7 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- bootstrap!! antes que otras css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!--LIBRERIA SWIPER/CARRUSEL -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- animate.css -->
     <link rel="stylesheet" href="css/resetNormalize.css">
     <!-- vinculo con css que resetea y normaliza propiedades // importante!! va antes del ccs -->
     <link rel="stylesheet" href="css/index.css"> <!-- vinculo con css -->
@@ -27,7 +31,8 @@
         <header>
             <p id="encabezadoSuperior">¡¡Construimos juntos tu proximo proyecto!!</p>
             <div id="contenedorLogoBuscar">
-                <a class="animate__animated  animate__pulse animate__infinite" href="index.html"><img src="recursos/LogoFerrecentroPNGnaranja.png" alt="Logo Ferrecentro Naranja"
+                <a class="animate__animated  animate__pulse animate__infinite" href="index.html"><img
+                        src="recursos/LogoFerrecentroPNGnaranja.png" alt="Logo Ferrecentro Naranja"
                         id="logoEncabezado"></a>
                 <form action="/buscar" method="GET" class="barra-busqueda">
                     <input type="text" name="query" placeholder="Buscar..." aria-label="Buscar" required>
@@ -94,25 +99,31 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
 
-<!--ver doble clase!!!--> <!--class="btn btn-secondary dropdown-toggle"-->
-                        <li>   
-                        <div class="dropdown itemNav">
-                            <a class="botonNav" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                        <!--ver doble clase!!!--> <!--class="btn btn-secondary dropdown-toggle"-->
+                        <li>
+                            <div class="dropdown itemNav">
+                                <a class="botonNav" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                               
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">ABERTURAS</a></li>
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">CONSTRUCCION</a></li>
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">ELECTRICIDAD</a></li>
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">FERRETERIA</a></li>
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">ILUMINACION</a></li>
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">MADERAS</a></li>
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">PINTURAS</a></li>
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">PLOMERIA</a></li>
-                                <li><a class="botonNav dropdown-item" href="./html/productos.html">PISOS</a></li>
-                            </ul>
-                        </div>
-                        </li> 
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">ABERTURAS</a>
+                                    </li>
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">CONSTRUCCION</a>
+                                    </li>
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">ELECTRICIDAD</a>
+                                    </li>
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">FERRETERIA</a>
+                                    </li>
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">ILUMINACION</a>
+                                    </li>
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">MADERAS</a></li>
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">PINTURAS</a></li>
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">PLOMERIA</a></li>
+                                    <li><a class="botonNav dropdown-item" href="./html/productos.html">PISOS</a></li>
+                                </ul>
+                            </div>
+                        </li>
 
                         <li class="itemNav"><a href="./html/promociones.html" class="botonNav"> PROMOCIONES</a></li>
                         <li class="itemNav"><a href="./html/preguntasFrecuentesBootstrap.html" class="botonNav">
@@ -120,7 +131,7 @@
                         <li class="itemNav"><a href="html/contacto.html" class="botonNav"> CONTACTO </a></li>
                         <li class="itemNav"><a href="html/ubicacion.html" class="botonNav"> UBICACION</a></li>
 
-                        
+
 
 
 
@@ -131,7 +142,7 @@
             </div>
         </nav>
 
-      
+
     </div>
 
 
@@ -151,6 +162,8 @@
                 <img src="recursos/imagenPrincipal6.jpg" alt="imagen pricipal carrusel 6">
             </div>
         </div>
+
+
 
 
         <div id="contenedorSecundario">
@@ -194,167 +207,511 @@
                     <h3>Productos destacados </h3>
                     <div class="contenedorCard">
 
-                        <div class="contenedorCard1">
-                            <div class="contenedorImagen1">
-                                <img class="imagenProducto1" src="recursos/producto11.png" alt="imagen destacados 1">
+
+
+                        <div class="swiper mySwiper container" id="contenedorExterior">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX1
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto1-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 88.588,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number1"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX2
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto2-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 13.600,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number2"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX3
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto3-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 152.708,03</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number3"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX4
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto4-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 1.188.000,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number4"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX5
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto5-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 500,55</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number5"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX6
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto6-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 99.999,99</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number1"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX7
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto7-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 105.704,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number2"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX8
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto8-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 15.000,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number3"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="contenedorPrecio1">
-                                <h4> $ 88.588,00</h4>
-                            </div>
-                            <div class="contenedorDescripcion1">
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Sed
-                                    labore molestiae illo, at explicabo </p>
-                            </div>
-                            <div class="contenedorInferior1">
-                                <input class="contenedorSelector1" type="number" id="Number1" name="cantidad" min="1"
-                                    max="100" value="1" step="1">
-                                <button class="contenedorBoton1">AGREGAR</button>
-                            </div>
+
+                            <!-- BOTONES DE AVANCE Y RETROCESO----->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
                         </div>
 
-                        <div class="contenedorCard1">
-                            <div class="contenedorImagen1">
-                                <img class="imagenProducto1" src="recursos/producto4.png" alt="imagen destacados 2">
-                            </div>
-                            <div class="contenedorPrecio1">
-                                <h4> $ 52.583,90</h4>
-                            </div>
-                            <div class="contenedorDescripcion1">
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Sed
-                                    labore molestiae illo, at explicabo </p>
-                            </div>
-                            <div class="contenedorInferior1">
-                                <input class="contenedorSelector1" type="number" id="Number2" name="cantidad" min="1"
-                                    max="100" value="1" step="1">
-                                <button class="contenedorBoton1">AGREGAR</button>
-                            </div>
-                        </div>
 
-                        <div class="contenedorCard1">
-                            <div class="contenedorImagen1">
-                                <img class="imagenProducto1" src="recursos/producto2.jpg" alt="imagen destacados 3">
-                            </div>
-                            <div class="contenedorPrecio1">
-                                <h4> $ 2.533,00</h4>
-                            </div>
-                            <div class="contenedorDescripcion1">
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Sed
-                                    labore molestiae illo, at explicabo </p>
-                            </div>
-                            <div class="contenedorInferior1">
-                                <input class="contenedorSelector1" type="number" id="Number3" name="cantidad" min="1"
-                                    max="100" value="1" step="1">
 
-                                <button class="contenedorBoton1">AGREGAR</button>
-                            </div>
-                        </div>
 
-                        <div class="contenedorCard1">
-                            <div class="contenedorImagen1">
-                                <img class="imagenProducto1" src="recursos/producto9.png" alt="imagen destacados 4">
-                            </div>
-                            <div class="contenedorPrecio1">
-                                <h4> $ 1.552.583,90</h4>
-                            </div>
-                            <div class="contenedorDescripcion1">
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Sed
-                                    labore molestiae illo, at explicabo </p>
-                            </div>
-                            <div class="contenedorInferior1">
-                                <input class="contenedorSelector1" type="number" id="Number4" name="cantidad" min="1"
-                                    max="100" value="1" step="1">
 
-                                <button class="contenedorBoton1">AGREGAR</button>
-                            </div>
-                        </div>
                     </div>
                 </section>
 
                 <section id="contenedorMasVendidos">
                     <h3>Mas vendidos </h3>
                     <div class="contenedorCard">
-                        <div class="contenedorCard1">
-                            <div class="contenedorImagen1">
-                                <img class="imagenProducto1" src="recursos/producto3.png" alt="imagen mas vendidos 1">
+
+
+
+
+
+
+                        <div class="swiper mySwiper container" id="contenedorExterior1">
+
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX9
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto9-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 130.555,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number6"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX10
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto10-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 55.600,99</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number7"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX11
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto11-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 365.250,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number8"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX12
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto12-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 9.800,99</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number9"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX13
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto13-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 173.420,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number10"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX14
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto14-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 25.630,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number11"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX15
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto15-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 1,00</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number12"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-txt">
+                                        <p>
+                                            BOX16
+                                        </p>
+                                    </div>
+                                    <div class="contenedorCard1">
+                                        <div class="contenedorImagen1">
+                                            <img class="imagenProducto1" src="recursos/productos/producto16-600x600.png"
+                                                alt="imagen destacados 1">
+                                        </div>
+                                        <div class="contenedorPrecio1">
+                                            <h4> $ 125,50</h4>
+                                        </div>
+                                        <div class="contenedorDescripcion1">
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Sed
+                                                labore molestiae illo, at explicabo </p>
+                                        </div>
+                                        <div class="contenedorInferior1">
+                                            <input class="contenedorSelector1" type="number" id="Number13"
+                                                name="cantidad" min="1" max="100" value="1" step="1">
+                                            <button class="contenedorBoton1">AGREGAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="contenedorPrecio1">
-                                <h4> $ 125.550,05</h4>
-                            </div>
-                            <div class="contenedorDescripcion1">
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Sed
-                                    labore molestiae illo, at explicabo </p>
-                            </div>
-                            <div class="contenedorInferior1">
-                                <input class="contenedorSelector1" type="number" id="cantidad" name="cantidad" min="1"
-                                    max="100" value="1" step="1">
-                                <button class="contenedorBoton1">AGREGAR</button>
-                            </div>
+
+                            <!-- BOTONES DE AVANCE Y RETROCESO----->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
                         </div>
 
-
-                        <div class="contenedorCard1">
-                            <div class="contenedorImagen1">
-                                <img class="imagenProducto1" src="recursos/producto1.png" alt="imagen mas vendidos 2">
-                            </div>
-                            <div class="contenedorPrecio1">
-                                <h4> $ 1.533,00</h4>
-                            </div>
-                            <div class="contenedorDescripcion1">
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Sed
-                                    labore molestiae illo, at explicabo </p>
-                            </div>
-                            <div class="contenedorInferior1">
-                                <input class="contenedorSelector1" type="number" id="Number6" name="cantidad" min="1"
-                                    max="100" value="1" step="1">
-                                <button class="contenedorBoton1">AGREGAR</button>
-                            </div>
-                        </div>
-
-
-                        <div class="contenedorCard1">
-                            <div class="contenedorImagen1">
-                                <img class="imagenProducto1" src="recursos/producto4.png" alt="imagen mas vendidos 3">
-                            </div>
-                            <div class="contenedorPrecio1">
-                                <h4> $ 52.583,90</h4>
-                            </div>
-                            <div class="contenedorDescripcion1">
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Sed
-                                    labore molestiae illo, at explicabo </p>
-                            </div>
-                            <div class="contenedorInferior1">
-                                <input class="contenedorSelector1" type="number" id="Number7" name="cantidad" min="1"
-                                    max="100" value="1" step="1">
-                                <button class="contenedorBoton1">AGREGAR</button>
-                            </div>
-                        </div>
-
-
-                        <div class="contenedorCard1">
-                            <div class="contenedorImagen1">
-                                <img class="imagenProducto1" src="recursos/producto12.png" alt="imagen mas vendidos 4">
-                            </div>
-                            <div class="contenedorPrecio1">
-                                <h4> $ 148.573,00</h4>
-                            </div>
-                            <div class="contenedorDescripcion1">
-                                <p>Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Sed
-                                    labore molestiae illo, at explicabo </p>
-                            </div>
-                            <div class="contenedorInferior1">
-                                <input class="contenedorSelector1" type="number" id="Number8" name="cantidad" min="1"
-                                    max="100" value="1" step="1">
-                                <button class="contenedorBoton1">AGREGAR</button>
-                            </div>
-                        </div>
 
                     </div>
                 </section>
@@ -397,7 +754,7 @@
 
     <footer>
         <div>
-            <div> <a href="index.html"> <img id="logoFooter" src="./recursos/LogoFerrecentroPNGgris.png"
+            <div> <a href="./html/carruselSwiper.html"> <img id="logoFooter" src="./recursos/LogoFerrecentroPNGgris.png"
                         alt="logo Ferrecentro Gris"> </a> </div>
 
             <div><a href="html/contacto.html" title="Contactanos"> Contacto </a></div>
@@ -418,6 +775,13 @@
                         src="./recursos/IMGdatafiscal.png" title="Info fiscal" alt="logo QR fiscal"></a></div>
         </div>
     </footer>
+
+
+    <!-- SWIPER-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/carruselSwiper.js"></script>
+
 
 
     <!-- bootstrap-->
