@@ -14,12 +14,6 @@
     --azuloscuroP: #004e98ff;
 }
 
-/*agregado luego*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 /**--------------------------------------*/
 
 

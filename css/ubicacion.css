@@ -1,3 +1,9 @@
+/*------------------ajustes universales-----------------*/
+* {
+
+  font-family: montserrat, Caveat, Tahoma, sans-serif;
+}
+
 :root {
   --naranjaP: #ff6700ff;
   /* Almacena los colores de la paleta con un nombre */
@@ -8,6 +14,7 @@
 }
 
 
+/*---------------------------BODY-------------------------*/
 body {
   color: var(--blancoP);
   text-align: center;
@@ -17,13 +24,10 @@ body {
   padding: 0;
 }
 
-
 main {
   border: 1px yellow solid;
   margin:auto;
     }
-
-
 
 #textoSuperior {
   /*border: 2px white solid;*/
@@ -50,8 +54,6 @@ main {
     font-weight: 700;
     color: var(--azuloscuroP);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-   
-
 }
 
 
@@ -59,12 +61,7 @@ main {
     border: 2px var(--blancoP) solid;
     background-color: var(--naranjaP);
     color: var(--blancoP);
-    
-    
 }
-
-
-
 
 /*****************************************************/
 
@@ -78,12 +75,7 @@ main {
   align-items: center;
   background-color: var(--azulclaroP);
   transition: background-color 0.3s ease;
-}
-  
-  /*justify-items: center; /* Alinea los elementos horizontalmente AGREGADO, LUEGO BORRAR*/
- /* align-items: center; /* Alinea los elementos verticalmente */
-  /*justify-content: center; /* Asegura que el contenido se centra en el eje horizontal */
-
+} 
 
 .contenedorPrincipal:hover {
 background-color: var(--naranjaP);
@@ -91,12 +83,8 @@ border: 4px var(--blancoP) solid;
 }
 
 
-
-
-
 .contenedorDuplicado {
   /*border: 4px green solid;*/
-
   display: flex;
   flex: 1;
   justify-content: center;
@@ -143,7 +131,6 @@ border: 4px var(--blancoP) solid;
 }
 
 
-
 .contenedorImagen {
   /*border: 3px violet solid;*/
   width: 60%;
@@ -162,7 +149,6 @@ border: 4px var(--blancoP) solid;
   max-height: 100%;
   margin: 0.5em auto;
 }
-
 
 
 .mapa {
@@ -184,7 +170,4 @@ hr {
   margin:auto;
   /* Espaciado alrededor de la línea */
   width:4em;
-
-
-
 }

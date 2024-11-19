@@ -16,22 +16,8 @@
     --azuloscuroP: #004e98ff;
 }
 
-/*agregado luego*/
-*,
-*::before,
-*::after {
- box-sizing: border-box;
-}
+
 /**--------------------------------------*/
-
-*{
-font-family: Montserrat, Caveat, Helvetica, sans-serif;
-
-}
-
-
-
-
 
 body {
     background-image: url(../recursos/imagenFondo1Construccion3840px72ppp.jpg);
@@ -40,11 +26,7 @@ body {
     background-position: center center; /* Centra la imagen */
     min-height: 100vh; /* Asegura que el fondo cubra todo el alto del viewport */
     text-align: center;
-    
 }
-
-
-
 
 
 .container{
@@ -86,19 +68,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .titulo{
     /*border: 6px var(--blancoP) solid;*/
     background-color: var(--azuloscuroP);
@@ -110,14 +79,7 @@ body {
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
     border-radius:5px;
     display: inline-block;
-    
-    
 }
-
-
-
-
-
 
 
 #introduccion{
@@ -130,33 +92,16 @@ padding:1em;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 background-color: rgba(0, 0, 0, 0.3); /* Negro con 50% de opacidad */
 border-radius:0.5em;
-
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/***********-----------acordion-------------------------*/
+/*----------------------------acordion-------------------------------------*/
 .accordion{
-    background-color:  var(--naranjaP);
-   
-    
+    background-color:  var(--naranjaP);   
 }
-
-
 
 .accordion-header{
 background-color: transparent;
-
 }
 
 .accordion-body{
@@ -168,9 +113,7 @@ background-color: transparent;
 /*veeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer aca **/
 accordion-body ul{
 background-color:Red;
-
 }
-
 
 .accordion-button{
     background-color:var(--azuloscuroP);
@@ -179,7 +122,6 @@ background-color:Red;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     font-size:0.6em;
     border-radius:0.4em;
-
 }
 
 .accordion-collapse{
@@ -201,8 +143,4 @@ background-color: transparent;
     font-weight: 600;
     border:none;
     text-align:left
-    
-    
-    
-    
     }

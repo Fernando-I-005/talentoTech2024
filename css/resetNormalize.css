@@ -1,6 +1,4 @@
-/* ----------------------------------------
-   RESET DE ESTILOS (básico)
-   ---------------------------------------- */
+/* ----------------------------------------RESET DE ESTILOS (básico)---------------------------------------- */
 
 /* Elimina márgenes, paddings y bordes por defecto */
 html, body, div, span, applet, object, iframe,
@@ -41,9 +39,7 @@ table {
     border-spacing: 0;
 }
 
-/* ----------------------------------------
-   NORMALIZACIÓN DE ESTILOS (básico)
-   ---------------------------------------- */
+/* ----------------------------------------NORMALIZACIÓN DE ESTILOS (básico)---------------------------------------- */
 
 /* Aplica box-sizing para un mejor control de diseño */
 html {

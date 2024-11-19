@@ -1,3 +1,18 @@
+/*------------------ajustes universales-----------------*/
+* {
+    font-family: Montserrat, Caveat, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranjaP: #ff6700ff; /* Almacena los colores de la paleta con un nombre */
+    --blancoP: #ebebebff;
+    --grisP: #c0c0c0ff;
+    --azulclaroP: #3a6ea5ff;
+    --azuloscuroP: #004e98ff;
+}
+
+
 body {
     background-color: blue;
     display: flex;
@@ -5,11 +20,8 @@ body {
 }
 
 
-
 #carouselExample{
-
 margin:4em;
-
 }
 
 

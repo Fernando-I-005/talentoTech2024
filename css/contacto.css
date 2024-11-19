@@ -35,19 +35,13 @@ body div a {
     font-weight: 700;
     color: var(--azuloscuroP);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-
-
 }
 
 body div a:hover {
     border: 2px var(--blancoP) solid;
     background-color: var(--naranjaP);
     color: var(--blancoP);
-
-
 }
-
-
 
 
 #contenedorEncabezado {
@@ -79,7 +73,6 @@ body div a:hover {
     margin-bottom: 1em;
     color: var(--blancoP);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-
 }
 
 
@@ -87,7 +80,6 @@ body div a:hover {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-
     max-width: 600px;
     min-width: 300px;
     margin: auto;
@@ -109,18 +101,7 @@ body div a:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
     /* Aumenta la sombra */
     background-color: var(--grisP);
-
-
-
 }
-
-
-
-
-
-
-
-
 
 
 #form1 label {
@@ -128,7 +109,6 @@ body div a:hover {
     margin-bottom: 5px;
     font-weight: bold;
     text-align: left;
-
 }
 
 
@@ -152,7 +132,6 @@ textarea:focus {
     outline: none;
     /*elimina el coloreado por default de los navegadores"*/
 }
-
 
 
 input[type="submit"]:hover,

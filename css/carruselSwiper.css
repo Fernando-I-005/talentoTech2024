@@ -14,31 +14,6 @@
     --azuloscuroP: #004e98ff;
 }
 
-/*agregado luego*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * {
     margin: 0;
@@ -51,8 +26,7 @@ body {
     background-color: rgb(212, 252, 196);
     font-family: Montserrat SemiBold;
     min-height: 50vh;
- 
-}
+ }
 
 
 #contenedorExterior {
@@ -104,7 +78,6 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .swiper-slide img {
@@ -124,7 +97,6 @@ li a {
     font-size: 20px;
     margin-bottom: 5px;
     color: Black;
-
 }
 
 
@@ -136,22 +108,11 @@ li a {
     font-size: 30px;
 }
 
-/*.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    /*background-color: rgba(0, 0, 0, 0.8);*/
-/*}*/
-
-
-
-
-
-
 
 /*----------------------------------------cardddd!!!!-------------------------------------------------------*/
 
 
 .contenedorCard1 {
-
     border: 3px var(--naranjaP) solid;
     border-radius: 10px;
     padding: 10px;
@@ -166,16 +127,11 @@ li a {
     height: 350px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Sombra */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-    
-
-}
+    }
 
 .contenedorCard1:hover {
-
 transform: translateY(-1px); /* Mueve la card hacia arriba al pasar el mouse */
 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mouse */
-
-
 }
 
 
@@ -253,7 +209,6 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
     align-items: end;
     display: flex;
     align-items: center;
-
 }
 
 .contenedorSelector1 {
@@ -287,54 +242,10 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mous
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------medias queries--------------*/
 
 @media(max-width:600px) {
-
-
-
     .swiper {
-        padding: 0 70px;
+    padding: 0 70px;
     }
-
- /*   .swiper-slide img {
-        
-    }
-*/
-
-
 }
-
-
-
-
-/* tutorial ------- https://www.youtube.com/watch?v=SxklmLH6TE8  librer�a Swiper desde un CDN swiper@9 ---- */

@@ -14,12 +14,6 @@
   --azuloscuroP: #004e98ff;
 }
 
-/*agregado luego*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 /**--------------------------------------*/
 
@@ -35,13 +29,9 @@ main {
   justify-content: center;
   text-align: center;
   background-image: url("../recursos/imagenFondo1Construccion3840px72ppp.jpg");
-  /* Ruta de la imagen */
-  background-size: cover;
-  /* Ajusta la imagen para que cubra todo el fondo */
+  background-size: cover;/* Ajusta la imagen para que cubra todo el fondo */
   background-position: center;
-  /* Centra la imagen */
-  background-repeat: no-repeat;
-  /* Evita que la imagen se repita */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
   min-height: 100vh;
   align-items: center;
   gap: 1em;
@@ -55,9 +45,6 @@ main {
     grid-area: bVolver;
     margin-top:1em;
 }
-
-
-
 
 #botonVolver {
     display: inline;
@@ -98,18 +85,12 @@ main {
 }
 
 
-
-
 /*-------------------cartaBancaria----------------------*/
-
-
-
 
 .cartaBancaria {
   border: 2px green solid;
   border-radius: 20px;
   background-color: var(--azuloscuroP);
-
   max-width: 20em;
   max-height: 30em;
   padding: 0.5em;
@@ -117,20 +98,13 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px white solid;
-  
-  
-  
-
-
 }
 
 
 .cartaBancaria:hover {
-transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+transform: scale(1.05); /* Aumenta el tamaï¿½o de la tarjeta */
 box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
 border: 4px var(--azulclaroP) solid;
-
-
 }
 
 
@@ -144,42 +118,21 @@ border: 4px var(--azulclaroP) solid;
 }
 
 
-
-/*-------------------------------------*/
-.contenedorLogoBanco {
-  /*border: 2px blue solid;*/
-  /*filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, 1)); /* Sombra blanca  nono*/
-  
-}
-
-
 .imagenLogoBanco {
  width: 50%;
-
-
 }
 
 
 /*----------------------------------*/
-.contenedorTextoPromo {
-  /*border: 2px rgb(24, 218, 208) solid;*/
-  
-}
-
 .imagenTextoPromo {
  width: 60%;
 }
-
-
-
 
 /*-------------------------contenedor inferior---------------------------*/
 
 .contenedorInferior {
   /*border: 2px yellow solid;*/
   text-align: left;
-  
-  
   margin: 0.5em 0;
   padding:0.5em;
 }
@@ -190,13 +143,10 @@ border: 4px var(--azulclaroP) solid;
 /*border: 2px pink solid;*/
 margin: 0 0 0.5em 0;
 font-size:0.9em;
-
-
 }
 
 .textoDetalle {
  /*border: 2px orange solid;*/
-    
   height: 5em;
   margin: 0 0 0.3em 0;
   /*display: flex;
@@ -204,7 +154,6 @@ font-size:0.9em;
   justify-content: center;*/
   overflow: hidden;
   font-size:0.8em;
-
 }
 
 
@@ -214,8 +163,6 @@ text-decoration: none;
 cursor: pointer;
 color:inherit;
 font-size:0.6em;
-
-
 }
 
 /********************************/
@@ -244,7 +191,7 @@ font-size:0.6em;
   grid-area: tarjetaBanco6;
 }
 
-/*-----------------------------mediasqueies------------------*/
+/*-------------------------------------------mediasqueies 1000px--------------------------------------*/
 
 @media (max-width: 1000px) {
   main {
@@ -258,7 +205,7 @@ font-size:0.6em;
     }  
 }
 
-/* Media Query para pantallas con un ancho máximo de 500px */
+/*-------------------------------------------mediasqueies 500px--------------------------------------*/
 @media (max-width: 500px) {
   main 
   {
@@ -276,8 +223,3 @@ font-size:0.6em;
     justify-items: center;
     }  
 }
-
-
-/*En este caso, se están utilizando áreas de grid verticales, pero no se especifica cómo deben alinearse esos elementos en el espacio disponible de la pantalla. A pesar de usar justify-content: center, esto solo afecta a los elementos en el eje horizontal, mientras que los elementos en un layout vertical se alinean según el espacio disponible, lo que podría causar que las tarjetas se desalineen o se distribuyan mal.
-
-2. Solución: Usar align-items y justify-items*/
