@@ -57,7 +57,7 @@ filter: drop-shadow(0px 0px 5px white);
  border: 6px var(--naranjaP) solid;
  background-color: var(--naranjaP);
  color: var(--blancoP);
- font-size:2.7em;
+ font-size:1.5em;
  font-weight:800;
  padding:0 0.3em;
  margin:0;
@@ -73,7 +73,7 @@ filter: drop-shadow(0px 0px 5px white);
 
 
 #constructorIMG{
-width:16em;
+width:12em;
 margin:0;
 filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
@@ -82,7 +82,7 @@ filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 #contenedorGrafico h3{
  /*border: 3px orange solid;*/
  font-family: Caveat;
- font-size:2.5em;
+ font-size:2em;
  color: var(--blancoP);
  margin:0;
  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));     

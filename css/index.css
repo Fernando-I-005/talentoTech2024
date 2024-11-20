@@ -159,7 +159,7 @@ nav {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     /* Aumenta la sombra al pasar el mouse */
     background-color: var(--azuloscuroP);
-    font-size: 0.9em;
+    font-size: 0.8em;
 
 }
 
@@ -723,6 +723,11 @@ footer div {
     #imagencarrusel6de6 {
         display: none;
     }
+
+    .botonNav {
+        font-size: 0.7em;
+    }
+
 
     #imagencarruselPrincipal {
         display: block;
