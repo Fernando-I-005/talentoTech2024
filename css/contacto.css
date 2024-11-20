@@ -21,7 +21,6 @@ body {
     background-color: var(--naranjaP);
     color: var(--naranjaP);
     /*border: 1px white solid;*/
-    font-display: flex;
     justify-content: center;
 }
 
