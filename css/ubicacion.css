@@ -22,6 +22,7 @@ main {
   /*border: 1px yellow solid;*/
   margin: auto;
   min-width: 300px;
+  text-align: center;
 }
 
 
@@ -83,9 +84,6 @@ main {
   justify-content: center;
 }
 
-/*justify-items: center; /* Alinea los elementos horizontalmente AGREGADO, LUEGO BORRAR*/
-/* align-items: center; /* Alinea los elementos verticalmente */
-/*justify-content: center; /* Asegura que el contenido se centra en el eje horizontal */
 
 
 .contenedorPrincipal:hover {
@@ -226,6 +224,12 @@ hr {
 /***************************MEDIAQUERIES 600PX******************************/
 
 @media (max-width: 600px) {
+main{
+  text-align: center;
+  margin: auto;
+}
+
+
 
   .contenedorImagen {
     /*border: 3px violet solid;*/

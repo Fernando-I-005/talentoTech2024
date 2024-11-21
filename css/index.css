@@ -158,14 +158,14 @@ nav {
     /* Transición suave */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     /* Aumenta la sombra al pasar el mouse */
-    background-color: var(--azuloscuroP);
-    font-size: 0.8em;
+    background-color: var(--azulclaroP);
+    font-size: 0.9em;
 
 }
 
 .botonNav:hover {
     background-color: var(--naranjaP);
-    border: 2px var(--azuloscuroP) solid;
+    border: 2px var(--azulclaroP) solid;
     color: var(--blancoP);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
     /* Aumenta la sombra al pasar el mouse */
@@ -724,6 +724,12 @@ footer div {
         display: none;
     }
 
+
+main{
+    justify-content: center;
+    align-items: center;
+}
+    
     .botonNav {
         font-size: 0.7em;
     }
@@ -750,6 +756,10 @@ footer div {
         display: inline-block;
         border: 3px red solid;
         width: 250px;
+    }
+
+    .publicidad{
+width: 100%;
     }
 
 }
