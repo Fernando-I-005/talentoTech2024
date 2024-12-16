@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 90000.00,
-    "imagen": "../recursos/productos/pintureria/pintura1600x600.png",
+    "imagen": "../recursos/pintureria/pintura1-600x600.png",
     "marca": "3M",
     "disponibilidad": true,
     "descuento": 0
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 55400.00,
-    "imagen": "../recursos/productos/pintureria/pintura2-600x600.png",
+    "imagen": "../recursos/pintureria/pintura2-600x600.png",
     "marca": "Megaflex",
     "disponibilidad": true,
     "descuento": 0
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 8660.50,
-    "imagen": "../recursos/productos/pintureria/pintura3-600x600.png",
+    "imagen": "../recursos/pintureria/pintura3-600x600.png",
     "marca": "Rasta",
     "disponibilidad": true,
     "descuento": 0
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 4250.00,
-    "imagen": "../recursos/productos/pintureria/pintura4-600x600.png",
+    "imagen": "../recursos/pintureria/pintura4-600x600.png",
     "marca": "7cf",
     "disponibilidad": true,
     "descuento": 0
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 4000.00,
-    "imagen": "../recursos/productos/pintureria/pintura5-600x600.png",
+    "imagen": "../recursos/pintureria/pintura5-600x600.png",
     "marca": "Colorin",
     "disponibilidad": true,
     "descuento": 0
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio":6350.99,
-    "imagen": "../recursos/productos/pintureria/pintura6-600x600.png",
+    "imagen": "../recursos/pintureria/pintura6-600x600.png",
     "marca": "Stretch",
     "disponibilidad": true,
     "descuento": 0
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 12500.00,
-    "imagen": "../recursos/productos/pintureria/pintura7-600x600.png",
+    "imagen": "../recursos/pintureria/pintura7-600x600.png",
     "marca": "Galgo",
     "disponibilidad": true,
     "descuento": 0
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 19900.90,
-    "imagen": "../recursos/productos/pintureria/pintura8-600x600.png",
+    "imagen": "../recursos/pintureria/pintura8-600x600.png",
     "marca": "Galgo",
     "disponibilidad": true,
     "descuento": 0
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 34500.00,
-    "imagen": "../recursos/productos/pintureria/pintura9-600x600.png",
+    "imagen": "../recursos/pintureria/pintura9-600x600.png",
     "marca": "Shermin Williams",
     "disponibilidad": true,
     "descuento": 0
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio":8500.00,
-    "imagen": "../recursos/productos/pintureria/pintura10-600x600.png",
+    "imagen": "../recursos/pintureria/pintura10-600x600.png",
     "marca": "Gulberg",
     "disponibilidad": true,
     "descuento": 0
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 9350.99,
-    "imagen": "../recursos/productos/pintureria/pintura11-600x600.png",
+    "imagen": "../recursos/pintureria/pintura11-600x600.png",
     "marca": "Kson",
     "disponibilidad": true,
     "descuento": 0
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 54500.00,
-    "imagen": "../recursos/productos/pintureria/pintura12-600x600.png",
+    "imagen": "../recursos/pintureria/pintura12-600x600.png",
     "marca": "Alba",
     "disponibilidad": true,
     "descuento": 0
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 92630.00,
-    "imagen": "../recursos/productos/pintureria/pintura13-600x600.png",
+    "imagen": "../recursos/pintureria/pintura13-600x600.png",
     "marca": "Liquitech",
     "disponibilidad": true,
     "descuento": 0
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 115000.00,
-    "imagen": "../recursos/productos/pintureria/pintura14-600x600.png",
+    "imagen": "../recursos/pintureria/pintura14-600x600.png",
     "marca": "Imperar",
     "disponibilidad": true,
     "descuento": 0
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 215000.00,
-    "imagen": "../recursos/productos/pintureria/pintura15-600x600.png",
+    "imagen": "../recursos/pintureria/pintura15-600x600.png",
     "marca": "Aquastop",
     "disponibilidad": true,
     "descuento": 0
@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 88600.00,
-    "imagen": "../recursos/productos/pintureria/pintura16-600x600.png",
+    "imagen": "../recursos/pintureria/pintura16-600x600.png",
     "marca": "Merclin",
     "disponibilidad": true,
     "descuento": 0
@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 35000.00,
-    "imagen": "../recursos/productos/pintureria/pintura17-600x600.png",
+    "imagen": "../recursos/pintureria/pintura17-600x600.png",
     "marca": "Vitreaux",
     "disponibilidad": true,
     "descuento": 0
@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 32666.00,
-    "imagen": "../recursos/productos/pintureria/pintura18-600x600.png",
+    "imagen": "../recursos/pintureria/pintura18-600x600.png",
     "marca": "Casablanca",
     "disponibilidad": true,
     "descuento": 0
@@ -282,12 +282,17 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 160800.00,
-    "imagen": "../recursos/productos/pintureria/pintura19-600x600.png",
+    "imagen": "../recursos/pintureria/pintura19-600x600.png",
     "marca": "Llana",
     "disponibilidad": true,
     "descuento": 0
   }
         
+
+
+/* ATENCION!! github tiene problemas con archivos con "indice muy profundo"---> ../recursos/productos/pintureria/pintura18-600x600.png",no muestra las imagenes, por eso se elimina un nivel-   Netlify no tiene esa problematica */
+
+
     ];
 
     function crearCards(productos) {

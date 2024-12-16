@@ -6,7 +6,7 @@
 
 ## **Marca**
 
-**Nombre de la Marca**: FerreCentro
+**Nombre de la Marca**: FerreCentro.
 La marca **FerreCentro** ha sido creada específicamente para este proyecto, reflejando una identidad que evoca confianza, calidad y cercanía al cliente. El nombre combina "ferretería" y "centro", sugiriendo una amplia gama de productos disponibles para todos los públicos.
 
 ---
@@ -56,7 +56,7 @@ Se aplicaron transiciones suaves en **CSS** para animar elementos al interactuar
 Las imágenes fueron optimizadas para asegurar tiempos de carga rápidos. Se trabajó con una resolución de 72 ppp para reducir el peso de los archivos, sin comprometer la calidad visual.
 
 ### **Deslizador de imagenes**
-Para realizar el deslizador se uso la libreria [swiper](https://swiperjs.com) basado en el [Tutorial de Youyube](https://www.youtube.com/watch?v=SxklmLH6TE8)
+Para realizar el deslizador se uso la libreria [swiper](https://swiperjs.com) basado en el [Tutorial de Youtube](https://www.youtube.com/watch?v=SxklmLH6TE8)
 
 
 ---
@@ -133,7 +133,7 @@ Este sitio está dirigido a:
 
 - **HTML**: Para la estructura básica del sitio.
 - **CSS**: Para estilos visuales y diseño responsivo.
-- **JavaScript**: Para interactividad y funcionalidad adicional (próximamente).
+- **JavaScript**: Para interactividad y funcionalidad adicional.
 
 
 ## Carga de Productos y Visualización Dinámica
@@ -166,7 +166,33 @@ Este proyecto maneja la visualización de sucursales y sus detalles en una pági
 
 Este proceso permite que los usuarios interactúen con la página de forma dinámica, visualizando la información de las sucursales y accediendo fácilmente a sus datos relevantes, como su dirección y mapa.
 
+## Pinturería: Visualización de Productos
 
+Esta sección muestra productos de la categoría "Pinturería" a través de tarjetas dinámicas. A continuación se describe su funcionamiento:
+
+### Funcionalidades:
+
+1. **Creación de Cards de Productos**:
+   - La función `crearCards(productos)` genera tarjetas para cada producto.
+   - Cada tarjeta incluye:
+     - **Imagen**: Representación visual del producto.
+     - **Descripción Corta**: Nombre del producto.
+     - **Precio**: Visualización del precio formateado.
+     - **Descripción Larga**: Botón para mostrar/ocultar detalles adicionales.
+
+2. **Selector de Cantidad y Acción**:
+   - Input numérico para seleccionar la cantidad deseada.
+   - Botón "AGREGAR" para añadir el producto al carrito o realizar otras acciones.
+
+3. **Manejo Dinámico**:
+   - Botón de "Ver detalles" para alternar la descripción larga.
+
+4. **Manejo de Errores**:
+   - Verificación del contenedor antes de crear las tarjetas.
+
+---
+
+Este proceso permite una interacción fluida con los productos de la categoría Pinturería, facilitando la visualización y gestión de detalles relevantes.
 
 
 
