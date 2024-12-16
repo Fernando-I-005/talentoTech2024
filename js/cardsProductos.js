@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 90000.00,
-    "imagen": "./recursos/pintureria/pintura1-600x600.png",
+    "imagen": "../recursos/pintureria/pintura1-600x600.png",
     "marca": "3M",
     "disponibilidad": true,
     "descuento": 0
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 55400.00,
-    "imagen": "./recursos/pintureria/pintura2-600x600.png",
+    "imagen": "../recursos/pintureria/pintura2-600x600.png",
     "marca": "Megaflex",
     "disponibilidad": true,
     "descuento": 0
