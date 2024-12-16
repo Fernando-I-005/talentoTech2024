@@ -281,6 +281,12 @@ align-items: end;
 @media (max-width: 950px) 
 {
 
+
+  #contenedorProductos{
+    
+    width:90vw;
+  }
+
 #contenedorCentro h1{
   font-size:2.5em;
 

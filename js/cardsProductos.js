@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "subcategoria": "standard",
     "mostrar": true,
     "precio": 90000.00,
-    "imagen": "./recursos/productos/pintureria/pintura1-600x600.png",
+    "imagen": "../recursos/productos/pintureria/pintura1600x600.png",
     "marca": "3M",
     "disponibilidad": true,
     "descuento": 0
