@@ -13,227 +13,392 @@ body {
   text-align: center;
   background-color: var(--azuloscuroP);
   /*border: 2px red solid;*/
-  margin: 0;
+  margin: auto;
   padding: 0;
+  min-width:300px;
+  display:flex;
+  justify-content:center;
+}
+
+body h1{
+  font-size: 1.75em;
+  line-height: 1.2;
+
 }
 
 
-main {
-  /*border: 1px yellow solid;*/
-  margin: auto;
-  min-width: 300px;
-  text-align: center;
+/*---------------------seccion ancabezado pagina--------------------*/
+
+
+#contenedorTitulo{
+display:flex;
+border:2px white solid;
+border-radius:15px;
+width:70vw;
+font-weight:900;
+background-color: rgba(255, 255, 255, 0.1);
+justify-content: space-around; /* Distribuye los elementos a los extremos */
+align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
+margin:auto;
+margin-bottom:1.5em;
+margin-top:3em;
 }
 
 
 
-#textoSuperior {
-  /*border: 2px white solid;*/
-  margin: auto;
-  border-radius: 5px;
-  flex: 0 0 100%;
-  /* Esto hace que el elemento ocupe todo el ancho */
-  width: 10%;
-  /* Asegura que ocupa todo el ancho del contenedor */
-  min-width: 90px;
-  /*border: 2px white solid;*/
-  margin: 1.5em auto;
-  border-radius: 5px;
+
+#contenedorIzquierdo{
+margin:0.5em 3em;
+/*border:2px wheat solid;*/
+align-items: center;
+}
+
+#contenedorCentro{
+margin:auto;
+/*border:2px red solid;*/
+display: flex;
+align-items: center;
+}
+
+#contenedorCentro h1 {
+display: inline;
+margin: 0 0.6em;
+/*border: 3px white solid;*/
+font-size: 3em;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
-#botonVolverUbicacion {
-  display: inline;
-  /*border: 2px var(--azuloscuroP) solid;*/
-  text-decoration: none;
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  background-color: var(--blancoP);
+
+
+.textoParrafo{
+display:flex;
+width:70vw;
+font-weight:600;
+justify-content: space-around; /* Distribuye los elementos a los extremos */
+align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
+margin:auto;
+margin-bottom:0em;
+font-size:1.1em;
+padding:1em 2em;
+    
+}
+    
+
+#logoFerrecentro{
+width:4em;
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+}
+
+#logoIconoTitulo{
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+
+}
+
+
+#dondeComprar{
+font-size:1.4em;
+font-weight:700;
+
+
+
+}
+/*----------------contenedor 3 iconos de sucursales------------------*/
+
+.contenedorSucursales {
+  /*border:Solid 2px rgb(102, 6, 6);*/
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+
+.cardSucursales {
+  border: Solid 2px var(--azulclaroP);
+  border-radius: 0.6em;
+  display: inline-block;
+  padding: 0.5em;
+  min-width: 15em;
+  margin: 1em 3em;
+}
+
+.cardSucursales:hover {
+  border-color: var(--blancoP);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.cardSucursales h3 {
+  font-size: 1, 9em;
+  padding: 0;
+  margin-top: 1em;
+  line-height: 1.2;
+}
+
+.cardSucursales h2 {
+  font-size: 1.6em;
+  padding: 0;
+  margin: 0;
   font-weight: 700;
-  color: var(--azuloscuroP);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
 
+
+.botonDetalle {
+  background-color: Transparent;
+  color: white;
+  border: none;
+  font-size: 0.9em;
+  padding: 0;
+  margin-top: 1.4em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.botonDetalle:hover {
+  color: var(--naranjaP)
+}
+
+
+
+
+/*---------------contenedor card sucursales desde html---------------------*/
+
+/*.contenedorPrincipal {
+  
+ 
+
+  /*border: 3px yellow solid;*/
+ /* 
+}*/
+
+.contenedorImagenes {
+  /*background-color: green;*/
+  padding: 0em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 
 }
 
 
-#botonVolverUbicacion:hover {
+/*---------------contenedor card sucursales desde .js---------------------*/
+/*agregadp*/
+.card {
+  
+  /*width: 50%;
+  height: 50%;
+  max-width: 500px;
+  max-height: 500px;*/
+  /*border: 3px rgb(186, 30, 218) solid;*/
+  padding: 1em;
+  
+  
+
+ 
+}
+
+
+.contenedorDuplicado{
+border: 2px red solid;
+padding:1em;
+border-color: var(--blancoP);
+border-radius: 15px;
+transition: background-color 0.3s ease;
+justify-content: center;
+}
+
+
+.contenedorDuplicado:hover {
   border: 2px var(--blancoP) solid;
   background-color: var(--naranjaP);
-  color: var(--blancoP);
-
-
-}
-
-
-
-
-/*****************************************************/
-
-.contenedorPrincipal {
-  border: 3px var(--naranjaP) solid;
-  border-radius: 15px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  width: auto;
-  height: auto;
-  margin: 2em 0em;
-  align-items: center;
-  background-color: var(--azulclaroP);
-  transition: background-color 0.3s ease;
-  justify-content: center;
-}
-
-
-
-.contenedorPrincipal:hover {
-  background-color: var(--naranjaP);
-  border: 4px var(--blancoP) solid;
 }
 
 
 
 
 
-.contenedorDuplicado {
-  /*border: 4px green solid;*/
-
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  flex-direction: column;
-  /* Alinea el contenido verticalmente */
-  align-items: center;
-  /* Centra el contenido */
-
-  /* Asegura que ocupa todo el ancho del contenedor */
-  min-width: 450px;
-  max-width: 700px;
-  height: 75vh;
-  padding: 1em;
-}
-
-
-.contenedorDuplicado h3 {
-  /*border: 1px red solid;*/
-  font-size: 0.8em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-}
 
 .contenedorDuplicado h2 {
   /*border: 1px rgb(29, 203, 209) solid;*/
-  padding: 0.5em;
-  margin-bottom: 0.5em;
+  padding: 1em;
+  margin:1em;
   font-size: 1.2em;
   font-weight: 700;
   color: var(--naranjaP);
   background-color: var(--blancoP);
   border-radius: 8px;
-  width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ }
+
+
+
+.contenedorDuplicado h3 {
+  /*border: 1px red solid;*/
+  font-size: 0.9em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
 }
+
 
 .contenedorDuplicado h3 a {
   font-style: italic;
   transition: font-size 0.3s ease;
-  /* Suaviza el cambio de tamaño */
 }
 
-.contenedorDuplicado h3 a:hover {
-  font-size: 102%;
-  /* Aumenta el tamaño al pasar el mouse */
-  color: white;
-}
+.contenedorDuplicado h3 a:hover
+/*{
+  /*font-size: 102%;
+   /*Aumenta el tamaño al pasar el mouse */
+/*color: white;
+}*/
 
 
 
 .contenedorImagen {
-  /*border: 3px violet solid;*/
-  width: 60%;
-  /*height:75%;*/
-  display: flex;
-  margin-top: 1em;
+ align-items: center;
+  margin: 0em;
+  display: inline;
 }
+
 
 
 .imagenLocal {
   border-radius: 9px;
-  border: 3px var(--naranjaP) solid;
-  width: 100%;
-  /* Ajusta al tamaño del contenedor */
-  height: auto;
-  /* Mantiene la proporción */
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0.5em auto;
+  border: 3px var(--azuloscuroP) solid;
+  max-width: 350px;
+  margin: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: inline;
+  margin:2em;
+
 }
 
 
+.mapa{
+  width: 25vw;
+  height: 350px;
+  margin:2em;
+  border-radius: 9px;
+  border: 3px var(--azuloscuroP) solid;
+  min-width: 350px;
+
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------MEDIAQUERIES 900px-----------------------------------------*/
+
+@media (max-width: 900px) 
+{
+/*.contenedorSucursales {
+justify-content: center;
+align-content: center;
+align-items: center;
+}
 
 .mapa {
   border-radius: 9px;
-  border: 3px var(--naranjaP) solid;
-  width: 100%;
-  height: 100%;
-  max-width: 500px;
-  max-height: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
+  border: 3px var(--azuloscuroP) solid;
 
-hr {
-  border: none;
-  /* Elimina el borde por defecto */
-  height: 1px;
-  /* Altura de la línea */
-  background-color: var(--blancoP);
-  /* Color de la línea */
-  margin: auto;
-  /* Espaciado alrededor de la línea */
-  width: 4em;
-}
-
-
-.contenedorSeparador {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.logoSeparador {
-  display: block;
-  width: 3em;
-  margin: 0em 0.5em;
-  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
-}
-
-hr {
-  border: none;
-  height: 2px;
-  background-color: var(--blancoP);
-  margin: 0;
-  width: 12em;
-  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
-}
-
-
-
-/***************************MEDIAQUERIES 600PX******************************/
-
-@media (max-width: 600px) {
-main{
-  text-align: center;
-  margin: auto;
-}
-
-
-
-  .contenedorImagen {
-    /*border: 3px violet solid;*/
-    width: 70%;
   }
 
+  .imagenLocal {
+    margin: 1em 0 1em 0;
+  }
+
+  .mapa {
+    margin: 1em 0 1em 0;
+  }
+*/
+
+.imagenLocal {
+
+  max-width: 80%;
+  
+  margin:1em;
+
 }
+
+
+.mapa{
+  width: 70vw;
+  height: 350px;
+  margin:1em;
+  border-radius: 9px;
+  border: 3px var(--azuloscuroP) solid;
+  
+
+}
+
+
+
+/*----------*/
+
+
+
+#contenedorCentro h1{
+  font-size:2.5em;
+
+}  
+ 
+#logoIconoTitulo{
+font-size:2.5em; /* maneja el tamaño del icono de fontawesome*/
+}
+
+#logoFerrecentro{
+min-width:3em;     
+}
+
+.textoParrafo{
+font-size:1em;
+}
+
+}
+
+/*----------------------------MEDIAQUERIES 650px-----------------------------------------*/
+
+@media (max-width: 650px) 
+{
+
+
+
+
+#contenedorCentro h1{
+  font-size:1.5em;
+  
+}  
+ 
+#logoIconoTitulo{
+font-size:1.5em; /* maneja el tamaño del icono de fontawesome*/
+}
+
+/*----------*/
+#contenedorIzquierdo{
+margin:0.2em;
+}
+
+#logoFerrecentro{
+width:2em;  
+}
+/*--------------*/
+.textoParrafo{
+font-size:1em;
+}
+
+}
+
+
+
+

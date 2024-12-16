@@ -20,17 +20,14 @@
 /**--------------------------------------*/
 
 body {
-    background-image: url(../recursos/imagenFondo1Construccion3840px72ppp.jpg);
-    background-size: cover; /* Hace que la imagen ocupe todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen */
-    min-height: 100vh; /* Asegura que el fondo cubra todo el alto del viewport */
+    background-color: var(--azuloscuroP);
     text-align: center;
+    margin-bottom:2em;
 }
 
 
 .container{
-    background-color: var(--naranjaP);
+    background-color: var(--azuloscuroP);
     padding: 3em;
     color: var(--blancoP);
     text-align: center;
@@ -38,66 +35,77 @@ body {
 
 
 /*********************************---*/
-#contenedorEncabezado {
-    /*border: 3px rgb(221, 13, 134) solid;*/
-    text-align: center;
-    grid-area: bVolver;
-    margin-top:0em;
-    margin-bottom: 1em;
+
+/*----------------*/
+#contenedorTitulo{
+display:flex;
+border:2px white solid;
+border-radius:15px;
+width:70vw;
+font-weight:900;
+background-color: rgba(255, 255, 255, 0.1);
+justify-content: space-around; /* Distribuye los elementos a los extremos */
+align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
+margin:auto;
+margin-bottom:1.5em;
+margin-top:1.5em;
 }
 
-
-
-
-#botonVolver {
-    display: inline;
-    /*border: 2px var(--azuloscuroP) solid;*/
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    background-color: var(--blancoP);
-    font-weight: 700;
-    color: var(--azuloscuroP);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+#contenedorIzquierdo{
+margin:0.5em 3em;
+/*border:2px wheat solid;*/
+align-items: center;
 }
 
-#botonVolver:hover {
-    border: 2px var(--blancoP) solid;
-    background-color: var(--naranjaP);
-    color: var(--blancoP);
+#contenedorCentro{
+margin:auto;
+/*border:2px red solid;*/
+display: flex;
+align-items: center;
 }
 
-
-.titulo{
-    /*border: 6px var(--blancoP) solid;*/
-    background-color: var(--azuloscuroP);
-    color: var(--blancoP);
-    font-size:1.5em;
-    font-weight:800;
-    padding:0.5em 1.5em ;
-    margin:1.5em 1em;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
-    border-radius:5px;
-    display: inline-block;
+#contenedorCentro h1 {
+display: inline;
+margin: 0 0.6em;
+/*border: 3px white solid;*/
+font-size: 3em;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-
-#introduccion{
-font-size: 1.1em;
-color: var(--blancoP);
-font-weight: 600;
-font-style: italic;
-margin: 2em 0em;
-padding:1em;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-background-color: rgba(0, 0, 0, 0.3); /* Negro con 50% de opacidad */
-border-radius:0.5em;
+#logoFerrecentro{
+width:4em;
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
 }
 
+#logoIconoTitulo{
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+
+}
+
+.textoParrafo{
+display:flex;
+width:70vw;
+font-weight:600;
+justify-content: space-around; /* Distribuye los elementos a los extremos */
+align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
+margin:auto;
+margin-bottom:1.5em;
+font-size:1.1em;
+padding:1em 2em;
+  
+}
+
+/*------------------*/
+.container{
+padding:0;
+
+}
 
 /*----------------------------acordion-------------------------------------*/
 .accordion{
-    background-color:  var(--naranjaP);   
+    background-color:  var(--azuloscuroP);
+    width:70vw;
+    margin:auto;  
 }
 
 .accordion-header{
@@ -105,9 +113,10 @@ background-color: transparent;
 }
 
 .accordion-body{
-    background-color:var(--blancoP);
+    background-color:var(--azuloscuroP);
     margin-bottom:2em;
     border-radius:0.4em;
+    color:var(--blancoP);
 }
 
 /*veeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer aca **/
@@ -116,12 +125,14 @@ background-color:Red;
 }
 
 .accordion-button{
-    background-color:var(--azuloscuroP);
+    background-color:var(--naranjaP);
     color: var(--blancoP);
     margin-bottom: 0.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    font-size:1em;
-    border-radius:0.4em;
+    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);*/
+    font-size:1.2em;
+    border-radius:0.6em;
+    border: 2px solid var(--blancoP);
+    font-weight:800;
 }
 
 .accordion-collapse{
@@ -130,17 +141,79 @@ background-color: transparent;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color:var(--azuloscuroP); /* Cambia a rosa el fondo del botón abierto */
+    background-color:var(--naranjaP); /* Cambia a rosa el fondo del botón abierto */
     color: var(--blancoP);
      /* Puedes cambiar el color del texto si es necesario */
      box-shadow:2px 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 .accordion-item{
-    background-color: var(--naranjaP);
+    background-color: var(--azuloscuro);
     /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);*/
     color:black;
     font-weight: 600;
     border:none;
     text-align:left
     }
+    
+    
+    
+    
+    /*----------------------------MEDIAQUERIES 900px-----------------------------------------*/
+
+@media (max-width: 950px) 
+{
+
+#contenedorCentro h1{
+  font-size:2.5em;
+
+}  
+ 
+#logoIconoTitulo{
+font-size:2.5em; /* maneja el tamaño del icono de fontawesome*/
+}
+
+#logoFerrecentro{
+min-width:3em;     
+}
+
+.textoParrafo{
+font-size:1em;
+}
+
+}
+
+
+/*----------------------------MEDIAQUERIES 650px-----------------------------------------*/
+
+@media (max-width: 650px) 
+{
+
+
+
+
+#contenedorCentro h1{
+  font-size:1.5em;
+  
+}  
+ 
+#logoIconoTitulo{
+font-size:1.5em; /* maneja el tamaño del icono de fontawesome*/
+}
+
+/*----------*/
+#contenedorIzquierdo{
+margin:0.2em;
+}
+
+#logoFerrecentro{
+width:2em;  
+}
+/*--------------*/
+.textoParrafo{
+font-size:1em;
+}
+
+}
+
+

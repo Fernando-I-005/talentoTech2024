@@ -18,36 +18,92 @@
 /*---------------------------body-------------------*/
 
 body {
-    background-color: var(--naranjaP);
-    color: var(--naranjaP);
+    background-color: var(--azuloscuroP);
+    color: var(--blancoP);
     /*border: 1px white solid;*/
     justify-content: center;
+    padding:2em;
 }
 
-body div a {
-    display: inline;
-    /*border: 2px var(--azuloscuroP) solid;*/
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    background-color: var(--blancoP);
-    font-weight: 700;
-    color: var(--azuloscuroP);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+/*----------------*/
+#contenedorTitulo{
+display:flex;
+border:2px white solid;
+border-radius:15px;
+width:70vw;
+font-weight:900;
+background-color: rgba(255, 255, 255, 0.1);
+justify-content: space-around; /* Distribuye los elementos a los extremos */
+align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
+margin:auto;
+margin-bottom:1.5em;
+margin-top:1.5em;
 }
 
-body div a:hover {
-    border: 2px var(--blancoP) solid;
-    background-color: var(--naranjaP);
-    color: var(--blancoP);
+#contenedorIzquierdo{
+margin:0.5em 3em;
+/*border:2px wheat solid;*/
+align-items: center;
+}
+
+#contenedorCentro{
+margin:auto;
+/*border:2px red solid;*/
+display: flex;
+align-items: center;
+}
+
+#contenedorCentro h1 {
+display: inline;
+margin: 0 0.6em;
+/*border: 3px white solid;*/
+font-size: 3em;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#logoFerrecentro{
+width:4em;
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+}
+
+#logoIconoTitulo{
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+
+}
+
+.textoParrafo{
+display:flex;
+width:70vw;
+font-weight:600;
+justify-content: space-around; /* Distribuye los elementos a los extremos */
+align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
+margin:auto;
+margin-bottom:1.5em;
+font-size:1.1em;
+padding:1em 2em;
+  
 }
 
 
-#contenedorEncabezado {
-    /*border: 3px rgb(221, 13, 134) solid;*/
-    text-align: center;
-    margin: 3em;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------------------form 1 -----------------------*/
@@ -61,7 +117,7 @@ body div a:hover {
 #contenedorForm1 h3 {
     border: 1px rgb(223, 98, 26) solid;
     text-align: center;
-    background-color: var(--azuloscuroP);
+    background-color: var(--naranjaP);
     max-width: 600px;
     min-width: 300px;
     font-size: 1.2em;
@@ -69,7 +125,7 @@ body div a:hover {
     padding: 10px;
     border-radius: 12px;
     margin: auto;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     color: var(--blancoP);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
@@ -77,7 +133,7 @@ body div a:hover {
 
 #form1 {
     background: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     max-width: 600px;
     min-width: 300px;
@@ -150,4 +206,61 @@ input[type="submit"] {
     border: none;
     font-weight: 700;
     transition: transform 0.3s ease;
+}
+
+ /*----------------------------MEDIAQUERIES 900px-----------------------------------------*/
+
+@media (max-width: 950px) 
+{
+
+#contenedorCentro h1{
+  font-size:2.5em;
+
+}  
+ 
+#logoIconoTitulo{
+font-size:2.5em; /* maneja el tamaño del icono de fontawesome*/
+}
+
+#logoFerrecentro{
+min-width:3em;     
+}
+
+.textoParrafo{
+font-size:1em;
+}
+
+}
+
+
+/*----------------------------MEDIAQUERIES 650px-----------------------------------------*/
+
+@media (max-width: 650px) 
+{
+
+
+
+
+#contenedorCentro h1{
+  font-size:1.5em;
+  
+}  
+ 
+#logoIconoTitulo{
+font-size:1.5em; /* maneja el tamaño del icono de fontawesome*/
+}
+
+/*----------*/
+#contenedorIzquierdo{
+margin:0.2em;
+}
+
+#logoFerrecentro{
+width:2em;  
+}
+/*--------------*/
+.textoParrafo{
+font-size:1em;
+}
+
 }

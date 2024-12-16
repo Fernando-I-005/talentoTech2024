@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucursales</title>
-    <link rel="stylesheet" href="../css/resetNormalize.css">
+    <link rel="stylesheet" href="../css/resetNormalize.css"> <!-- vinculo con css que resetea y normaliza propiedades // importante!! va antes del ccs -->
     <link rel="stylesheet" href="../css/ubicacion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +14,117 @@
     <!-- animate.css -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f0e4497dc2.js" crossorigin="anonymous"></script> <!-- link fontawesome -->
 </head>
 
-<body>
-    <main>
-        <div id="textoSuperior">
-            <a id="botonVolverUbicacion" href="../index.html"> VOLVER</a>
-        </div>
 
-        <div class="contenedorPrincipal">
-            <div class="contenedorDuplicado">
+
+
+
+<body>
+  <main>
+    
+     <div id="contenedorTitulo">
+   
+   
+   <div id="contenedorIzquierdo">
+    <a href="../index.html"> <img id="logoFerrecentro" src="../recursos/LogoFerrecentroVolverPNGGris 300px.png" alt="logo Ferrecentro Gris"> </a>     
+    </div>
+    
+    <div id="contenedorCentro">
+    <i class="fa-solid fa-location-dot fa-4x" id="logoIconoTitulo"></i>
+    <h1>Sucursales</h1>
+    
+    </div>
+    
+    
+    
+    </div>
+
+<div class="textoParrafo"> 
+  <p>En <strong>Ferrecentro</strong> contamos con varias sucursales para que puedas visitarnos con facilidad. Encuentra la más cercana a ti y descubre nuestra amplia gama de productos. Estamos listos para ayudarte y ofrecerte la mejor atención en todo momento.</p>
+</div>
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ <div>
+    <h2 id="dondeComprar">¿Dónde Prefieres Comprar?</h2>
+ </div>
+
+
+
+
+    <div class="contenedorSucursales">
+      <!-- Card de Casa Central -->
+      <span class="cardSucursales" data-id="1">
+        <a title="Visita nuestra pagina de Instagram"><i class="fa-solid fa-map-location-dot fa-5x"></i></a>
+        <h3>Casa Central</h3>
+        <h2>Buenos Aires</h2>
+       <button class="botonDetalle" id="botonCasaCentral" onclick="mostrarSucursal(1)">Ver detalles</button>
+        
+      </span>
+
+      <!-- Card de Sucursal Cordoba -->
+      <span class="cardSucursales" data-id="2">
+        <a title="Visita nuestra pagina de Instagram"><i class="fa-solid fa-map-location-dot fa-5x"></i></a>
+        <h3>Sucursal</h3>
+        <h2>Cordoba</h2>
+        <button class="botonDetalle" id="botonSucursalCordoba" onclick="mostrarSucursal(2)">Ver detalles</button>
+      </span>
+
+      <!-- Card de Sucursal Chubut -->
+      <span class="cardSucursales" data-id="3">
+        <a title="Visita nuestra pagina de Instagram"><i class="fa-solid fa-map-location-dot fa-5x"></i></a>
+        <h3>Sucursal</h3>
+        <h2>Chubut</h2>
+        <button class="botonDetalle" id="botonSucursalChubut" onclick="mostrarSucursal(3)">Ver detalles</button>
+      </span>
+    </div>
+
+    <div class="contenedorPrincipal" id="contenedorDisplaySucursal">
+      <!-- Las cards generadas seran insertadas aca -->
+    </div>
+
+</main>
+
+
+
+
+ <script src="../js/sucursales.js"></script>
+ 
+</body>
+
+</html>
+
+
+      
+      
+<!-- para luego borrar      
+ <div>
+ mapa con iframe
+ <iframe class="mapa" src="${sucursal.mapa}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
+  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5664.324080380321!2d-63.24850489663693!3d-32.4184281777583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc42e3d2815e89%3A0x44bf8af72dc1d34c!2zRW50cmUgUsOtb3MgNTUwLCBYNTkwMSBWaWxsYSBNYXLDrWEsIEPDs3Jkb2Jh!5e0!3m2!1ses!2sar!4v1730218257810!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
+ </div>     -->
+      
+      
+      
+      
+      
+      
+        
+      
+      <!--    <div class="contenedorDuplicado">
                 <h2>Casa Central</h2>
                 <h3>Carpintero 500 - Villa Ventana - Bs.As.</h3>
                 <h3>Lunes a viernes de 7:00 a 17:00 hs - Sabados de 7:00 a 12:00 hs</h3>
@@ -42,10 +143,16 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.4487374745777!2d-61.93317022362112!3d-38.08321747190924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ecf2d6ef3ae07b%3A0x931088f85abd09c5!2sCarpintero%2C%20Villa%20Ventana%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1730218035703!5m2!1ses!2sar"
                     allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-        </div>
+            </section> -->
+        
+        
+        
+        
+        
+        
+        
 
-        <div class="contenedorSeparador">
+   <!--     <div class="contenedorSeparador">
             <hr>
             <img src="../recursos/LogoFerrecentroPNGgris.png"
                 class="logoSeparador  animate__animated animate__bounceIn" alt="imagen logo Ferrecentro">
@@ -108,11 +215,11 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </section>
-        </div>
+        </div> -->
 
 
-    </main>
+   
 
-</body>
 
-</html>
+
+

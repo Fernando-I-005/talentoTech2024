@@ -14,6 +14,80 @@
   --azuloscuroP: #004e98ff;
 }
 
+body {
+    background-color: var(--azuloscuroP);
+    text-align: center;
+    margin-bottom:2em;
+    color: var(--blancoP);
+    padding: 2em;
+}
+
+
+
+
+/*********************************---*/
+
+/*----------------*/
+#contenedorTitulo{
+display:flex;
+border:2px white solid;
+border-radius:15px;
+width:70vw;
+font-weight:900;
+background-color: rgba(255, 255, 255, 0.1);
+justify-content: space-around; /* Distribuye los elementos a los extremos */
+align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
+margin:auto;
+margin-bottom:1.5em;
+margin-top:1.5em;
+}
+
+#contenedorIzquierdo{
+margin:0.5em 3em;
+/*border:2px wheat solid;*/
+align-items: center;
+}
+
+#contenedorCentro{
+margin:auto;
+/*border:2px red solid;*/
+display: flex;
+align-items: center;
+}
+
+#contenedorCentro h1 {
+display: inline;
+margin: 0 0.6em;
+/*border: 3px white solid;*/
+font-size: 3em;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#logoFerrecentro{
+width:4em;
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+}
+
+#logoIconoTitulo{
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+
+}
+
+.textoParrafo{
+display:flex;
+width:70vw;
+font-weight:600;
+justify-content: space-around; /* Distribuye los elementos a los extremos */
+align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
+margin:auto;
+margin-bottom:1.5em;
+font-size:1.1em;
+padding:1em 2em;
+  
+}
+
+
+
 
 /**--------------------------------------*/
 
@@ -22,8 +96,6 @@ main {
   /*border: 3px pink solid; */
   display: grid;
   grid-template-areas:
-  "bVolver bVolver bVolver"
-    "titulo titulo titulo"
     "tarjetaBanco1 tarjetaBanco2 tarjetaBanco3"
     "tarjetaBanco4 tarjetaBanco5 tarjetaBanco6";
   justify-content: center;
@@ -35,55 +107,8 @@ main {
   min-height: 100vh;
   align-items: center;
   gap: 1em;
+  padding: 2em 0 2em 0;
 }
-
-
-/*********************************---*/
-#contenedorEncabezado {
-    /*border: 3px rgb(221, 13, 134) solid;*/
-    text-align: center;
-    grid-area: bVolver;
-    margin-top:1em;
-}
-
-#botonVolver {
-    display: inline;
-    /*border: 2px var(--azuloscuroP) solid;*/
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    background-color: var(--blancoP);
-    font-weight: 700;
-    color: var(--azuloscuroP);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-#botonVolver:hover {
-    border: 2px var(--blancoP) solid;
-    background-color: var(--naranjaP);
-    color: var(--blancoP);
-}
-
-/*----------------------------------------*/
-#contenedorTitulo {
-  /*border: 3px red solid;*/
-  grid-area: titulo;
-  margin:0em;
-  padding:0em;
-}
-
-#contenedorTitulo h2 {
-  border: 3px var(--azulclaroP) solid;
-  background-color: var(--azuloscuroP);
-  color: var(--blancoP);
-  font-size: 2em;
-  font-weight: 800;
-  padding: 0 0.3em;
-  margin: 0.3em;
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
-  border-radius: 5px;
-}
-
 
 /*-------------------cartaBancaria----------------------*/
 
@@ -196,8 +221,6 @@ font-size:0.6em;
 @media (max-width: 1000px) {
   main {
     grid-template-areas:
-    "bVolver bVolver"
-    "titulo titulo"
     "tarjetaBanco1 tarjetaBanco2"
     "tarjetaBanco3 tarjetaBanco4"
     "tarjetaBanco5 tarjetaBanco6";
@@ -210,8 +233,6 @@ font-size:0.6em;
   main 
   {
     grid-template-areas:
-    "bVolver"
-    "titulo"
     "tarjetaBanco1"
     "tarjetaBanco2" 
     "tarjetaBanco3"
@@ -223,3 +244,60 @@ font-size:0.6em;
     justify-items: center;
     }  
 }
+  /*----------------------------MEDIAQUERIES 900px-----------------------------------------*/
+
+@media (max-width: 950px) 
+{
+
+#contenedorCentro h1{
+  font-size:2.5em;
+
+}  
+ 
+#logoIconoTitulo{
+font-size:2.5em; /* maneja el tamaño del icono de fontawesome*/
+}
+
+#logoFerrecentro{
+min-width:3em;     
+}
+
+.textoParrafo{
+font-size:1em;
+}
+
+}
+
+
+/*----------------------------MEDIAQUERIES 650px-----------------------------------------*/
+
+@media (max-width: 650px) 
+{
+
+
+
+
+#contenedorCentro h1{
+  font-size:1.5em;
+  
+}  
+ 
+#logoIconoTitulo{
+font-size:1.5em; /* maneja el tamaño del icono de fontawesome*/
+}
+
+/*----------*/
+#contenedorIzquierdo{
+margin:0.2em;
+}
+
+#logoFerrecentro{
+width:2em;  
+}
+/*--------------*/
+.textoParrafo{
+font-size:1em;
+}
+
+}
+

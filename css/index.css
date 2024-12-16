@@ -17,8 +17,8 @@
 /*--------------------------------------BODY---------------------------------------------------*/
 body {
     /*border: 5px violet solid;*/
-    padding: 1em;
-    margin: 1em;
+    padding: 0em;
+    margin: 0em;
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -59,7 +59,7 @@ header {
     font-size: 1.5em;
     text-align: center;
     padding: 0.5em;
-    font-weight: 600;
+    font-weight: 700;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -108,7 +108,7 @@ form button {
 
 .barra-busqueda input {
     padding: 10px;
-    border: 2px solid var(--naranjaP);
+    border: 2px solid var(--azuloscuroP);
     border-radius: 0.5em;
 }
 
@@ -156,7 +156,7 @@ nav {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease;
     /* Transición suave */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     /* Aumenta la sombra al pasar el mouse */
     background-color: var(--azulclaroP);
     font-size: 0.9em;
@@ -165,9 +165,9 @@ nav {
 
 .botonNav:hover {
     background-color: var(--naranjaP);
-    border: 2px var(--azulclaroP) solid;
+    border: 1px var(--azulclaroP) solid;
     color: var(--blancoP);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     /* Aumenta la sombra al pasar el mouse */
 }
 
@@ -183,7 +183,12 @@ nav {
 /*------CONTENEDOR DE 5 BOTONES----*/
 .navbar-nav {
     margin: 0 auto;
+  }
+
+#recuadroNav{
+padding: 0;
 }
+
 
 .itemNav,
 .dropdown {
@@ -205,14 +210,20 @@ nav {
     border-radius: 5px;
     border: 1px var(--blancoP) solid;
     margin: 0em;
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 0.2em 0.4em;
+   
 }
 
 .dropdown-item:hover {
     background-color: var(--naranjaP);
     color: White;
 }
+
+.tachado{
+    text-decoration: line-through wavy rgb(3, 19, 114) 2px;
+}
+
 
 
 /*ICONO HAMBURGUESA*/
@@ -258,9 +269,10 @@ main {
     font-size: 2em;
     font-weight: 800;
     font-family: "caveat";
-    margin: 0;
+    margin: 0.4em 0 0.4em 0;
     padding: 0;
     color: var(--azuloscuroP);
+    line-height: 0.8;
 
 }
 
@@ -312,6 +324,7 @@ main {
     grid-area: secundario;
     /*border: 2px black solid;*/
     padding: 2em;
+    
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: auto;
@@ -332,9 +345,10 @@ main {
 
 .publicidad {
     margin: 2em auto;
-    border: 2px var(--naranjaP) solid;
-    padding: 0.4em;
-    border-radius: 6px;
+    border: 3px var(--azuloscuroP) solid;
+    padding: 0.2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -362,21 +376,26 @@ main {
     font-size: 1.4em;
     font-weight: 600;
     background-color: var(--naranjaP);
-    border-radius: 20px;
-    width: 100%;
+    border-radius: 9px;
+    width: 90%;
     margin: auto;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-top: 0.6em;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
+
 }
 
 /*-------------------DESTACADOS--------------------------*/
 #contenedorDestacados {
-    /*border: 2px black solid;*/
+    border: 3px var(--azuloscuroP) solid;
     border-radius: 1em;
-    background-color: var(--azuloscuroP);
+    background-color: var(--blancoP);
     padding: 0.5em;
+    
 }
 
+/*#contenedorSwiperDestacados{
+}*/
 
 .card {
     width: 15em;
@@ -385,11 +404,11 @@ main {
 
 }
 
-/*-----------------MAS VENDIDOS----------------------------*/
+/*------------------------MAS VENDIDOS----------------------------*/
 #contenedorMasVendidos {
-    /*border: 2px black solid;*/
+    border: 3px var(--azuloscuroP) solid;
     border-radius: 1em;
-    background-color: var(--azuloscuroP);
+    background-color: var(--blancoP);
     padding: 0.5em;
 
 }
@@ -409,12 +428,13 @@ main {
     max-width: 1250px;
     margin: 0 auto;
     /*border: 2px red solid;*/
-    /*background-color: blue;*/
+    /*background-color: pink;  luego sacar-----------------------------*/
     padding: 0em 3em;
 }
 
 .swiper-wrapper {
-    background-color: transparent;
+    background-color: var(--blancoP);/*transparent*/
+    
 }
 
 ul {
@@ -442,7 +462,7 @@ li a {
     background-color: transparent;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    height: 350px;
+    height: 390px;
     width: 260px;
     position: relative;
     text-align: center;
@@ -452,9 +472,12 @@ li a {
     margin-bottom: 2em;
 }
 
-.box {
+/*.box {
     display: none;
-}
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}*/
 
 
 
@@ -484,7 +507,7 @@ li a {
 .swiper-button-prev {
     color: var(--naranjaP);
     font-size: 30px;
-    margin: 0em;
+    /*margin: 0em;*/
 
 }
 
@@ -495,49 +518,60 @@ li a {
 
 .contenedorCard1 {
 
-    border: 3px var(--naranjaP) solid;
+    border:8px var(--azulclaroP) ridge;
     border-radius: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    background-color: var(--blancoP);
-    color: var(--azuloscuroP);
+    background-color: var(--azuloscuroP);
+    color: var(--blancoP);
     font-family: arial;
     width: 250px;
-    height: 350px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    height: 390px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Montserrat ;
    }
 
 .contenedorCard1:hover {
 
-    transform: translateY(-1px);/* Mueve la card hacia arriba al pasar el mouse */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);/* Aumenta la sombra al pasar el mouse */
+    transform: translateY(-2px);/* Mueve la card hacia arriba al pasar el mouse */
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.2);/* Aumenta la sombra al pasar el mouse */
     }
 
 
 
 .contenedorImagen1 {
-    border: 2px var(--azuloscuroP) solid;
+    /*border: 2px var(--blancoP) solid;*/
     border-radius: 10px;
     width: 95%;
-    height: 60%;
+    height: 50%;
     display: flex;
-    background-color: var(--blancoP);
+    background-color: var(--azulclaroP);
     justify-content: center;  /* Centrar la imagen horizontalmente */
     align-items: center; /* Centrar la imagen verticalmente */
+    flex-wrap:wrap; /*-------------------------------------------------------------verrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-*/
 }
 
 .imagenProducto1 {
     width: auto;
     height: auto;
-    max-width: 100%; /* Se ajusta al 100% del ancho del contenedor */
-    max-height: 100%;  /* Se ajusta al 100% de la altura del contenedor */
+    max-width: 85%; /* Se ajusta al 100% del ancho del contenedor */
+    max-height: 85%;  /* Se ajusta al 100% de la altura del contenedor */
     object-fit: contain;
     margin: auto;
     transition: transform 0.3s ease;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+}
+
+.descripcionCorta{  /* verrrrrrrrrrrrrrrrrrrrrrrr*/
+color: var(--blancoP);
+font-size:1em;
+align-items: end;
+font-weight: 600;
+
 }
 
 
@@ -560,8 +594,9 @@ li a {
 }
 
 .contenedorPrecio1 h4 {
-    font-weight: 800;
-    font-size: 1.3em;
+    font-weight: 700;
+    font-size: 1.6em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -573,9 +608,9 @@ li a {
     margin: auto;
     display: flex;
     align-items: center;
-    padding: 8px;
-    font-size: 0.7em;
-    font-weight: 500;
+    padding: 0 10px;
+    font-size: 0.8em;
+    font-weight: 400;
     text-align: left;
 }
 
@@ -594,23 +629,24 @@ li a {
 }
 
 .contenedorSelector1 {
-    border: 2px var(--naranjaP) solid;
+    border: 1px rgb(240, 235, 230) solid;
     width: 20%;
-    height: 70%;
+    height: 60%;
     border-radius: 0.4em;
     text-align: center;
     font-size: 0.9em;
-    background-color: var(--blancoP);
+    background-color: var(--azulclaroP);
+    color: var(--blancoP);
 }
 
 .contenedorBoton1 {
-    border: 2px rgb(240, 235, 230) solid;
-    border-radius: 0.6em;
+    border: 1px rgb(240, 235, 230) solid;
+    border-radius: 5px;
     width: 60%;
-    height: 90%;
+    height: 60%;
     background-color: var(--naranjaP);
     color: var(--blancoP);
-    font-weight: 700;
+    font-weight: 800;
     transition: transform 0.3s ease;
     /* Transición suave para el tamaño */
 }

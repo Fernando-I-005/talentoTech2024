@@ -1,4 +1,4 @@
-﻿# E-Commerce de Ferretería - **FerreMundo**
+﻿# E-Commerce de Ferretería - **FerreCentro**
 
 ![Logo de la Ferretería](./recursos/LogoFerrecentroPNGnaranja150x140px.png)
 
@@ -6,8 +6,8 @@
 
 ## **Marca**
 
-**Nombre de la Marca**: FerreMundo  
-La marca **FerreMundo** ha sido creada específicamente para este proyecto, reflejando una identidad que evoca confianza, calidad y cercanía al cliente. El nombre combina "ferretería" y "mundo", sugiriendo una amplia gama de productos disponibles para todos los públicos.
+**Nombre de la Marca**: FerreCentro
+La marca **FerreCentro** ha sido creada específicamente para este proyecto, reflejando una identidad que evoca confianza, calidad y cercanía al cliente. El nombre combina "ferretería" y "centro", sugiriendo una amplia gama de productos disponibles para todos los públicos.
 
 ---
 
@@ -134,6 +134,41 @@ Este sitio está dirigido a:
 - **HTML**: Para la estructura básica del sitio.
 - **CSS**: Para estilos visuales y diseño responsivo.
 - **JavaScript**: Para interactividad y funcionalidad adicional (próximamente).
+
+
+## Carga de Productos y Visualización Dinámica
+
+Este código carga un archivo JSON (`jsonProductos.json`) que contiene información sobre productos. A continuación, se realiza lo siguiente:
+
+1. **Carga del archivo JSON**: Se utiliza la función `fetch` para solicitar el archivo `jsonProductos.json`.
+2. **Filtrado de productos**: Los productos se filtran en dos categorías:
+   - **Destacados**: Productos con la subcategoría "destacados" y que deben ser visibles (`mostrar: true`).
+   - **Más vendidos**: Productos con la subcategoría "masVendidos" y que también deben ser visibles.
+3. **Creación de tarjetas HTML**: Para cada producto filtrado, se genera una tarjeta de producto con su imagen, descripción corta, precio y un campo para seleccionar la cantidad. Estas tarjetas se agregan dinámicamente a los contenedores correspondientes en la página.
+4. **Manejo de errores**: Si ocurre un problema durante la carga del archivo JSON, se muestra un mensaje de error en la consola.
+
+Este proceso permite que los productos sean mostrados de manera dinámica en una página web, categorizados como destacados o más vendidos.
+
+
+## Gestión de Sucursales y Visualización Dinámica
+
+Este proyecto maneja la visualización de sucursales y sus detalles en una página web. A continuación se describen los pasos y la funcionalidad implementada:
+
+1. **Estructura de las sucursales**: Se define un array de objetos que contiene la información de las sucursales, incluyendo nombre, dirección, horarios, teléfono, correo electrónico, imagen y enlace al mapa.
+
+2. **Creación de las tarjetas de sucursales**: Se generan dinámicamente las tarjetas de las sucursales utilizando JavaScript. Cada tarjeta contiene la información relevante de cada sucursal, como el nombre, dirección, horarios de atención y un enlace a su correo electrónico.
+
+3. **Interacción con los botones**: Se implementan botones que permiten visualizar los detalles de cada sucursal. Al hacer clic en estos botones, se renderiza la información completa de la sucursal seleccionada en una sección del DOM, mostrando una tarjeta con los detalles como dirección, horarios, número de teléfono y un mapa interactivo.
+
+4. **Función para imprimir los nombres de las sucursales**: Se implementa una función que, al presionar los botones correspondientes, accede al objeto de las sucursales y imprime en la consola los nombres de las tres sucursales.
+
+5. **Manejo de eventos**: Se utilizan eventos de tipo `onclick` para gestionar las interacciones con los botones de las sucursales, facilitando la visualización de la información de cada una.
+
+Este proceso permite que los usuarios interactúen con la página de forma dinámica, visualizando la información de las sucursales y accediendo fácilmente a sus datos relevantes, como su dirección y mapa.
+
+
+
+
 
 ---
 
