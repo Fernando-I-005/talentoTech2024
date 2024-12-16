@@ -31,6 +31,7 @@ body {
         "main main main"
         "footer footer footer";
     min-width: 350px;
+    
 }
 
 
@@ -45,14 +46,14 @@ body {
 
 /*-----------------------BODY/CONTENEDORFIJO/HEADER-------------------------------------*/
 header {
-    background-color: var(--blancoP);
+    background-color: var(--azuloscuroP);
     /*border: 2px greenyellow solid;*/
     font-size: 0.6em;
 }
 
 
 #encabezadoSuperior {
-    background-color: var(--azuloscuroP);
+    background-color: var(--azulclaroP);
     /*border: 2px greenyellow solid;*/
     color: var(--blancoP);
     margin: 0em;
@@ -78,6 +79,8 @@ header {
 #logoEncabezado {
     width: 7.5em;
     margin: 1em;
+    filter: drop-shadow(1px 1px 1px rgba(156, 9, 41, 0.1));
+
 }
 
 /* campo blanco + boton buscar*/
@@ -140,7 +143,8 @@ form button {
 
 nav {
     background-color: var(--azulclaroP);
-    /*border: 2px greenyellow solid;*/
+    
+    
 }
 
 
@@ -174,9 +178,10 @@ nav {
 
 /*------contenedor NAV entero---*/
 .container-fluid {
-    background-color: var(--azulclaroP);
+    background-color: var(--azuloscuroP);
     /*border: 2px greenyellow solid;*/
     padding: 1em 0em;
+    border: 2px var(--azulclaroP) solid
 }
 
 
@@ -242,7 +247,7 @@ padding: 0;
 /*----------------------------------------------------------MAIN------------------------------------------------------------*/
 
 main {
-    background-color: var(--blancoP);
+    background-color: var(--azuloscuroP);
     /*border: 2px violet solid;*/
     padding: 0em;
     text-align: center;
@@ -261,6 +266,7 @@ main {
 #contenedorCarrusel {
     grid-area: carrusel;
     padding: 0em 2em;
+    
 
 
 }
@@ -293,6 +299,7 @@ main {
     object-fit: cover;
     opacity: 0.8;
     transition: .5s ease;
+    
 }
 
 
@@ -307,10 +314,10 @@ main {
 
 
 #contenedorCarrusel div {
-    background-color: var(--azulclaroP);
+    background-color: var(--blancoP);
     /*border: 2px greenyellow solid;*/
-    padding: 1em;
-    border-radius: 15px;
+    padding: 0.3em;
+    border-radius: 10px;
 }
 
 #imagencarruselPrincipal {
@@ -345,7 +352,7 @@ main {
 
 .publicidad {
     margin: 2em auto;
-    border: 3px var(--azuloscuroP) solid;
+    border: 2px var(--blancoP) solid;
     padding: 0.2em;
     border-radius: 8px;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
@@ -387,9 +394,9 @@ main {
 
 /*-------------------DESTACADOS--------------------------*/
 #contenedorDestacados {
-    border: 3px var(--azuloscuroP) solid;
+    border: 3px var(--blancoP) solid;
     border-radius: 1em;
-    background-color: var(--blancoP);
+    background-color: var(--azuloscuroP);
     padding: 0.5em;
     
 }
@@ -406,9 +413,9 @@ main {
 
 /*------------------------MAS VENDIDOS----------------------------*/
 #contenedorMasVendidos {
-    border: 3px var(--azuloscuroP) solid;
+    border: 3px var(--blancoP) solid;
     border-radius: 1em;
-    background-color: var(--blancoP);
+    background-color: var(--azuloscuroP);
     padding: 0.5em;
 
 }
@@ -433,7 +440,7 @@ main {
 }
 
 .swiper-wrapper {
-    background-color: var(--blancoP);/*transparent*/
+    background-color: var(--azuloscuroP);/*transparent*/
     
 }
 
@@ -525,8 +532,8 @@ li a {
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    background-color: var(--azuloscuroP);
-    color: var(--blancoP);
+    background-color: var(--blancoP);
+    color: var(--azuloscuroP);
     width: 250px;
     height: 390px;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
@@ -543,12 +550,12 @@ li a {
 
 
 .contenedorImagen1 {
-    /*border: 2px var(--blancoP) solid;*/
+    border: 2px var(--azuloscuroP) ridge;
     border-radius: 10px;
     width: 95%;
     height: 50%;
     display: flex;
-    background-color: var(--azulclaroP);
+    background-color: var(--blancoP);
     justify-content: center;  /* Centrar la imagen horizontalmente */
     align-items: center; /* Centrar la imagen verticalmente */
     flex-wrap:wrap; /*-------------------------------------------------------------verrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-*/
@@ -566,10 +573,10 @@ li a {
 }
 
 .descripcionCorta{  /* verrrrrrrrrrrrrrrrrrrrrrrr*/
-color: var(--blancoP);
+color: var(--azuloscuroP);
 font-size:0.9em;
 align-items: end;
-font-weight: 600;
+font-weight: 700;
 
 }
 
@@ -595,7 +602,7 @@ font-weight: 600;
 .contenedorPrecio1 h4 {
     font-weight: 700;
     font-size: 1.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -609,7 +616,7 @@ font-weight: 600;
     align-items: center;
     padding: 0 10px;
     font-size: 0.7em;
-    font-weight: 400;
+    font-weight: 700;
     text-align: left;
 }
 
@@ -660,7 +667,7 @@ font-weight: 600;
 
 #contenedorMarcas {
     background-color: transparent;
-    border: 2px var(--azuloscuroP) solid;
+    border: 3px var(--blancoP) solid;
     /*text-align: center;*/
     /*margin: 2em;*/
     grid-area: marcas;
@@ -679,7 +686,7 @@ font-weight: 600;
 
 /*-----------------------------------FOOTER-------------------------------*/
 footer {
-    background-color: var(--azuloscuroP);
+    background-color: var(--azulclaroP);
     /*border: 2px greenyellow solid;*/
     color: var(--blancoP);
     display: flex;
