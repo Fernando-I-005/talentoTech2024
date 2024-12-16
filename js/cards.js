@@ -28,7 +28,7 @@ function crearCard(producto) {
 }
 
 // Obtener datos del archivo JSON
-fetch('../datos/jsonProductos.json')
+fetch('./datos/jsonProductos.json')
     .then(response => {
         if (!response.ok) {
             throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
@@ -62,5 +62,5 @@ fetch('../datos/jsonProductos.json')
             });
     })
     .catch(error => {
-        console.error('Hubo un problema con la carga del JSON:', error);
+        console.error('Hubo un problema con la carga del JSON (desde catch):', error);
     });
