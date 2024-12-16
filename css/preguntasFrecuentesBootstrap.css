@@ -23,6 +23,8 @@ body {
     background-color: var(--azuloscuroP);
     text-align: center;
     margin-bottom:2em;
+    display: flex;
+    justify-content: center;
 }
 
 
