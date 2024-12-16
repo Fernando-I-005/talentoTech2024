@@ -166,6 +166,14 @@ background-color: transparent;
 @media (max-width: 950px) 
 {
 
+    #contenedorTitulo{
+        width:90vw;}
+      
+        .accordion{
+          width:90vw;
+        }
+
+
 #contenedorCentro h1{
   font-size:2.5em;
 

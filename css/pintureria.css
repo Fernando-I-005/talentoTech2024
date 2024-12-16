@@ -1,6 +1,5 @@
 :root {
-  --naranjaP: #ff6700ff;
-  /* Almacena los colores de la paleta con un nombre */
+  --naranjaP: #ff6700ff;/* Almacena los colores de la paleta con un nombre */
   --blancoP: #ebebebff;
   --grisP: #c0c0c0ff;
   --azulclaroP: #3a6ea5ff;
@@ -15,356 +14,287 @@ body {
   /*border: 2px red solid;*/
   margin: auto;
   padding: 0;
-  min-width:400px;
-  display:flex;
-  justify-content:center;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
   padding-bottom: 3em;
 }
 
-body h1{
+body h1 {
   font-size: 1.75em;
   line-height: 1.2;
-
 }
-
-
-
 
 
 /*----------------contenedor superior sucursales------------------*/
 
-#contenedorTitulo{
-display:flex;
-border:2px white solid;
-border-radius:15px;
-width:70vw;
-font-weight:900;
-background-color: rgba(255, 255, 255, 0.1);
-justify-content: space-around; /* Distribuye los elementos a los extremos */
-align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
-margin:auto;
-margin-bottom:1.5em;
-margin-top:3em;
+#contenedorTitulo {
+  display: flex;
+  border: 2px white solid;
+  border-radius: 15px;
+  width: 70vw;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: space-around;/* Distribuye los elementos a los extremos */
+  align-items: center;/* Centra los elementos verticalmente (si se necesitan) */
+  margin: auto;
+  margin-bottom: 1.5em;
+  margin-top: 3em;
 }
 
-
-
-
-#contenedorIzquierdo{
-margin:0.5em 3em;
+#contenedorIzquierdo {
+  margin: 0.5em 3em;
 /*border:2px wheat solid;*/
-align-items: center;
+  align-items: center;
 }
 
-#contenedorCentro{
-margin:auto;
-/*border:2px red solid;*/
-display: flex;
-align-items: center;
+#contenedorCentro {
+  margin: auto;
+  /*border:2px red solid;*/
+  display: flex;
+  align-items: center;
 }
 
 #contenedorCentro h1 {
-display: inline;
-margin: 0 0.6em;
-/*border: 3px white solid;*/
-font-size: 3em;
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: inline;
+  margin: 0 0.6em;
+  /*border: 3px white solid;*/
+  font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-.textoParrafo{
-display:flex;
-width:70vw;
-font-weight:600;
-justify-content: space-around; /* Distribuye los elementos a los extremos */
-align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
-margin:auto;
-margin-bottom:1.5em;
-font-size:1.1em;
-padding:1em 2em;
-    
-}
-    
-
-#logoFerrecentro{
-width:4em;
- filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+.textoParrafo {
+  display: flex;
+  width: 70vw;
+  font-weight: 600;
+  justify-content: space-around;/* Distribuye los elementos a los extremos */
+  align-items: center;/* Centra los elementos verticalmente (si se necesitan) */
+  margin: auto;
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+  padding: 1em 2em;
 }
 
-#logoIconoTitulo{
- filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+#logoFerrecentro {
+  width: 4em;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+}
 
+#logoIconoTitulo {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
 }
 
 /*------------------------------------ contenedor productos---------------------------*/
 
-
-#contenedorProductos{
-border:2px white solid;
-border-radius:15px;
-width:70vw;
-
-padding:2.5em;
-display:flex;
-flex-wrap: wrap;
-justify-content:flex-start;/*veeeeeeeeeeeeeeeeeeeeeeer*/
-background-color: var(--naranjaP);
+#contenedorProductos {
+  border: 2px white solid;
+  border-radius: 15px;
+  width: 70vw;
+  padding: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;/*veeeeeeeeeeeeeeeeeeeeeeer*/
+  background-color: var(--naranjaP);
 }
 
 /*-----------------------------CARD------------------------------*/
 
-.contenedorCard{
-    border:8px var(--azulclaroP) ridge;
-    border-radius: 10px;
-    width: 280px;
-    height: 450px;
-    margin: 1em auto;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
-    background-color:var(--azuloscuroP);
-    color:var(--blancoP);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 5px 8px rgba(0, 0, 0, 0.2);
-    
+.contenedorCard {
+  border: 8px var(--azulclaroP) ridge;
+  border-radius: 10px;
+  width: 280px;
+  height: 450px;
+  margin: 1em auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  background-color: var(--azuloscuroP);
+  color: var(--blancoP);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 8px rgba(0, 0, 0, 0.2);
 }
 
-.contenedorCard:hover{
- box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.8);
-
-
-
+.contenedorCard:hover {
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.8);
 }
 
-
-
-
-
-.contenedorImagen{
-    /*border: 2px var(--blancoP) solid;*/
-    border-radius: 10px;
-    width: 95%;
-    height: 60%;
-    display: flex;
-    background-color: var(--azulclaroP);
-    box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.2);
-     
-   
-    
-    justify-content: center;  /* Centrar la imagen horizontalmente */
-    align-items: center; /* Centrar la imagen verticalmente */
-    flex-wrap:wrap; 
-     
-     
-     
-     
-     
- }
-
-.imagenProducto{
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    margin:auto;
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+.contenedorImagen {
+  /*border: 2px var(--blancoP) solid;*/
+  border-radius: 10px;
+  width: 95%;
+  height: 60%;
+  display: flex;
+  background-color: var(--azulclaroP);
+  box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.2);
+  justify-content: center;/* Centrar la imagen horizontalmente */
+  align-items: center; /* Centrar la imagen verticalmente */
+  flex-wrap: wrap;
 }
 
-
-
-.descripcionCorta{  /* verrrrrrrrrrrrrrrrrrrrrrrr*/
-color:var(--blancoP);
-font-size:0.9em;
-align-items: end;
-
+.imagenProducto {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  margin: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
 }
 
-
-
-
-.contenedorPrecio{
-    /*border: 2px yellow solid;*/
-    border-radius: 10px;
-    width: 95%;
-    height: 10%;
-    display: flex;
-    font-weight: 1000;
-    font-size: 1.5em;
-    justify-content: center;
-    align-items: center;
-    margin-top:0.5em;
-   }
-
-.contenedorDescripcion{
-    /*border: 2px rgb(34, 127, 233) solid;*/
-    border-radius: 10px;
-    width: 95%;
-    height: 30%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    font-size: 0.8em;
+.descripcionCorta {
+ /* verrrrrrrrrrrrrrrrrrrrrrrr*/
+  color: var(--blancoP);
+  font-size: 0.9em;
+  align-items: end;
 }
 
-/*.descripcionLarga{  
+.contenedorPrecio {
+  /*border: 2px yellow solid;*/
+  border-radius: 10px;
+  width: 95%;
+  height: 10%;
+  display: flex;
+  font-weight: 1000;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
 
-}*/
+.contenedorDescripcion {
+  /*border: 2px rgb(34, 127, 233) solid;*/
+  border-radius: 10px;
+  width: 95%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-size: 0.8em;
+  justify-content: center;
+  margin-top: 1rem;/* Espacio superior */
+}
 
-
-
-
-.masDetalles
-{
-    margin:auto;
-    border:none;
-    background-color:var(--azuloscuroP);
-    color:var(--blancoP);
-    font-size:1em;
-    cursor: pointer; /* Cambia el puntero a una mano */
-    display:none;
+.descripcionLarga {
+  background-color: transparent;/* Fondo transparente */
+  border: none;/* Sin bordes */
+  color: var(--blancoP);
+  cursor: pointer;/* Mostrar el cursor como "mano" */
+  font-size: 1rem;/* Ajustar tamaño del texto */
+  text-align: center;
 }
 
 
 
-.contenedorInferior{
-    /*border: 2px rgb(29, 197, 94) solid;*/
-    border-radius: 10px;
-    width: 95%;
-    height: 15%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-    display: flex;
-    align-items: center;
+.masDetalles {
+  margin: auto;
+  border: none;
+  background-color: var(--azuloscuroP);
+  color: var(--blancoP);
+  font-size: 1em;
+  cursor: pointer;
+  /* Cambia el puntero a una mano */
+  /*display:none;*/
 }
 
-.contenedorSelector{
-    border: 2px var(--blancoP) solid;
-    width: 20%;
-    height: 70%;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1em;
-    color: var(--blancoP);
-    background-color:var(--azulclaroP);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.2);
-    cursor: pointer; /* Cambia el puntero a una mano */
-    }
+
+.contenedorInferior {
+  /*border: 2px rgb(29, 197, 94) solid;*/
+  border-radius: 10px;
+  width: 95%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorSelector {
+  border: 2px var(--blancoP) solid;
+  width: 20%;
+  height: 70%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1em;
+  color: var(--blancoP);
+  background-color: var(--azulclaroP);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;/* Cambia el puntero a una mano */
+}
 
 
 
 .contenedorBoton {
-    border: 2px rgb(240, 235, 230) solid;
-    border-radius: 10px;
-    width: 60%;
-    height: 70%;
-    background-color: var(--naranjaP);
-    color: var(--blancoP);
-    font-weight: 800;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.2);
-    cursor: pointer; /* Cambia el puntero a una mano */
-    }
+  border: 2px rgb(240, 235, 230) solid;
+  border-radius: 10px;
+  width: 60%;
+  height: 70%;
+  background-color: var(--naranjaP);
+  color: var(--blancoP);
+  font-weight: 800;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px -2px 5px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;/* Cambia el puntero a una mano */
+}
 
 
+/*----------------------------MEDIAQUERIES 900px-----------------------------------------*/
 
-
-
- /*----------------------------MEDIAQUERIES 900px-----------------------------------------*/
-
-@media (max-width: 950px) 
-{
-
-
-  #contenedorProductos{
-    
-    width:90vw;
+@media (max-width: 950px) {
+  #contenedorTitulo {
+    width: 90vw;
   }
 
-#contenedorCentro h1{
-  font-size:2.5em;
+  #contenedorProductos {
+    width: 90vw;
+  }
 
-}  
- 
-#logoIconoTitulo{
-font-size:2.5em; /* maneja el tama�o del icono de fontawesome*/
-}
+  #contenedorCentro h1 {
+    font-size: 2.5em;
+  }
 
-#logoFerrecentro{
-min-width:3em;     
-}
+  #logoIconoTitulo {
+    font-size: 2.5em;/* maneja el tamaño del icono de fontawesome*/
+  }
 
-.textoParrafo{
-font-size:1em;
-}
+  #logoFerrecentro {
+    min-width: 3em;
+  }
+
+  .textoParrafo {
+    font-size: 1em;
+  }
 
 }
 
 
 /*----------------------------MEDIAQUERIES 650px-----------------------------------------*/
 
-@media (max-width: 650px) 
-{
+@media (max-width: 650px) {
 
+  #contenedorCentro h1 {
+    font-size: 1.5em;
+  }
 
+  #logoIconoTitulo {
+    font-size: 1.5em;
+    /* maneja el tamaño del icono de fontawesome*/
+  }
 
+  /*----------*/
+  #contenedorIzquierdo {
+    margin: 0.2em;
+  }
 
-#contenedorCentro h1{
-  font-size:1.5em;
-  
-}  
- 
-#logoIconoTitulo{
-font-size:1.5em; /* maneja el tama�o del icono de fontawesome*/
+  #logoFerrecentro {
+    width: 2em;
+  }
+
+  /*--------------*/
+  .textoParrafo {
+    font-size: 1em;
+  }
 }
-
-/*----------*/
-#contenedorIzquierdo{
-margin:0.2em;
-}
-
-#logoFerrecentro{
-width:2em;  
-}
-/*--------------*/
-.textoParrafo{
-font-size:1em;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

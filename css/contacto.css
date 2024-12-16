@@ -22,66 +22,69 @@ body {
     color: var(--blancoP);
     /*border: 1px white solid;*/
     justify-content: center;
-    padding:2em;
+    padding: 2em;
 }
 
 /*----------------*/
-#contenedorTitulo{
-display:flex;
-border:2px white solid;
-border-radius:15px;
-width:70vw;
-font-weight:900;
-background-color: rgba(255, 255, 255, 0.1);
-justify-content: space-around; /* Distribuye los elementos a los extremos */
-align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
-margin:auto;
-margin-bottom:1.5em;
-margin-top:1.5em;
+#contenedorTitulo {
+    display: flex;
+    border: 2px white solid;
+    border-radius: 15px;
+    width: 70vw;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-around;
+    /* Distribuye los elementos a los extremos */
+    align-items: center;
+    /* Centra los elementos verticalmente (si se necesitan) */
+    margin: auto;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
 }
 
-#contenedorIzquierdo{
-margin:0.5em 3em;
-/*border:2px wheat solid;*/
-align-items: center;
+#contenedorIzquierdo {
+    margin: 0.5em 3em;
+    /*border:2px wheat solid;*/
+    align-items: center;
 }
 
-#contenedorCentro{
-margin:auto;
-/*border:2px red solid;*/
-display: flex;
-align-items: center;
+#contenedorCentro {
+    margin: auto;
+    /*border:2px red solid;*/
+    display: flex;
+    align-items: center;
 }
 
 #contenedorCentro h1 {
-display: inline;
-margin: 0 0.6em;
-/*border: 3px white solid;*/
-font-size: 3em;
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: inline;
+    margin: 0 0.6em;
+    /*border: 3px white solid;*/
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#logoFerrecentro{
-width:4em;
- filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+#logoFerrecentro {
+    width: 4em;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
 }
 
-#logoIconoTitulo{
- filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
-
+#logoIconoTitulo {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
 }
 
-.textoParrafo{
-display:flex;
-width:70vw;
-font-weight:600;
-justify-content: space-around; /* Distribuye los elementos a los extremos */
-align-items: center; /* Centra los elementos verticalmente (si se necesitan) */
-margin:auto;
-margin-bottom:1.5em;
-font-size:1.1em;
-padding:1em 2em;
-  
+.textoParrafo {
+    display: flex;
+    width: 70vw;
+    font-weight: 600;
+    justify-content: space-around;
+    /* Distribuye los elementos a los extremos */
+    align-items: center;
+    /* Centra los elementos verticalmente (si se necesitan) */
+    margin: auto;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    padding: 1em 2em;
+
 }
 
 
@@ -208,59 +211,70 @@ input[type="submit"] {
     transition: transform 0.3s ease;
 }
 
- /*----------------------------MEDIAQUERIES 900px-----------------------------------------*/
+/*----------------------------MEDIAQUERIES 900px-----------------------------------------*/
 
-@media (max-width: 950px) 
-{
+@media (max-width: 950px) {
 
-#contenedorCentro h1{
-  font-size:2.5em;
+    #contenedorTitulo {
+        width: 90vw;
+    }
 
-}  
- 
-#logoIconoTitulo{
-font-size:2.5em; /* maneja el tamaño del icono de fontawesome*/
-}
+    #contenedorProductos {
+        width: 90vw;
+    }
 
-#logoFerrecentro{
-min-width:3em;     
-}
 
-.textoParrafo{
-font-size:1em;
-}
+
+    #contenedorCentro h1 {
+        font-size: 2.5em;
+
+    }
+
+    #logoIconoTitulo {
+        font-size: 2.5em;
+        /* maneja el tamaño del icono de fontawesome*/
+    }
+
+    #logoFerrecentro {
+        min-width: 3em;
+    }
+
+    .textoParrafo {
+        font-size: 1em;
+    }
 
 }
 
 
 /*----------------------------MEDIAQUERIES 650px-----------------------------------------*/
 
-@media (max-width: 650px) 
-{
+@media (max-width: 650px) {
 
 
 
 
-#contenedorCentro h1{
-  font-size:1.5em;
-  
-}  
- 
-#logoIconoTitulo{
-font-size:1.5em; /* maneja el tamaño del icono de fontawesome*/
-}
+    #contenedorCentro h1 {
+        font-size: 1.5em;
 
-/*----------*/
-#contenedorIzquierdo{
-margin:0.2em;
-}
+    }
 
-#logoFerrecentro{
-width:2em;  
-}
-/*--------------*/
-.textoParrafo{
-font-size:1em;
-}
+    #logoIconoTitulo {
+        font-size: 1.5em;
+        /* maneja el tamaño del icono de fontawesome*/
+    }
+
+    /*----------*/
+    #contenedorIzquierdo {
+        margin: 0.2em;
+    }
+
+    #logoFerrecentro {
+        width: 2em;
+    }
+
+    /*--------------*/
+    .textoParrafo {
+        font-size: 1em;
+    }
 
 }

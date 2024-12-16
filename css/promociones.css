@@ -226,6 +226,14 @@ font-size:0.6em;
     "tarjetaBanco5 tarjetaBanco6";
     justify-content: center;
     }  
+    
+    #contenedorTitulo {
+      width: 90vw;
+  }
+
+
+
+
 }
 
 /*-------------------------------------------mediasqueies 500px--------------------------------------*/

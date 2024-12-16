@@ -290,94 +290,109 @@ document.addEventListener("DOMContentLoaded", function () {
         
     ];
 
-    // Función para crear las cards dinámicamente
     function crearCards(productos) {
-        const contenedorProductos = document.getElementById("contenedorProductos");
+      const contenedorProductos = document.getElementById("contenedorProductos");
+  
+      // Verificar que el contenedor exista
+      if (!contenedorProductos) {
+          console.error("El contenedor con ID 'contenedorProductos' no existe.");
+          return;
+      }
+  
+      // Limpiar el contenedor antes de agregar las cards
+      contenedorProductos.innerHTML = '';
+  
+      // Iterar sobre cada producto
+      productos.forEach(producto => {
+          if (producto.mostrar) {
+              // Crear la card
+              const card = document.createElement("div");
+              card.classList.add("contenedorCard");
+  
+              // Crear la imagen
+              const contenedorImagen = document.createElement("div");
+              contenedorImagen.classList.add("contenedorImagen");
+              const img = document.createElement("img");
+              img.classList.add("imagenProducto");
+              img.src = producto.imagen; // Asignar la imagen
+              img.alt = `Imagen del producto ${producto.nombre}`;
+  
+              // Crear la descripción corta
+              const descripcionCorta = document.createElement("p");
+              descripcionCorta.classList.add("descripcionCorta");
+              descripcionCorta.textContent = producto.nombre;
+  
+              contenedorImagen.appendChild(img);
+              contenedorImagen.appendChild(descripcionCorta);
+  
+              // Crear la parte del precio
+              const contenedorPrecio = document.createElement("div");
+              contenedorPrecio.classList.add("contenedorPrecio");
+              const precio = document.createElement("h3");
+              precio.textContent = `$ ${producto.precio.toLocaleString()}`;
+              contenedorPrecio.appendChild(precio);
+  
+              // Crear la descripción larga como botón toggle
+              const contenedorDescripcion = document.createElement("div");
+              contenedorDescripcion.classList.add("contenedorDescripcion");
+  
+              const descripcionLarga = document.createElement("button");
+              descripcionLarga.classList.add("descripcionLarga");
+              descripcionLarga.textContent = "Ver detalles"; // Texto inicial
+  
+              // Alternar entre mostrar y ocultar la descripción
+              descripcionLarga.addEventListener("click", () => {
+                  if (descripcionLarga.textContent === "Ver detalles") {
+                      descripcionLarga.textContent = producto.descripcionLarga; // Mostrar descripción larga
+                  } else {
+                      descripcionLarga.textContent = "Ver detalles"; // Volver al estado inicial
+                  }
+              });
+  
+              contenedorDescripcion.appendChild(descripcionLarga);
+  
+              // Crear el contenedor inferior (cantidad y botón AGREGAR)
+              const contenedorInferior = document.createElement("div");
+              contenedorInferior.classList.add("contenedorInferior");
+  
+              const inputCantidad = document.createElement("input");
+              inputCantidad.classList.add("contenedorSelector");
+              inputCantidad.type = "number";
+              inputCantidad.value = "1";
+              inputCantidad.min = "1";
+              inputCantidad.max = "100";
+  
+              const botonAgregar = document.createElement("button");
+              botonAgregar.classList.add("contenedorBoton");
+              botonAgregar.textContent = "AGREGAR";
+              botonAgregar.setAttribute("data-producto-id", producto.id);
+  
+              contenedorInferior.appendChild(inputCantidad);
+              contenedorInferior.appendChild(botonAgregar);
+  
+              // Agregar todo al contenedor principal de la card
+              card.appendChild(contenedorImagen);
+              card.appendChild(contenedorPrecio);
+              card.appendChild(contenedorDescripcion);
+              card.appendChild(contenedorInferior);
+  
+              // Agregar la card al contenedor de productos
+              contenedorProductos.appendChild(card);
+          }
+      });
+  }
+  
 
-        // Verificar que el contenedor exista
-        if (!contenedorProductos) {
-            console.error("El contenedor con ID 'contenedorProductos' no existe.");
-            return;
-        }
+// Llamar a la función para crear las cards
+crearCards(productos);
 
-        // Limpiar el contenedor antes de agregar las cards
-        contenedorProductos.innerHTML = '';
 
-        // Iterar sobre cada producto
-        productos.forEach(producto => {
-            if (producto.mostrar) {
-                // Crear la card
-                const card = document.createElement("div");
-                card.classList.add("contenedorCard");
 
-                // Crear la imagen
-                const contenedorImagen = document.createElement("div");
-                contenedorImagen.classList.add("contenedorImagen");
-                const img = document.createElement("img");
-                img.classList.add("imagenProducto");
-                img.src = producto.imagen; // Asignar la imagen
-                img.alt = `Imagen del producto ${producto.nombre}`;
 
-                // Crear la descripción corta
-                const descripcionCorta = document.createElement("p");
-                descripcionCorta.classList.add("descripcionCorta");
-                descripcionCorta.textContent = producto.nombre;
 
-                contenedorImagen.appendChild(img);
-                contenedorImagen.appendChild(descripcionCorta);
 
-                // Crear la parte del precio
-                const contenedorPrecio = document.createElement("div");
-                contenedorPrecio.classList.add("contenedorPrecio");
-                const precio = document.createElement("h3");
-                precio.textContent = `$ ${producto.precio.toLocaleString()}`;
-                contenedorPrecio.appendChild(precio);
 
-                // Crear la descripción larga y el botón
-                const contenedorDescripcion = document.createElement("div");
-                contenedorDescripcion.classList.add("contenedorDescripcion");
-                const descripcionLarga = document.createElement("p");
-                descripcionLarga.classList.add("descripcionLarga");
-                descripcionLarga.textContent = producto.descripcionLarga;
 
-                const botonDetalles = document.createElement("button");
-                botonDetalles.classList.add("masDetalles");
-                botonDetalles.textContent = "Ver detalles";
 
-                contenedorDescripcion.appendChild(descripcionLarga);
-                contenedorDescripcion.appendChild(botonDetalles);
 
-                // Crear el contenedor inferior (cantidad y botón AGREGAR)
-                const contenedorInferior = document.createElement("div");
-                contenedorInferior.classList.add("contenedorInferior");
-
-                const inputCantidad = document.createElement("input");
-                inputCantidad.classList.add("contenedorSelector");
-                inputCantidad.type = "number";
-                inputCantidad.value = "1";
-                inputCantidad.min = "1";
-                inputCantidad.max = "100";
-
-                const botonAgregar = document.createElement("button");
-                botonAgregar.classList.add("contenedorBoton");
-                botonAgregar.textContent = "AGREGAR";
-                botonAgregar.setAttribute("data-producto-id", producto.id);
-
-                contenedorInferior.appendChild(inputCantidad);
-                contenedorInferior.appendChild(botonAgregar);
-
-                // Agregar todo al contenedor principal de la card
-                card.appendChild(contenedorImagen);
-                card.appendChild(contenedorPrecio);
-                card.appendChild(contenedorDescripcion);
-                card.appendChild(contenedorInferior);
-
-                // Agregar la card al contenedor de productos
-                contenedorProductos.appendChild(card);
-            }
-        });
-    }
-
-    // Llamar a la función para crear las cards
-    crearCards(productos);
 });
