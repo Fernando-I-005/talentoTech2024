@@ -101,7 +101,7 @@ El sitio ha sido desplegado en **GitHub Pages** y **Netlify** para asegurar su d
   - [Página Principal](https://fernando-i-005.github.io/talentoTech2024/)
   
 - **Netlify**:  
-  - [Página Principal](https://ferremundo.netlify.app/)
+  - [Página Principal](https://ferrecentro.netlify.app/)
 
 ---
 
