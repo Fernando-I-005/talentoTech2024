@@ -29,10 +29,61 @@
 </head>
 
 <body>
+
+
+    <button class="whatsapp-icono" onclick="openWhatsApp()">
+        <img src="./recursos/iconoWhatsapp.png" alt="WhatsApp">
+      </button>
+
+
     <div id="contenedorFijo">
 
         <header>
-            <p id="encabezadoSuperior"  class="animate__animated animate__backInDown">Envios gratis en compras superiores a $ 90.000,00</p>
+        
+
+            <div id="textCarousel" class="carousel slide encabezadoSuperior" data-bs-ride="carousel">
+                <!-- Indicadores -->
+              
+                <!-- Contenido del carrusel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2500">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
+                      <h3>Envío gratis en compras superiores a $ 120.000</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2500">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
+                      <h3>6 cuotas sin interés- Plan Cuota Simple</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2500">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
+                      <h3>12 cuotas sin interés en seleccionados</h3>
+                    </div>
+                  </div>
+                </div>
+            
+                
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -258,7 +309,16 @@
         </p>
     </footer>
 
+
+
     <script src="./js/cards.js"></script>
+
+    <script>
+        // Función para abrir WhatsApp
+        function openWhatsApp() {
+          window.open("https://wa.me/1234567890", "_blank");
+        }
+      </script>
 
 
 

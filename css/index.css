@@ -5,7 +5,8 @@
 }
 
 :root {
-    --naranjaP: #ff6700ff; /* Almacena los colores de la paleta con un nombre */
+    --naranjaP: #ff6700ff;
+    /* Almacena los colores de la paleta con un nombre */
     --blancoP: #ebebebff;
     --grisP: #c0c0c0ff;
     --azulclaroP: #3a6ea5ff;
@@ -31,8 +32,30 @@ body {
         "main main main"
         "footer footer footer";
     min-width: 350px;
-    
+
 }
+
+
+
+/*------------icono whastapp----------------*/
+.whatsapp-icono {
+    position: fixed;
+    bottom: 4em;
+    right: 1em;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .whatsapp-icono img {
+    width: 2em;
+    height: 2em;
+  }
+
+
+
+
 
 
 /*--------------------------------BODY/CONTENEDORFIJO-----------------------------------------*/
@@ -52,17 +75,28 @@ header {
 }
 
 
-#encabezadoSuperior {
+
+/*---------------carrusel de texto -------------------------*/
+
+.encabezadoSuperior {
     background-color: var(--azulclaroP);
     /*border: 2px greenyellow solid;*/
     color: var(--blancoP);
     margin: 0em;
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: center;
-    padding: 0.5em;
-    font-weight: 700;
+    padding: 0.2em;
+    font-weight: 600;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
+
+
+
+.carousel-item h3 {
+    line-height: 0.8;
+}
+
+
 
 
 
@@ -143,8 +177,8 @@ form button {
 
 nav {
     background-color: var(--azulclaroP);
-    
-    
+
+
 }
 
 
@@ -188,10 +222,10 @@ nav {
 /*------CONTENEDOR DE 5 BOTONES----*/
 .navbar-nav {
     margin: 0 auto;
-  }
+}
 
-#recuadroNav{
-padding: 0;
+#recuadroNav {
+    padding: 0;
 }
 
 
@@ -217,7 +251,7 @@ padding: 0;
     margin: 0em;
     font-size: 0.9em;
     padding: 0.2em 0.4em;
-   
+
 }
 
 .dropdown-item:hover {
@@ -225,7 +259,7 @@ padding: 0;
     color: White;
 }
 
-.tachado{
+.tachado {
     text-decoration: line-through wavy rgb(3, 19, 114) 2px;
 }
 
@@ -249,7 +283,7 @@ padding: 0;
 main {
     background-color: var(--azuloscuroP);
     /*border: 2px violet solid;*/
-    padding: 0em;
+    padding: 0em 2em;
     text-align: center;
     grid-area: main;
     display: grid;
@@ -265,8 +299,8 @@ main {
 
 #contenedorCarrusel {
     grid-area: carrusel;
-    padding: 0em 2em;
-    
+    padding: 0em 3em;
+
 
 
 }
@@ -299,7 +333,7 @@ main {
     object-fit: cover;
     opacity: 0.8;
     transition: .5s ease;
-    
+
 }
 
 
@@ -331,7 +365,7 @@ main {
     grid-area: secundario;
     /*border: 2px black solid;*/
     padding: 2em;
-    
+
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: auto;
@@ -398,7 +432,7 @@ main {
     border-radius: 1em;
     background-color: var(--azuloscuroP);
     padding: 0.5em;
-    
+
 }
 
 /*#contenedorSwiperDestacados{
@@ -428,7 +462,7 @@ main {
     flex-wrap: Wrap;
     justify-content: center;
     align-self: center;
-    }
+}
 
 /*---------------CARRUSEL SWIPER!!!!!-----------------------*/
 .container {
@@ -440,8 +474,9 @@ main {
 }
 
 .swiper-wrapper {
-    background-color: var(--azuloscuroP);/*transparent*/
-    
+    background-color: var(--azuloscuroP);
+    /*transparent*/
+
 }
 
 ul {
@@ -525,7 +560,7 @@ li a {
 
 .contenedorCard1 {
 
-    border:8px var(--azulclaroP) ridge;
+    border: 8px var(--azulclaroP) ridge;
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -538,14 +573,16 @@ li a {
     height: 390px;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: Montserrat ;
-   }
+    font-family: Montserrat;
+}
 
 .contenedorCard1:hover {
 
-    transform: translateY(-2px);/* Mueve la card hacia arriba al pasar el mouse */
-    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.2);/* Aumenta la sombra al pasar el mouse */
-    }
+    transform: translateY(-2px);
+    /* Mueve la card hacia arriba al pasar el mouse */
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.2);
+    /* Aumenta la sombra al pasar el mouse */
+}
 
 
 
@@ -556,27 +593,33 @@ li a {
     height: 50%;
     display: flex;
     background-color: var(--blancoP);
-    justify-content: center;  /* Centrar la imagen horizontalmente */
-    align-items: center; /* Centrar la imagen verticalmente */
-    flex-wrap:wrap; /*-------------------------------------------------------------verrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-*/
+    justify-content: center;
+    /* Centrar la imagen horizontalmente */
+    align-items: center;
+    /* Centrar la imagen verticalmente */
+    flex-wrap: wrap;
+    /*-------------------------------------------------------------verrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-*/
 }
 
 .imagenProducto1 {
     width: auto;
     height: auto;
-    max-width: 85%; /* Se ajusta al 100% del ancho del contenedor */
-    max-height: 85%;  /* Se ajusta al 100% de la altura del contenedor */
+    max-width: 85%;
+    /* Se ajusta al 100% del ancho del contenedor */
+    max-height: 85%;
+    /* Se ajusta al 100% de la altura del contenedor */
     object-fit: contain;
     margin: auto;
     transition: transform 0.3s ease;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
 }
 
-.descripcionCorta{  /* verrrrrrrrrrrrrrrrrrrrrrrr*/
-color: var(--azuloscuroP);
-font-size:0.9em;
-align-items: end;
-font-weight: 700;
+.descripcionCorta {
+    /* verrrrrrrrrrrrrrrrrrrrrrrr*/
+    color: var(--azuloscuroP);
+    font-size: 0.9em;
+    align-items: end;
+    font-weight: 700;
 
 }
 
@@ -710,7 +753,8 @@ footer {
 
 footer a {
     color: var(--blancoP);
-    text-decoration: none; /* Elimina el subrayado */
+    text-decoration: none;
+    /* Elimina el subrayado */
     margin: 0.3em;
 }
 
@@ -748,7 +792,7 @@ footer div {
             "marcas";
     }
 
-    
+
     .publicidad {
         width: 80%;
     }
@@ -757,6 +801,7 @@ footer div {
 /***************************MEDIAQUERIES 768PX******************************/
 
 @media (max-width: 768px) {
+
     #imagencarrusel1de6,
     #imagencarrusel2de6,
     #imagencarrusel3de6,
@@ -767,11 +812,24 @@ footer div {
     }
 
 
-main{
-    justify-content: center;
-    align-items: center;
-}
-    
+
+    .encabezadoSuperior {
+        font-size: 1.4em;
+    }
+
+
+    .whatsapp-icono {
+        right: 0.25em;
+      }
+
+
+
+    main {
+        justify-content: center;
+        align-items: center;
+        padding: 0em;
+    }
+
     .botonNav {
         font-size: 0.7em;
     }
@@ -800,11 +858,8 @@ main{
         width: 250px;
     }
 
-    .publicidad{
-width: 100%;
+    .publicidad {
+        width: 100%;
     }
 
 }
-
-
-
