@@ -1,0 +1,211 @@
+/*------------------ajustes universales-----------------*/
+* {
+
+    font-family: montserrat, Caveat, Tahoma, sans-serif;
+}
+
+:root {
+    --naranjaP: #ff6700ff;
+    /* Almacena los colores de la paleta con un nombre */
+    --blancoP: #ebebebff;
+    --grisP: #c0c0c0ff;
+    --azulclaroP: #3a6ea5ff;
+    --azuloscuroP: #004e98ff;
+}
+
+
+
+/*---------------------------body-------------------*/
+
+body {
+    background-color: var(--azuloscuroP);
+    /*var(--azuloscuroP);*/
+    color: var(--blancoP);
+    /*border: 1px white solid;*/
+    justify-content: center;
+    padding: 2em;
+}
+
+/*----------------*/
+#contenedorTitulo {
+    display: flex;
+    border: 2px white solid;
+    border-radius: 15px;
+    width: 70vw;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-around;
+    /* Distribuye los elementos a los extremos */
+    align-items: center;
+    /* Centra los elementos verticalmente (si se necesitan) */
+    margin: auto;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+#contenedorIzquierdo {
+    margin: 0.5em 3em;
+    /*border:2px wheat solid;*/
+    align-items: center;
+}
+
+#contenedorCentro {
+    margin: auto;
+    /*border:2px red solid;*/
+    display: flex;
+    align-items: center;
+}
+
+#contenedorCentro h1 {
+    display: inline;
+    margin: 0 0.6em;
+    /*border: 3px white solid;*/
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#logoFerrecentro {
+    width: 4em;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+}
+
+#logoIconoTitulo {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4))
+}
+
+.textoParrafo {
+    display: flex;
+    width: 70vw;
+    font-weight: 600;
+    justify-content: space-around;
+    /* Distribuye los elementos a los extremos */
+    align-items: center;
+    /* Centra los elementos verticalmente (si se necesitan) */
+    margin: auto;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    padding: 1em 2em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------contenedor 1----------------------*/
+#contenedor1 {
+    border: 3px var(--blancoP) solid;
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    width: 70vw;
+    margin: auto;
+    border-radius: 1em;
+    height: 60vh;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+/*#contenedor1 h3 {
+    border: 1px rgb(223, 98, 26) solid;
+    text-align: center;
+    background-color: var(--naranjaP);
+    max-width: 600px;
+    min-width: 300px;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 0.5em;
+    color: var(--blancoP);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}*/
+
+
+/*--------------carrito-----------------------*/
+
+#contenedorIntroduccion {
+       display: block;
+}
+
+
+#contenedor1 {
+padding: 1em 5em;
+
+}
+
+
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    display: flexbox;
+    align-self: center;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    vertical-align: middle; /* Centrar contenido en altura */
+}
+table th {
+    background-color: #f4f4f4;
+    color: var(--azuloscuroP);
+}
+img {
+    max-width: 4em;
+    height: auto;
+}
+
+table td {
+    align-items: center;
+}
+
+
+tfoot td {
+    font-weight: bold;
+    background-color: var(--blancoP);
+    color: var(--azuloscuroP);
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------MEDIAQUERIES 650px-----------------------------------------*/
+
+@media (max-width: 650px) {}

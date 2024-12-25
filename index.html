@@ -31,56 +31,40 @@
 <body>
 
 
-    <button class="whatsapp-icono" onclick="openWhatsApp()">
+    <button class="whatsapp-icono animate__animated animate__headShake animate__slower animate__infinite" onclick="openWhatsApp()">
         <img src="./recursos/iconoWhatsapp.png" alt="WhatsApp">
-      </button>
+    </button>
 
 
     <div id="contenedorFijo">
 
         <header>
-        
+
 
             <div id="textCarousel" class="carousel slide encabezadoSuperior" data-bs-ride="carousel">
                 <!-- Indicadores -->
-              
+
                 <!-- Contenido del carrusel -->
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="2500">
-                    <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
-                      <h3>Envío gratis en compras superiores a $ 120.000</h3>
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
+                            <h3>Envío gratis en compras superiores a $ 120.000</h3>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2500">
-                    <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
-                      <h3>6 cuotas sin interés- Plan Cuota Simple</h3>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
+                            <h3>6 cuotas sin interés- Plan Cuota Simple</h3>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2500">
-                    <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
-                      <h3>12 cuotas sin interés en seleccionados</h3>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 2em;">
+                            <h3>12 cuotas sin interés en seleccionados</h3>
+                        </div>
                     </div>
-                  </div>
                 </div>
-            
-                
-              </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
 
 
 
@@ -96,7 +80,10 @@
                     <input type="text" name="query" placeholder="Buscar..." aria-label="Buscar" required>
                     <button type="submit">Buscar</button>
                 </form>
-
+                <div>
+                    <a id="logoCarrito" href="" title="Aqui encontra los productos que elegiste"> <i
+                            class="fa-solid fa-cart-shopping fa-3x"></i> </a>
+                </div>
             </div>
 
 
@@ -316,14 +303,14 @@
     <script>
         // Función para abrir WhatsApp
         function openWhatsApp() {
-          window.open("https://wa.me/1157579257", "_blank");
+            window.open("https://wa.me/1157579257", "_blank");
         }
-      </script>
+    </script>
 
 
 
     <script>
-        document.querySelector('.barra-busqueda').addEventListener('submit', function(event) {
+        document.querySelector('.barra-busqueda').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevenir que se envíe el formulario automáticamente
             alert('Funcionalidad deshabilita - En proceso de creacion'); // Mostrar la ventana emergente
         });

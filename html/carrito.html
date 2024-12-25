@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../css/resetNormalize.css">
+  <link rel="stylesheet" href="../css/carrito.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="../recursos/favicon.ico" type="image/x-icon"> <!-- favicon en formato .ico -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f0e4497dc2.js" crossorigin="anonymous"></script> <!-- link fontawesome -->
+</head>
+
+
+
+<body>
+
+  <div id="contenedorTitulo">
+
+
+    <div id="contenedorIzquierdo">
+      <a href="../index.html"> <img id="logoFerrecentro" src="../recursos/LogoFerrecentroVolverPNGGris 300px.png"
+          alt="logo Ferrecentro Gris"> </a>
+    </div>
+
+    <div id="contenedorCentro">
+      <i class="fa-solid fa-cart-shopping fa-4x" id="logoIconoTitulo"></i>
+      <h1>Carrito(en construccion)</h1>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="textoParrafo">
+    <p>Tu carrito de compras está diseñado para brindarte una experiencia sencilla y práctica. Revisa los productos que
+      has seleccionado, ajusta las cantidades según tus necesidades y procede al pago con total seguridad. Estamos aquí
+      para garantizar que tu compra sea rápida, fácil y confiable.</p>
+  </div>
+
+
+
+
+  <section id="contenedor1">
+
+    <!-- <div id="contenedorIntroduccion">
+      <p id:="textoVacio">Tu carrito está vacío.<br>
+        Miles de productos y ofertas te están esperando.</p>
+    </div> -->
+
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Descripción</th>
+          <th>Precio Unitario</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+
+        <tr>
+          <td><img src="../recursos/pintureria/pintura15-600x600.png" alt="Producto"></td>
+          <td>Pintura Latex 4lt.</td>
+          <td class="precio-unitario">$50.00</td>
+          <td>
+            <input 
+              type="number" 
+              value="1" 
+              min="1" 
+              style="width: 60px;" 
+              oninput="actualizarSubtotal(this)">
+          </td>
+          <td class="subtotal">$50.00</td>
+          <td>
+            <i 
+              class="fas fa-trash-alt" 
+              style="cursor: pointer; color: white;" 
+              onclick="eliminarFila(this)">
+            </i>
+          </td>
+        </tr>
+        
+        
+        <!-- Agrega más filas de productos aquí -->
+
+
+        <tr>
+          <td><img src="../recursos/pintureria/pintura1-600x600.png" alt="Producto"></td>
+          <td>Pintura Latex 4lt.</td>
+          <td class="precio-unitario">$150.00</td>
+          <td>
+            <input 
+              type="number" 
+              value="1" 
+              min="1" 
+              style="width: 60px;" 
+              oninput="actualizarSubtotal(this)">
+          </td>
+          <td class="subtotal"></td>
+          <td>
+            <i 
+              class="fas fa-trash-alt" 
+              style="cursor: pointer; color: white;" 
+              onclick="eliminarFila(this)">
+            </i>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><img src="../recursos/pintureria/pintura10-600x600.png" alt="Producto"></td>
+          <td>Pintura Latex 4lt.</td>
+          <td class="precio-unitario">$80.00</td>
+          <td>
+            <input 
+              type="number" 
+              value="1" 
+              min="1" 
+              style="width: 60px;" 
+              oninput="actualizarSubtotal(this)">
+          </td>
+          <td class="subtotal"></td>
+          <td>
+            <i 
+              class="fas fa-trash-alt" 
+              style="cursor: pointer; color: white;" 
+              onclick="eliminarFila(this)">
+            </i>
+          </td>
+        </tr>
+
+
+
+        <tfoot>
+          <tr>
+              <td colspan="4" style="text-align: right;">Resumen de la compra TOTAL</td>
+              <td id="total"></td>
+          </tr>
+      </tfoot>
+
+
+
+
+
+
+
+
+
+      </tbody>
+    </table>
+
+  </section>
+
+
+
+
+
+
+
+
+  <script src="../js/carrito.js"></script>
+
+</body>
+
+</html>
